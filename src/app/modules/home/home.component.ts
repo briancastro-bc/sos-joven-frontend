@@ -15,6 +15,6 @@ export class HomeComponent {
 
   constructor(
     private readonly deviceDetectorService: CustomDeviceDetectorService
-  ) {}
+  ) { }
 
 }
