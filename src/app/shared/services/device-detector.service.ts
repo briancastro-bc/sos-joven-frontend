@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Observable, Subscriber } from 'rxjs';
@@ -8,7 +7,7 @@ import { Observable, Subscriber } from 'rxjs';
 })
 export class CustomDeviceDetectorService extends DeviceDetectorService {
 
-  constructor(@Inject(PLATFORM_ID) platformId: any) {
+  constructor(@Inject(PLATFORM_ID) platformId: object) {
     super(platformId);
   }
 
