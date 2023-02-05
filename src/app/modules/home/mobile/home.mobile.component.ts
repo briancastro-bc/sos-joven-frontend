@@ -1,4 +1,6 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+
+import { LocalStorageService } from '@shared/services';
 
 @Component({
   selector: 'app-home-mobile',
@@ -6,9 +8,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./home.mobile.component.scss'],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class HomeMobileComponent implements OnInit {
+export class HomeMobileComponent {
 
-  ngOnInit(): void {
-    console.log("hello world!");
-  }
+  constructor(
+    private readonly localStorageService: LocalStorageService
+  ) { }
 }

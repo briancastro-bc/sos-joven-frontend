@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
   template: `
-    <!-- NAVBAR HERE -->
+    <app-navbar></app-navbar>
 
-    <main>
+    <main #main>
       <router-outlet></router-outlet>
     </main>
   `
 })
 export class LayoutComponent {
-
+  @ViewChild('main') mainContent!: ElementRef<HTMLElement>;
 }

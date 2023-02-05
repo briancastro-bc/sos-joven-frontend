@@ -1,6 +1,7 @@
-import { HttpBackend, HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule, isDevMode } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpBackend, HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -8,7 +9,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@core/core.module';
-import { RouterModule } from '@angular/router';
+import { SharedModule } from '@shared/shared.module';
 
 export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
   const http = new HttpClient(handler);
@@ -25,6 +26,7 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
     HttpClientModule,
     RouterModule,
     CoreModule,
+    SharedModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
@@ -39,6 +41,7 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
       useDefaultLang: true
     })
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
