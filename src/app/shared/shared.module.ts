@@ -8,6 +8,8 @@ import { BannerDesktopComponent } from './components/banner/desktop/banner.compo
 import { NavbarDesktopComponent } from './components/navbar/desktop/navbar.desktop.component';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { AboutDesktopComponent } from './components/about/desktop/about.desktop.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TranslateModule } from '@ngx-translate/core';
     NavbarMobileComponent,
     BannerDesktopComponent,
     BannerComponent,
-    NavbarDesktopComponent
+    NavbarDesktopComponent,
+    AboutDesktopComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +29,8 @@ import { TranslateModule } from '@ngx-translate/core';
   exports: [
     NavbarComponent,
     BannerDesktopComponent,
-    BannerComponent
+    BannerComponent,
+    AboutDesktopComponent
   ]
 })
 export class SharedModule { }

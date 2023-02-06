@@ -50,6 +50,11 @@
                 padding: 29px 0;
 
                 .link {
+                    &:hover {
+                        cursor: pointer;
+                        // background: #000;
+                    }
+
                     a {
                         color: var(--grey-6-color);
                         padding: 28px 0;

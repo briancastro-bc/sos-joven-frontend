@@ -1,8 +1,8 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-layout',
-  template: `
+    selector: 'app-layout',
+    template: `
     <app-navbar></app-navbar>
 
     <main #main>
@@ -11,5 +11,5 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   `
 })
 export class LayoutComponent {
-  @ViewChild('main') mainContent!: ElementRef<HTMLElement>;
+    @ViewChild('main') mainContent!: ElementRef<HTMLElement>;
 }
