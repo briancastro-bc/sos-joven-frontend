@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { LocalStorageService } from '@shared/services';
+import { ThemeService } from '@shared/services';
 
 @Component({
   selector: 'app-home-mobile',
@@ -11,6 +11,10 @@ import { LocalStorageService } from '@shared/services';
 export class HomeMobileComponent {
 
   constructor(
-    private readonly localStorageService: LocalStorageService
+    private readonly themeService: ThemeService
   ) { }
+
+  switchTheme(): void {
+    this.themeService.toggleTheme();
+  }
 }

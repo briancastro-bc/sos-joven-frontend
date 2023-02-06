@@ -34,10 +34,34 @@
   --grey-9-color: #{$grey-9-color};
   --grey-10-color: #{$grey-10-color};
 
-
-
+  --mobile-navbar-height: #{$mobile-navbar-height};
+  --mobile-footer-height: #{$mobile-footer-height};
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: var(--background-theme);
+  color: var(--text-theme);
+}
+
+body.light-theme {
+  --text-theme: var(--dark-color);
+  --text-alt-theme: var(--dark-alt-color);
+  --border-theme: #2a282820;
+  --border-alt-theme: 0 1.5px 2.5px 0 var(--border-theme);
+  --background-theme: var(--light-color);
+  --background-alt-theme: var(--light-alt-color);
+  --against-theme: var(--dark-color);
+  --againts-alt-theme: var(--dark-alt-color);
+}
+
+body.dark-theme {
+  --text-theme: var(--light-color);
+  --text-alt-theme: var(--light-alt-color);
+  --border-theme: #fbfbfb30;
+  --border-alt-theme: 0 .25px 2.5px 0 var(--border-theme);
+  --background-theme: var(--dark-color);
+  --background-alt-theme: var(--dark-alt-color);
+  --against-theme: var(--light-color);
+  --againts-alt-theme: var(--light-alt-color);
 }

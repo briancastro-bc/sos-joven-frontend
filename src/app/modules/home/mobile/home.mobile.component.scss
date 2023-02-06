@@ -1,0 +1,6 @@
+@import "src/sass/variables";
+
+.home-mobile {
+  height: calc(100vh - ($mobile-footer-height + $mobile-navbar-height));
+  animation: 1s fadeIn ease-in-out;
+}

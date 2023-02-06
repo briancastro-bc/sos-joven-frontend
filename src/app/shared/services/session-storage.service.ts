@@ -8,7 +8,7 @@ import { CustomStorage } from '@app/core/storage/storage';
 export class SessionStorageService<T = unknown> extends CustomStorage<T> {
 
   constructor(
-    @Inject(DOCUMENT) private readonly document: Document
+    @Inject(DOCUMENT) private document: Document
   ) {
     super(document.defaultView!.sessionStorage);
   }

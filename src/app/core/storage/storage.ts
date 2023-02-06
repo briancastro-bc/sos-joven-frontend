@@ -30,7 +30,7 @@ export class CustomStorage<T> {
       lastValue: this.getLastValue(key),
     });
     const item = this.storage.getItem(key);
-    return item ? JSON.parse(item) : undefined;
+    return item ? JSON.parse(item) : '';
   }
 
   setItem(key: string, value: unknown): void {

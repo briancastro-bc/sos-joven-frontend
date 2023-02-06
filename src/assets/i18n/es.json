@@ -1,3 +1,15 @@
 {
-  "hello": "world {{param}}"
+  "hello": "world {{param}}",
+  "layout": {
+    "navbar": {},
+    "footer": {
+      "mobile": {
+        "us": "Nosotros",
+        "services": "Servicios",
+        "saionline": "SAI en línea",
+        "products": "Productos",
+        "contact": "Contacto"
+      }
+    }
+  }
 }

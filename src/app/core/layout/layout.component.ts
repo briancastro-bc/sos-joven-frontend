@@ -1,5 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
+import { CustomDeviceDetectorService } from '@shared/services';
+
 @Component({
   selector: 'app-layout',
   template: `
@@ -8,8 +10,16 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
     <main #main>
       <router-outlet></router-outlet>
     </main>
+
+    <app-footer-mobile *ngIf="isMobile$ | async"></app-footer-mobile>
   `
 })
 export class LayoutComponent {
   @ViewChild('main') mainContent!: ElementRef<HTMLElement>;
+
+  readonly isMobile$ = this.deviceDetectorService.isMobile$;
+
+  constructor(
+    private readonly deviceDetectorService: CustomDeviceDetectorService
+  ) {}
 }
