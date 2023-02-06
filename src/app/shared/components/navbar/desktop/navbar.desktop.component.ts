@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.desktop.component.html',
   styleUrls: ['./navbar.desktop.component.scss']
 })
-export class NavbarDesktopComponent {
-
-}
+export class NavbarDesktopComponent {}

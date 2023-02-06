@@ -4,10 +4,11 @@ import { RouterModule } from '@angular/router';
 
 import { NavbarMobileComponent } from './components/navbar/mobile/navbar.mobile.component';
 import { FooterMobileComponent } from './components/footer/mobile/footer.mobile.component';
-import { BannerComponent } from './components/banner/banner.component';
 import { BannerDesktopComponent } from './components/banner/desktop/banner.component';
 import { NavbarDesktopComponent } from './components/navbar/desktop/navbar.desktop.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { AboutDesktopComponent } from './components/about/desktop/about.desktop.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TranslateModule } from '@ngx-translate/core';
     NavbarDesktopComponent,
     FooterMobileComponent,
     BannerDesktopComponent,
-    BannerComponent,
+    AboutDesktopComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
@@ -26,8 +28,8 @@ import { TranslateModule } from '@ngx-translate/core';
     NavbarMobileComponent,
     NavbarDesktopComponent,
     FooterMobileComponent,
+    AboutDesktopComponent,
     BannerDesktopComponent,
-    BannerComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
