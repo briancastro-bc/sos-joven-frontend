@@ -1,7 +1,16 @@
 {
-  "hello": "world {{param}}",
   "layout": {
-    "navbar": {},
+    "navbar": {
+      "mobile": {
+        "brand": {
+          "name": "SAI",
+          "complements": {
+            "one": "Soluciones",
+            "two": "Informáticas"
+          }
+        }
+      }
+    },
     "footer": {
       "mobile": {
         "us": "Nosotros",

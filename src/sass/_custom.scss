@@ -1,0 +1,17 @@
+%_button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.86, 0.01, 0.15, 0.99);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.eq-button {
+  @extend %_button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

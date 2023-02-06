@@ -32,8 +32,8 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'us',
         routeActive: 'link__active',
         icon: {
-          type: 'regular',
-          name: 'globe',
+          type: 'solid',
+          name: 'business',
         }
       },
       {
@@ -41,14 +41,14 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'services',
         routeActive: 'link__active',
         icon: {
-          type: 'regular',
-          name: 'layer',
+          type: 'solid',
+          name: 'grid-alt',
         }
       },
       {
         span: 'layout.footer.mobile.saionline',
         route: 'saionline',
-        routeActive: 'link__active',
+        routeActive: 'saioline__active',
         icon: {
           type: 'regular',
           name: 'wifi',
@@ -60,8 +60,8 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'products',
         routeActive: 'link__active',
         icon: {
-          type: 'regular',
-          name: 'shopping-bag',
+          type: 'solid',
+          name: 'shopping-bags',
         }
       },
       {
@@ -69,7 +69,7 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'contact',
         routeActive: 'link__active',
         icon: {
-          type: 'regular',
+          type: 'solid',
           name: 'phone',
         }
       },

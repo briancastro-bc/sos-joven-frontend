@@ -13,16 +13,10 @@ export class AppInitializerService {
 
   load(): Observable<void> {
 
-    this.printHelloWorldOnLoad();
-
     this.themeService.initialize();
 
     return new Observable<void>(subscriber => {
       subscriber.complete();
     });
-  }
-
-  printHelloWorldOnLoad(): void {
-    console.log('Initializer hello world');
   }
 }

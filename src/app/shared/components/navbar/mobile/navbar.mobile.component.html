@@ -1,1 +1,21 @@
-<p>navbar.mobile works!</p>
+<header class="header-mobile" role="heading" #header>
+  <div class="header-mobile__wrapper px-5">
+    <a [routerLink]="['home']" class="header-mobile__wrapper__brand">
+      <span class="header-mobile__wrapper__brand--name">
+        {{ 'layout.navbar.mobile.brand.name' | translate }}
+      </span>
+      <div class="header-mobile__wrapper__brand--complement">
+        <span class="leading-4">{{ 'layout.navbar.mobile.brand.complements.one' | translate }}</span>
+        <span class="leading-4">{{ 'layout.navbar.mobile.brand.complements.two' | translate }}</span>
+      </div>
+    </a>
+    <nav class="header-mobile__wrapper__navigation">
+      <button class="eq-button icon-button">
+        <box-icon class="eq-icon-button" type="solid" name="bell"></box-icon>
+      </button>
+      <button class="eq-button icon-button">
+        <box-icon class="eq-icon-button" type="regular" name="menu"></box-icon>
+      </button>
+    </nav>
+  </div>
+</header>

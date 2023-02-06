@@ -9,6 +9,7 @@
   box-shadow: 0px -1px 25px 1.5px var(--border-theme);
   background-color: transparent;
   font-size: 12px;
+  z-index: 1;
 
   &__wrapper {
     height: 100%;
