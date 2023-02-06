@@ -6,7 +6,7 @@ import { CustomDeviceDetectorService } from '@shared/services';
   selector: 'app-home',
   template: `
     <app-home-mobile *ngIf="isMobile$ | async"></app-home-mobile>
-    <!-- <app-home-desktop *ngIf="!isMobile$ | async"></app-home-desktop> -->
+    <app-home-desktop *ngIf="!(isMobile$ | async)"></app-home-desktop>
   `,
 })
 export class HomeComponent {
