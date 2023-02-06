@@ -7,8 +7,6 @@ import { FooterMobileComponent } from './components/footer/mobile/footer.mobile.
 import { BannerDesktopComponent } from './components/banner/desktop/banner.component';
 import { NavbarDesktopComponent } from './components/navbar/desktop/navbar.desktop.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { AboutDesktopComponent } from './components/about/desktop/about.desktop.component';
-import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +14,6 @@ import { AboutComponent } from './components/about/about.component';
     NavbarDesktopComponent,
     FooterMobileComponent,
     BannerDesktopComponent,
-    AboutDesktopComponent,
-    AboutComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +24,6 @@ import { AboutComponent } from './components/about/about.component';
     NavbarMobileComponent,
     NavbarDesktopComponent,
     FooterMobileComponent,
-    AboutDesktopComponent,
     BannerDesktopComponent,
   ],
   schemas: [

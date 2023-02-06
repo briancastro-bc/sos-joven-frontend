@@ -1,11 +1,14 @@
 <div class="banner">
-    <div class="information">
-        <p class="title">{{information[bannerState].information.title}}</p>
-        <p class="body">{{information[bannerState].information.body}}</p>
 
-        <div class="elements">
-            <div *ngFor="let item of information; let i = index">
-                <div class="element" [ngClass]=" {'active' : bannerState == i}"  (click)="changeBanner(i)"></div>
+    <div class="information">
+        <div class="center_banner_information">
+            <p class="title">{{information[bannerState].information.title}}</p>
+            <p class="body">{{information[bannerState].information.body}}</p>
+
+            <div class="elements">
+                <div *ngFor="let item of information; let i = index">
+                    <div class="element" [ngClass]=" {'active' : bannerState == i}" (click)="changeBanner(i)"></div>
+                </div>
             </div>
         </div>
     </div>

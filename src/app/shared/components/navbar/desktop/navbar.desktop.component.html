@@ -9,26 +9,27 @@
     <header class="header">
         <div class="center_header">
             <div class="logo">
-                <!-- <h1 class="text-2xl">SAI</h1> -->
-                <img class="logo_image" src="https://media.licdn.com/dms/image/C4E0BAQFDQiaOMM9PHw/company-logo_200_200/0/1675397390507?e=1683763200&v=beta&t=GwRhSMdGlHCRsw9hhuK2g2tcCXvUGRoQE718-L5doY4" alt="">
+                <div class="sai_logo">
+                    <h1 class="sai_brand">SAI</h1>
+                    <div class="sai_desc">
+                        <p class="sai_title">Solciones</p>
+                        <p class="sai_subtitle">Informaticas</p>
+                    </div>
+                </div>
             </div>
-        
+
             <nav class="app_nav">
                 <div *ngFor=" let link of 'home.nav.links' | translate">
                     <div class="link">
-                        <a [routerLink]="'ojhbdfji'" [routerLinkActive]="'active'" >{{link.route}}</a>
-
-                        <div class="submenu">
-                            <p>{{link.route}}</p>
-                        </div>
+                        <a [routerLink]="link.to" [routerLinkActive]="'active'">{{link.route}}</a>                       
                     </div>
-
                 </div>
 
                 <div class="saienlinea link">
-                    <a [routerLink]="'saienlinea'" [routerLinkActive]="'active'" >Sai en linea</a>
+                    <a [routerLink]="'saienlinea'" [routerLinkActive]="'active'">Sai en linea</a>
                 </div>
             </nav>
         </div>
     </header>
+    
 </div>

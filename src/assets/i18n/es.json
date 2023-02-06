@@ -25,11 +25,48 @@
         },
         {
           "to": "about",
-          "route": "Quienes somos"
+          "route": "Quienes somos",
+          "subtitle": "Sobre nosotros",  
+          "sub_routes": [
+            {
+              "to": "about",
+              "route": "Mision y vision" 
+            },
+            {
+              "to": "about",
+              "route": "Descripcion" 
+            },
+            {
+              "to": "about",
+              "route": "Talento humano" 
+            },
+            {
+              "to": "about",
+              "route": "Politicas" 
+            } 
+          ]
         },
         {
           "to": "services",
-          "route": "Servicios"
+          "route": "Servicios",  
+          "sub_routes": [
+            {
+              "to": "about",
+              "route": "Mision y vision" 
+            },
+            {
+              "to": "about",
+              "route": "Descripcion" 
+            },
+            {
+              "to": "about",
+              "route": "Talento humano" 
+            },
+            {
+              "to": "about",
+              "route": "Politicas" 
+            } 
+          ]
         },
         {
           "to": "products",

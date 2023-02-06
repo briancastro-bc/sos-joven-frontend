@@ -3,7 +3,7 @@
     // height: 300px;
 
     .information {
-        padding: 5em;
+        // padding: 5em;
         position: absolute;
         width: 100%;
         height: 500px;
@@ -11,63 +11,73 @@
         z-index: 2;
 
         display: flex;
-        flex-direction: column;
-        gap: 30px;
-        justify-content: space-between;
+        align-items: center;
 
-        transition: all ease-in 500ms;
+        .center_banner_information {
+            width: var(--max-width-desktop);
+            padding: 0 var(--desktop-content-padding);
+            margin: auto;
 
-        .title {
-            max-width: 500px;
-            font-size: 2.5em;
-            color: #FFFF;
-            font-weight: 700;
-            line-height: 50px;
-            transition: all ease-in 500ms;
-        }
-
-        .body {
-            transition: all ease-in 500ms;
-
-            font-size: 1.3em;
-            max-width: 400px;
-            color: #FFFF;
-        }
-
-        .elements {
             display: flex;
-            gap: 20px;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: space-between;
+    
+            transition: all ease-in 500ms;
 
-            &:hover {
-                cursor: pointer;
+            .title {
+                max-width: 500px;
+                font-size: 2.5em;
+                color: #FFFF;
+                font-weight: 700;
+                line-height: 50px;
+                transition: all ease-in 500ms;
             }
 
-            .element {
-                width: 50px;
-                height: 5px;
-                background: #686767;
-                border-radius: 5px;
-                position: relative;
-                overflow: hidden;
+            .body {
+                transition: all ease-in 500ms;
+
+                font-size: 1.3em;
+                max-width: 400px;
+                color: #FFFF;
             }
 
-            .active {
-                background: #FFFF;
-                transform: scale(1.02);
-                transition: all ease 300ms;
+            .elements {
+                display: flex;
+                gap: 20px;
 
-                &::before {
-                    content: '';
-                    width: 50%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: #4066ce;
-                    animation: temp 4000ms;
+                &:hover {
+                    cursor: pointer;
+                }
+
+                .element {
+                    width: 50px;
+                    height: 5px;
+                    background: #686767;
+                    border-radius: 5px;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .active {
+                    background: #FFFF;
+                    transform: scale(1.02);
+                    transition: all ease 300ms;
+
+                    &::before {
+                        content: '';
+                        width: 50%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #4066ce;
+                        animation: temp 4000ms;
+                    }
                 }
             }
         }
+
     }
 
     .slider {
@@ -108,4 +118,5 @@
             width: 100%
         }
     }
+
 }
