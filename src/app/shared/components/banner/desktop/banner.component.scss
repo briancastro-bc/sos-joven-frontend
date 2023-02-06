@@ -1,0 +1,111 @@
+.banner {
+    position: relative;
+    // height: 300px;
+
+    .information {
+        padding: 5em;
+        position: absolute;
+        width: 100%;
+        height: 500px;
+        background: #000000a9;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+
+        transition: all ease-in 500ms;
+
+        .title {
+            max-width: 500px;
+            font-size: 2.5em;
+            color: #FFFF;
+            font-weight: 700;
+            line-height: 50px;
+            transition: all ease-in 500ms;
+        }
+
+        .body {
+            transition: all ease-in 500ms;
+
+            font-size: 1.3em;
+            max-width: 400px;
+            color: #FFFF;
+        }
+
+        .elements {
+            display: flex;
+            gap: 20px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .element {
+                width: 50px;
+                height: 5px;
+                background: #686767;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .active {
+                background: #FFFF;
+                transform: scale(1.02);
+                transition: all ease 300ms;
+
+                &::before {
+                    content: '';
+                    width: 50%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #4066ce;
+                    animation: temp 4000ms;
+                }
+            }
+        }
+    }
+
+    .slider {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: slidein 1s;
+            transform: translateX(70px);
+            opacity: 0;
+            transition: all ease-in-out 130ms;
+
+            &:first-child {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @keyframes temp {
+        0% {
+            width: 0%
+        }
+
+        100% {
+            width: 100%
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.nav_container {
+    margin: auto;
+    border-bottom: 1px solid var(--grey-9-color);
+
+    .before_header {
+        background: #DCEAFC;
+
+        .center_information {
+            max-width: var(--max-width-desktop);
+            margin: auto;
+            padding: 8px 10px;
+
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+
+            .location {
+                color: var(--grey-4-color);
+            }
+
+            .phone {
+                color: var(--grey-4-color);
+            }
+        }
+    }
+
+    .header {
+
+        .center_header {
+            max-width: var(--max-width-desktop);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 15px;
+
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .logo_image {
+                    width: 60px;
+                }
+            }
+
+            .app_nav {
+                display: flex;
+                gap: 25px;
+                padding: 29px 0;
+
+                .link {
+                    a {
+                        color: var(--grey-6-color);
+                        padding: 28px 0;
+                    }
+                    .active {
+                        border-bottom: 3px solid var(--primary-alt-color);
+                        color: var(--grey-2-color);
+                    }
+                }
+
+                .saienlinea {
+                    a {
+                        color: var(--primary-alt-color);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}

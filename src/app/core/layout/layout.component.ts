@@ -5,7 +5,8 @@ import { CustomDeviceDetectorService } from '@shared/services';
 @Component({
   selector: 'app-layout',
   template: `
-    <app-navbar></app-navbar>
+    <app-navbar-mobile *ngIf="isMobile$ | async"></app-navbar-mobile>
+    <app-navbar-desktop *ngIf="!(isMobile$ | async)"></app-navbar-desktop>
 
     <main #main>
       <router-outlet></router-outlet>

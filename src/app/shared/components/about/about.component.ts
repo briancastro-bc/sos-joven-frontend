@@ -3,13 +3,13 @@ import { Component } from '@angular/core';
 import { CustomDeviceDetectorService } from '@shared/services';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-about',
   template: `
-    <app-home-mobile *ngIf="isMobile$ | async"></app-home-mobile>
-    <app-home-desktop *ngIf="!(isMobile$ | async)"></app-home-desktop>
+    <!-- <app-about-desktop *ngIf="isMobile$ | async"></app-navbar-mobile> -->
+    <app-about-desktop *ngIf="!(isMobile$ | async)"></app-about-desktop>
   `,
 })
-export class HomeComponent {
+export class AboutComponent {
 
   readonly isMobile$ = this.deviceDetectorService.isMobile$;
 

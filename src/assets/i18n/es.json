@@ -11,5 +11,66 @@
         "contact": "Contacto"
       }
     }
+  },
+  "home": {
+    "nav": {
+      "nav_contact": {
+        "location": "Armenia, Quindio, Colombia",
+        "phones": "312 2890738 - 314 8252084 - 3147775180"
+      },
+      "links": [
+        {
+          "to": "home",
+          "route": "Home"
+        },
+        {
+          "to": "about",
+          "route": "Quienes somos"
+        },
+        {
+          "to": "services",
+          "route": "Servicios"
+        },
+        {
+          "to": "products",
+          "route": "Productos"
+        },
+        {
+          "to": "clients",
+          "route": "Clientes"
+        }
+      ]
+    },
+    "banner": [
+      {
+        "url": "https://img.freepik.com/vector-gratis/concepto-isometrico-cms_23-2148807389.jpg?w=2000",
+        "information": {
+          "title": "SIFAB - Software Integrado Financiero y Asistencial",
+          "body": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+        }
+      },
+      {
+        "url": "https://www.it.nrw/sites/default/files/styles/format_16x9_1280x0720/public/thumbnails/image/it-nrw_online_adobestock_311320634.jpg?itok=Ki0_tS8n",
+        "information": {
+          "title": "Historias Clínicas Robustas, Parametrizables",
+          "body": "Nuestros Clientes pueden decidir que formatos implementar o usar alguno de los más de 120 formatos ya listos para usar"
+        }
+      },
+      {
+        "url": "https://www.software-shop.com/images/index/header/atlasti_softwareshop_banner_2.jpg",
+        "information": {
+          "title": "Con SIFAB todo es más fácil",
+          "body": "Los usuarios de nuestro sistema de información así lo afirman"
+        }
+      },
+      {
+        "url": "https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/types-of-software.png",
+        "information": {
+          "title": "Con SIFAB todo es más fácil",
+          "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
+        }
+      }
+    ]
   }
 }
+
