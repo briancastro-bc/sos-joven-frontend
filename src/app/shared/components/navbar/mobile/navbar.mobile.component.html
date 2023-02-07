@@ -1,4 +1,4 @@
-<header class="header-mobile" role="heading" #header>
+<header class="header-mobile" role="menubar" #header>
   <div class="header-mobile__wrapper px-5">
     <a [routerLink]="['home']" class="header-mobile__wrapper__brand">
       <span class="header-mobile__wrapper__brand--name">
@@ -13,7 +13,7 @@
       <button class="eq-button icon-button">
         <box-icon class="eq-icon-button" type="solid" name="bell"></box-icon>
       </button>
-      <button class="eq-button icon-button">
+      <button class="eq-button icon-button" (click)="displaySidebar()">
         <box-icon class="eq-icon-button" type="regular" name="menu"></box-icon>
       </button>
     </nav>
