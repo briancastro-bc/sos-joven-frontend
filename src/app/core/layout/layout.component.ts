@@ -1,8 +1,9 @@
-import { Component, ComponentRef, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ComponentRef, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 
 import { CustomDeviceDetectorService, DisplaySidebarService } from '@shared/services';
 import { SidebarComponent } from '@shared/components/sidebar/sidebar.component';
 import { SidebarDirective } from '@shared/components/sidebar/sidebar.directive';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-layout',
@@ -19,13 +20,15 @@ import { SidebarDirective } from '@shared/components/sidebar/sidebar.directive';
     <app-footer-mobile *ngIf="isMobile$ | async"></app-footer-mobile>
   `,
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements AfterViewInit, OnDestroy {
 
   @ViewChild('main') mainContent!: ElementRef<HTMLElement>;
 
   @ViewChild(SidebarDirective, { static: true }) sidebarHost!: SidebarDirective;
 
   readonly isMobile$ = this.deviceDetectorService.isMobile$;
+
+  private subscription: Subscription | undefined;
 
   private isDisplayedSidebar = true;
 
@@ -36,14 +39,20 @@ export class LayoutComponent implements OnInit {
     private readonly deviceDetectorService: CustomDeviceDetectorService,
   ) {}
 
-  ngOnInit(): void {
-    this.displaySidebarService.isDisplayedSidebar$.subscribe(isDisplayed => {
+  ngAfterViewInit(): void {
+    this.subscription = this.displaySidebarService.isDisplayedSidebar$.subscribe(isDisplayed => {
       this.isDisplayedSidebar = isDisplayed;
-      this.attachSidebarComponent();
+      this.attachSidebar();
     });
   }
 
-  private attachSidebarComponent(): void {
+  ngOnDestroy(): void {
+    if (typeof this.subscription !== 'undefined') {
+      this.subscription.unsubscribe();
+    }
+  }
+
+  private attachSidebar(): void {
     if (this.sidebarHost.viewContainerRef.length > 0) {
       this.sidebarComponentRef.destroy();
       return;

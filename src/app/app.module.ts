@@ -1,6 +1,6 @@
 import { NgModule, isDevMode } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpBackend, HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -22,9 +22,9 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule,
+    AppRoutingModule,
     CoreModule,
     SharedModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

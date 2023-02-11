@@ -1,7 +1,68 @@
 <div class="sidebar-mobile--overlay" (click)="displaySidebar()">
 </div>
-<aside class="sidebar-mobile" role="navigation" appSidebarHost #sidebar>
-  <div class="sidebar-mobile__wrapper py-5 px-5">
-    <h1>hello world!</h1>
+<aside [@openClose]="isDisplayedSidebar" class="sidebar-mobile" role="navigation" #sidebar>
+  <div class="sidebar-mobile__wrapper">
+    <div class="sidebar-mobile__wrapper--header">
+      <div class="sidebar-mobile__wrapper--header__container">
+        <div class="sidebar-mobile__wrapper--header__container--photo">
+          <img class="picture" src="assets/images/user.svg" alt="">
+        </div>
+        <div class="sidebar-mobile__wrapper--header__container--information">
+          <h3 class="greet greet-one leading-4 mb-1">Hola, invitado</h3>
+          <h2 class="greet greet-two">Buen día</h2>
+        </div>
+        <div class="sidebar-mobile__wrapper--header__container--theme ml-auto">
+          <button class="eq-button icon-button" appRipple>
+            <box-icon class="eq-icon-button" type="solid" name="moon"></box-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-mobile__wrapper--body">
+      <div class="sidebar-mobile__wrapper--body__link-group">
+        <span class="sidebar-mobile__wrapper--body__link-group--label">General</span>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Inicio</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Inicio</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Inicio</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+      </div>
+      <div class="sidebar-mobile__wrapper--body__link-group">
+        <span class="sidebar-mobile__wrapper--body__link-group--label">Redes sociales</span>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="logo" name="facebook"></box-icon>
+          <span class="link__text">Facebook</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="logo" name="twitter"></box-icon>
+          <span class="link__text">Twitter</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="logo" name="linkedin"></box-icon>
+          <span class="link__text">Linkedin</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link">
+          <box-icon type="logo" name="instagram"></box-icon>
+          <span class="link__text">Instagram</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar-mobile__wrapper--footer">
+
+    </div>
   </div>
 </aside>

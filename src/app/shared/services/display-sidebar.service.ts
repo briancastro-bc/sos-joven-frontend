@@ -20,12 +20,7 @@ export class DisplaySidebarService {
   ) {}
 
   display(): void {
-    this.isDisplayedSidebar = this.displayedSidebar ? !this.displayedSidebar : !this.isDisplayedSidebar;
-    this.sessionStorageService.setItem('sidebarDisplayedStatus', this.isDisplayedSidebar);
+    this.isDisplayedSidebar = !this.isDisplayedSidebar;
     this.isDisplayedSidebarEvent$.emit(this.isDisplayedSidebar);
-  }
-
-  get displayedSidebar(): boolean {
-    return this.sessionStorageService.getItem('sidebarDisplayedStatus').value as boolean;
   }
 }

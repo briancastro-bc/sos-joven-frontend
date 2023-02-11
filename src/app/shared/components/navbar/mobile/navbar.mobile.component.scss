@@ -8,17 +8,14 @@
   background-color: transparent;
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
-  color: var(--primary-alt-color);
-  fill: var(--primary-alt-color);
+  fill: var(--light-color);
+  color: var(--light-color);
   transition: all .3s ease-in;
   z-index: 1;
 
   &__scrolling {
     height: $mobile-navbar-height;
-    fill: var(--light-color);
-    color: var(--light-color);
     border-radius: 0 0 15px 15px;
-    background-color: var(--primary-alt-color);
     transition: all .3s ease-in;
   }
 
@@ -29,6 +26,7 @@
     grid-template-rows: unset;
     align-items: center;
     border-radius: inherit;
+    background-color: var(--primary-alt-color);
 
     &__brand {
       display: flex;

@@ -16,6 +16,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
  * Directives section
  *
  */
+import { RippleDirective } from './directives';
 import { SidebarDirective } from './components/sidebar/sidebar.directive';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { SidebarDirective } from './components/sidebar/sidebar.directive';
     AboutDesktopComponent,
     AboutComponent,
     SidebarComponent,
-    SidebarDirective
+    SidebarDirective,
+    RippleDirective,
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,7 @@ import { SidebarDirective } from './components/sidebar/sidebar.directive';
     BannerDesktopComponent,
     SidebarComponent,
     SidebarDirective,
+    RippleDirective,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
