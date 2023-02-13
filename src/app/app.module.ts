@@ -10,6 +10,7 @@ import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
   const http = new HttpClient(handler);
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
     RouterModule,
     CoreModule,
     SharedModule,
+    SlickCarouselModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'

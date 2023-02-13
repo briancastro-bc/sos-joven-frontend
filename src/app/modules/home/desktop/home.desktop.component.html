@@ -1,0 +1,78 @@
+<app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="5000"></app-banner-desktop>
+
+<section class="about__section">
+    <div class="center_about_section">
+        <div class="about__content">
+            <div>
+                <div class="__content">
+                    <h1 class="about__title">{{ 'home.about.title' | translate }}</h1>
+                    <p class="about__subtitle">{{ 'home.about.subtitle' | translate }}</p>
+                </div>
+                <p class="about__sai">{{ 'home.about.content' | translate }}</p>
+            </div>
+            
+            <a class="button_learn__more" [routerLink]="'/about'">
+                <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
+                <i class="fa solid fa-arrow-right arrow__icon"></i>
+            </a>
+        </div>  
+
+        <div class="about__ilustration">ashd</div>
+    </div>
+</section>
+
+<section class="products__section">
+    <div class="center__products__section">
+        <div class="header__products">
+            <p class="title__products">{{'home.products.title' | translate }}</p>
+        </div>
+        <div class="body__products">
+
+            <div class="product">
+                <i class="product__icon fa solid fa-desktop"></i>
+                <div class="product__information">
+                    <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
+                    <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
+                    <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
+
+                    <a [routerLink]="'/product/sifab'">
+                        <div class="product__link">
+                            <p>
+                                Mas sobre {{'home.products.SIFAB.title' | translate }}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product">
+                <i class="product__icon fa solid fa-window-maximize"></i>
+                <div class="product__information">
+                    <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
+                    <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
+                    <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
+
+
+                    <a [routerLink]="'/product/sifapp'">
+                        <div class="product__link">
+                            <p>
+                                Mas sobre {{'home.products.SIFAPP.title' | translate }}
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients__section">
+    <div class="center__clients__section">
+        <div class="header__clients__section">
+            <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
+        </div>
+        <div class="body__clients__section">
+            <app-slider-desktop [brands]=" 'home.clients.images' | translate  "></app-slider-desktop>
+        </div>
+    </div>
+</section>
