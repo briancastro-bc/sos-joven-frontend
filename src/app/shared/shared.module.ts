@@ -18,9 +18,11 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
  */
 import { RippleDirective } from './directives';
 import { SidebarDirective } from './components/sidebar/sidebar.directive';
+import { IllustrationComponent } from './components/illustration/illustration.component';
 
 @NgModule({
   declarations: [
+    IllustrationComponent,
     NavbarMobileComponent,
     NavbarDesktopComponent,
     FooterMobileComponent,
@@ -37,6 +39,7 @@ import { SidebarDirective } from './components/sidebar/sidebar.directive';
     TranslateModule,
   ],
   exports: [
+    IllustrationComponent,
     NavbarMobileComponent,
     NavbarDesktopComponent,
     FooterMobileComponent,

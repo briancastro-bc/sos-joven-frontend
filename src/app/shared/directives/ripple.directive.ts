@@ -12,6 +12,7 @@ import {
 })
 export class RippleDirective implements AfterViewInit {
 
+  // TODO: fix directive functionality for some components
   constructor(
     private readonly renderer2: Renderer2,
     private readonly elementRef: ElementRef<HTMLElement>,

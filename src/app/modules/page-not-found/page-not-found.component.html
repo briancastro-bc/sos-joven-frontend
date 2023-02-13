@@ -1,10 +1,17 @@
 <section class="not-found" role="feed">
   <div class="not-found__wrapper">
     <div class="not-found__wrapper--illustration">
-
+      <app-illustration [source]="'assets/illustrations/not-found.svg'" [style]="'illustration'"/>
     </div>
     <div class="not-found__wrapper--content">
-
+      <div class="not-found__wrapper--content__heading">
+        <h1 class="title">Oh-no! 404</h1>
+        <h2 class="subtitle">No lo hemos encontrado...</h2>
+      </div>
+      <p class="not-found__wrapper--content__description">
+        No hemos podido encontrar lo que buscas... ¡Pero no te preocupes! No es culpa tuya, puedes volver a donde estabas antes o ir a nuestro inicio.
+      </p>
+      <a routerLink="">Ir al inicio</a>
     </div>
   </div>
 </section>

@@ -1,5 +1,132 @@
 @import "src/sass/variables";
 
+:host ::ng-deep {
+  .illustration {
+    @apply mx-auto;
+    width: 100%;
+    max-width: 600px;
+    // min-width: 450px;
+    height: auto;
+
+    svg {
+      @apply mx-auto;
+    }
+  }
+}
+
 .not-found {
   height: 100vh;
+
+  &__wrapper {
+    @apply px-10;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+    justify-content: center;
+    align-items: center;
+
+    &--illustration {
+      @apply px-10;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        background-color: var(--background-alt-theme);
+        border-radius: 66% 34% 100% 0% / 0% 75% 25% 100%;
+        z-index: -1;
+      }
+    }
+
+    &--content {
+      @apply px-10;
+      width: 100%;
+      max-width: 650px;
+      display: flex;
+      flex-direction: column;
+
+      &__heading {
+        @apply mb-3;
+        font-family: 'Montserrat', sans-serif;
+
+        .title {
+          @apply text-4xl leading-10 mb-1;
+          // line-height: 2.25rem;
+          font-weight: 600;
+          color: var(--primary-alt-color);
+        }
+
+        .subtitle {
+          font-size: 3.55rem;
+          line-height: 3.55rem;
+          font-weight: 800;
+        }
+      }
+
+      &__description {
+        @apply text-xl mb-3.5;
+        font-family: 'Sora', sans-serif;
+        font-weight: 400;
+        color: var(--grey-3-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+  :host ::ng-deep {
+    .illustration {
+      @apply mx-auto;
+      max-width: 300px;
+    }
+  }
+
+  .not-found {
+    width: 100%;
+
+    &__wrapper {
+      @apply px-0 py-0;
+      grid-template-columns: unset;
+      grid-template-rows: 50% 50%;
+
+      &--illustration {
+        @apply px-0 py-5;
+
+        &::after {
+          height: 55vh;
+          width: 100vw;
+          top: 0;
+          border-radius: 0 0 40% 30%;
+          // background-color: rebeccapurple;
+        }
+      }
+
+      &--content {
+        @apply px-5 py-0;
+        text-align: center;
+
+        &__heading {
+          .title {
+            @apply text-2xl leading-8;
+          }
+
+          .subtitle {
+            font-size: 2.25rem;
+            line-height: 2.25rem;
+          }
+        }
+
+        &__description {
+          font-size: 1rem;
+          line-height: 1.15rem;
+        }
+      }
+    }
+  }
 }
