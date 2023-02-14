@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgxTranslateCutModule } from 'ngx-translate-cut';
 
 import { NavbarMobileComponent } from './components/navbar/mobile/navbar.mobile.component';
 import { NavbarDesktopComponent } from './components/navbar/desktop/navbar.desktop.component';
@@ -37,6 +38,7 @@ import { IllustrationComponent } from './components/illustration/illustration.co
     CommonModule,
     RouterModule,
     TranslateModule,
+    NgxTranslateCutModule,
   ],
   exports: [
     IllustrationComponent,
@@ -48,6 +50,8 @@ import { IllustrationComponent } from './components/illustration/illustration.co
     SidebarComponent,
     SidebarDirective,
     RippleDirective,
+    TranslateModule,
+    NgxTranslateCutModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

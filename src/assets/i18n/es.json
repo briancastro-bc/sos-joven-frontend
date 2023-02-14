@@ -22,6 +22,14 @@
     }
   },
   "home": {
+    "mobile": {
+      "welcome": {
+        "text": "Bienvenido/a a SAI",
+        "phrase": "Un equipo que piensa en | Soluciones Informáticas | para | ti."
+      },
+      "description": "Somos una empresa constituida en Armenia, con más de 10 años de experiencia en el mercado.",
+      "link": "Conocer más"
+    },
     "nav": {
       "nav_contact": {
         "location": "Armenia, Quindio, Colombia",
@@ -85,6 +93,15 @@
       "subtitle": "Soluciones informáticas",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos omnis a et, cumque voluptatibus quisquam fugiat magni repudiandae cum facilis quos consectetur. Nisi, expedita ex! Expedita vitae architecto eos?",
       "button_learn_more": "Saber mas sobre SAI"
+    }
+  },
+  "not_found": {
+    "title": "Oh-no! 404",
+    "subtitle": "No lo hemos encontrado...",
+    "description": "No hemos podido encontrar lo que buscas... ¡Pero no te preocupes! No es culpa tuya, puedes volver a donde estabas antes o ir a nuestro inicio.",
+    "links": {
+      "home": "Ir al inicio",
+      "goback": "Volver atrás"
     }
   }
 }

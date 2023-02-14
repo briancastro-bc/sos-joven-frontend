@@ -14,7 +14,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: var(--black-color);
+    background-color: var(--grey-1-color);
     opacity: 0.5;
     z-index: 5;
   }
@@ -31,7 +31,6 @@
       @apply mx-auto;
       overflow: hidden;
       width: 100%;
-      // border-radius: inherit;
       background-color: var(--primary-alt-color);
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
@@ -111,12 +110,12 @@
           display: flex;
           align-items: center;
           gap: .5rem;
-          background-color: var(--primary-alt-color);
           border-radius: 10px;
           fill: var(--light-color);
           color: var(--light-color);
           font-size: .875rem;
           line-height: .875rem;
+          font-weight: 600;
         }
       }
     }

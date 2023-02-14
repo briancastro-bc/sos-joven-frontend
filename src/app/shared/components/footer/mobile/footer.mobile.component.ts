@@ -30,7 +30,7 @@ export class FooterMobileComponent implements AfterViewInit {
     this.links = [
       {
         span: 'layout.footer.mobile.us',
-        route: 'home',
+        route: 'us',
         routeActive: 'link__active',
         icon: {
           type: 'solid',
@@ -48,7 +48,7 @@ export class FooterMobileComponent implements AfterViewInit {
       },
       {
         span: 'layout.footer.mobile.saionline',
-        route: 'home',
+        route: 'saionline',
         routeActive: 'saioline__active',
         icon: {
           type: 'regular',

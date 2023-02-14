@@ -23,3 +23,26 @@
   animation: ripple 600ms linear;
   background-color: var(--light-alt-color);
 }
+
+.bg {
+
+  &-primary {
+    background: var(--primary-alt-color);
+  }
+
+  &-facebook {
+    background: var(--background-facebook);
+  }
+
+  &-instagram {
+    background: var(--background-instagram);
+  }
+
+  &-twitter {
+    background: var(--background-twitter);
+  }
+
+  &-linkedin {
+    background: var(--background-linkedin);
+  }
+}

@@ -1,4 +1,4 @@
-export { ThemeService } from './theme.service';
+export { ThemeService, ThemeType } from './theme.service';
 export { LocalStorageService } from './local-storage.service';
 export { SessionStorageService } from './session-storage.service';
 export { DisplaySidebarService } from './display-sidebar.service';

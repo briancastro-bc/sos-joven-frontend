@@ -24,6 +24,7 @@
     "@ngx-translate/http-loader": "^7.0.0",
     "boxicons": "^2.1.4",
     "ngx-device-detector": "^5.0.1",
+    "ngx-translate-cut": "^4.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

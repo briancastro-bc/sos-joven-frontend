@@ -9,8 +9,8 @@ import {
   trigger
 } from '@angular/animations';
 
-import { DisplaySidebarService } from '@shared/services';
-import { Subscription } from 'rxjs';
+import { DisplaySidebarService, ThemeService, ThemeType } from '@shared/services';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-sidebar',
@@ -44,11 +44,14 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   isDisplayedSidebar = 'true';
 
+  readonly currentTheme$: Observable<ThemeType> = this.themeService.theme$;
+
   private subscription: Subscription | undefined;
 
   constructor(
     @Inject(DOCUMENT) private readonly document: Document,
     private readonly renderer2: Renderer2,
+    private readonly themeService: ThemeService,
     private readonly displaySidebarService: DisplaySidebarService,
   ) {}
 
@@ -65,6 +68,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
 
   displaySidebar(): void {
     this.displaySidebarService.display();
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggleTheme();
   }
 
   ngOnDestroy(): void {

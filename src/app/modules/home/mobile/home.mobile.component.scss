@@ -4,3 +4,53 @@
   height: calc(100vh - ($mobile-footer-height + $mobile-navbar-height));
   animation: 1s fadeIn ease-in-out;
 }
+
+.home-mobile--welcome {
+  // height: calc(50vh - ($mobile-footer-height + $mobile-navbar-height));
+
+  &__wrapper {
+    @apply px-6 py-4;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    &__heading {
+      font-family: 'Montserrat Alternates', sans-serif;
+
+      &--welcome {
+        @apply text-sm leading-3 mb-2.5;
+        font-weight: 600;
+        color: var(--grey-4-color);
+      }
+
+      &--phrase {
+        @apply text-2xl mb-3;
+        line-height: 1.5rem;
+        font-weight: 700;
+
+        .marked {
+          color: var(--primary-alt-color);
+        }
+      }
+    }
+
+    &--description {
+      @apply text-sm mb-2;
+      line-height: .895rem;
+      max-width: 60vw;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -$mobile-navbar-height;
+      left: 0;
+      height: calc(480px - ($mobile-navbar-height + $mobile-footer-height));
+      width: 100%;
+      background-color: var(--background-alt-theme);
+      border-radius: 0% 100% 21% 79% / 78% 0% 100% 22%;
+      z-index: -1;
+    }
+  }
+}
