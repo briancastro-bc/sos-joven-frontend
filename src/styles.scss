@@ -42,7 +42,11 @@
 
   --mobile-navbar-height: #{$mobile-navbar-height};
   --mobile-footer-height: #{$mobile-footer-height};
+
   --max-width-desktop: #{$max-width-desktop};
+  --desktop-content-padding: #{$desktop-content-padding};
+
+  --carrousel-lenght: 7;
 }
 
 * {

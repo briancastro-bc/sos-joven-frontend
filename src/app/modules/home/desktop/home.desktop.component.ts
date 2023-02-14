@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home-desktop',
-  templateUrl: './desktop.component.html',
-  styleUrls: ['./desktop.component.scss']
+  templateUrl: './home.desktop.component.html',
+  styleUrls: ['./home.desktop.component.scss']
 })
 export class HomeDesktopComponent {}

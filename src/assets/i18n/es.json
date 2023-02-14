@@ -42,11 +42,48 @@
         },
         {
           "to": "about",
-          "route": "Quienes somos"
+          "route": "Quienes somos",
+          "subtitle": "Sobre nosotros",  
+          "sub_routes": [
+            {
+              "to": "about",
+              "route": "Mision y vision" 
+            },
+            {
+              "to": "about",
+              "route": "Descripcion" 
+            },
+            {
+              "to": "about",
+              "route": "Talento humano" 
+            },
+            {
+              "to": "about",
+              "route": "Politicas" 
+            } 
+          ]
         },
         {
           "to": "services",
-          "route": "Servicios"
+          "route": "Servicios",  
+          "sub_routes": [
+            {
+              "to": "about",
+              "route": "Mision y vision" 
+            },
+            {
+              "to": "about",
+              "route": "Descripcion" 
+            },
+            {
+              "to": "about",
+              "route": "Talento humano" 
+            },
+            {
+              "to": "about",
+              "route": "Politicas" 
+            } 
+          ]
         },
         {
           "to": "products",
@@ -93,6 +130,38 @@
       "subtitle": "Soluciones informáticas",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos omnis a et, cumque voluptatibus quisquam fugiat magni repudiandae cum facilis quos consectetur. Nisi, expedita ex! Expedita vitae architecto eos?",
       "button_learn_more": "Saber mas sobre SAI"
+    },
+    "products": {
+      "title":"Nuestros productos",
+      "SIFAB": {
+        "title": "SIFAB",
+        "subtitle":"Software Integrado Financiero y Asistencial",
+        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+      },
+      "SIFAPP": {
+        "title": "SIFAPP",
+        "subtitle":"Lorem ipsum dolor sit amet, consectetur",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus."
+      }
+    },
+    "clients": {
+      "title": "Nuestros clientes",
+      "images":[
+        "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
+        "https://www.equiposai.com/views/images/galeria/happy.jpg",
+        "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
+        "https://www.equiposai.com/views/images/galeria/ral.jpg",
+        "https://www.equiposai.com/views/images/galeria/jdsuministros.jpg",
+        "https://www.equiposai.com/views/images/galeria/medinped.jpg",
+        "https://www.equiposai.com/views/images/galeria/somti.jpg",
+        "https://www.equiposai.com/views/images/galeria/esedorada.jpg",
+        "https://www.equiposai.com/views/images/galeria/integrasalud.jpg",
+        "https://www.equiposai.com/views/images/galeria/kostar.jpg",
+        "https://www.equiposai.com/views/images/galeria/monicaestrada.jpg",
+        "https://www.equiposai.com/views/images/galeria/oscarelias.jpg",
+        "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
+        "https://www.equiposai.com/views/images/galeria/medicavivir.jpg"
+      ]
     }
   },
   "not_found": {

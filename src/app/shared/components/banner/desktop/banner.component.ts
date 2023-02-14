@@ -17,7 +17,7 @@ export class BannerDesktopComponent {
         interval(this.velocity).subscribe(() => {
             this.next()
         });
-    }
+    } 
 
     changeBanner(pos: number) {
         this.bannerState = pos

@@ -35,10 +35,14 @@
               "./node_modules/tailwindcss/components.css",
               "./node_modules/tailwindcss/utilities.css",
               "./node_modules/boxicons/css/boxicons.min.css",
+              "./node_modules/slick-carousel/slick/slick.scss",
+              "./node_modules/slick-carousel/slick/slick-theme.scss",
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/boxicons/dist/boxicons.js"
+              "./node_modules/boxicons/dist/boxicons.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/slick-carousel/slick/slick.min.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
