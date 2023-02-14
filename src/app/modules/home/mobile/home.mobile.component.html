@@ -14,6 +14,49 @@
     <p class="home-mobile--welcome__wrapper--description">
       {{ 'home.mobile.description' | translate }}
     </p>
-    <a routerLink="us">{{ 'home.mobile.link' | translate }}</a>
+    <a routerLink="/us" class="eq-btn eq-btn-md eq-btn-primary">{{ 'home.mobile.link' | translate }}</a>
+  </div>
+</section>
+<section class="home-mobile--section">
+  <div class="home-mobile--section__wrapper">
+    <div class="home-mobile--section__wrapper__heading">
+      <h2 class="home-mobile--section__wrapper__heading--title">
+        {{ 'home.mobile.products.title' | translate }}
+      </h2>
+      <a routerLink="/products" class="home-mobile--section__wrapper__heading--link">
+        {{ 'home.mobile.products.link' | translate }}
+      </a>
+    </div>
+    <article class="home-mobile--section__wrapper__card" role="banner">
+      <div class="home-mobile--section__wrapper__card--illustration">
+        <app-illustration [source]="'assets/illustrations/sifab.svg'" [style]="'sifab-illustration'"></app-illustration>
+      </div>
+      <div class="home-mobile--section__wrapper__card--content">
+        <h2 class="initialism">
+          {{ 'home.mobile.products.sifab.initialism' | translate }}
+        </h2>
+        <h3 class="meaning">
+          {{ 'home.mobile.products.sifab.meaning' | translate }}
+        </h3>
+        <p class="description">
+          {{ 'home.mobile.products.sifab.description' | translate }}
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="home-mobile--section">
+  <div class="home-mobile--section__wrapper">
+    <div class="home-mobile--section__wrapper__heading">
+      <h2 class="home-mobile--section__wrapper__heading--title">
+        {{ 'home.mobile.clients.title' | translate }}
+      </h2>
+      <a routerLink="/clients" class="home-mobile--section__wrapper__heading--link">
+        {{ 'home.mobile.clients.link' | translate }}
+      </a>
+    </div>
+    <!-- <div class="home-mobile--section__wrapper__container">
+      <app-slider-desktop [brands]="'home.clients.images' | translate"></app-slider-desktop>
+    </div> -->
   </div>
 </section>

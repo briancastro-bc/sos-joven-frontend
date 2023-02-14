@@ -11,6 +11,45 @@
         }
       }
     },
+    "sidebar": {
+      "information": {
+        "greet": "Hola, saiuser",
+        "good_day": "Buen día",
+        "categories": [
+          {
+            "name": "General",
+            "links": [
+              {
+                "text": "Link1"
+              },
+              {
+                "text": "Link2"
+              },
+              {
+                "text": "Link3"
+              }
+            ]
+          },
+          {
+            "name": "Redes sociales",
+            "links": [
+              {
+                "text": "Facebook"
+              },
+              {
+                "text": "Twitter"
+              },
+              {
+                "text": "Linkedin"
+              },
+              {
+                "text": "Instagram"
+              }
+            ]
+          }
+        ]
+      }
+    },
     "footer": {
       "mobile": {
         "us": "Nosotros",
@@ -27,8 +66,21 @@
         "text": "Bienvenido/a a SAI",
         "phrase": "Un equipo que piensa en | Soluciones Informáticas | para | ti."
       },
-      "description": "Somos una empresa constituida en Armenia, con más de 10 años de experiencia en el mercado.",
-      "link": "Conocer más"
+      "description": "Somos una empresa constituida en Armenia, Quindío, con más de 10 años de experiencia en el mercado.",
+      "link": "Conocer más",
+      "products": {
+        "title": "Nuestros productos",
+        "link": "Ver todos",
+        "sifab": {
+          "initialism": "SIFAB",
+          "meaning": "Software Integrado Financiero Asistencial",
+          "description": "Implementado en IPS alrededor de Colombia. Empresas sociales del estado, clínicas privadsa y profesionales independientes."
+        }
+      },
+      "clients": {
+        "title": "Nuestros clientes",
+        "link": "Ver todos"
+      }
     },
     "nav": {
       "nav_contact": {
@@ -43,46 +95,46 @@
         {
           "to": "about",
           "route": "Quienes somos",
-          "subtitle": "Sobre nosotros",  
+          "subtitle": "Sobre nosotros",
           "sub_routes": [
             {
               "to": "about",
-              "route": "Mision y vision" 
+              "route": "Mision y vision"
             },
             {
               "to": "about",
-              "route": "Descripcion" 
+              "route": "Descripcion"
             },
             {
               "to": "about",
-              "route": "Talento humano" 
+              "route": "Talento humano"
             },
             {
               "to": "about",
-              "route": "Politicas" 
-            } 
+              "route": "Politicas"
+            }
           ]
         },
         {
           "to": "services",
-          "route": "Servicios",  
+          "route": "Servicios",
           "sub_routes": [
             {
               "to": "about",
-              "route": "Mision y vision" 
+              "route": "Mision y vision"
             },
             {
               "to": "about",
-              "route": "Descripcion" 
+              "route": "Descripcion"
             },
             {
               "to": "about",
-              "route": "Talento humano" 
+              "route": "Talento humano"
             },
             {
               "to": "about",
-              "route": "Politicas" 
-            } 
+              "route": "Politicas"
+            }
           ]
         },
         {

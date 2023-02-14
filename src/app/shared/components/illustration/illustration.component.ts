@@ -35,7 +35,6 @@ export class IllustrationComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-    console.log(this.illustrationEl);
     if (this.styleClass) {
       this.renderer2.addClass(this.illustrationEl.nativeElement, this.styleClass);
     }
