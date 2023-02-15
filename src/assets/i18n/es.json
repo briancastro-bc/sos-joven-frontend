@@ -145,6 +145,25 @@
         "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
         "https://www.equiposai.com/views/images/galeria/medicavivir.jpg"
       ]
+    },
+    "securities": {
+      "title":"Nuestros valores",
+      "responsability": {
+        "title":"Responsabilidad",
+        "body":"Nuestros compromisos son respetados y nuestros clientes son valorados."
+      },
+      "honestly": {
+        "title":"Honestidad",
+        "body":"Actuamos de una forma sincera y hacemos siempre nuestro mejor esfuerzo."
+      },
+      "cuality": {
+        "title":"Calidad",
+        "body":"Nuestros productos cumplen con los parámetros establecidos y prometidos."
+      },
+      "competitiveness": {
+        "title":"Competitividad",
+        "body":"La pasión, la motivación y el progreso nos anima a ser mejores cada día."
+      }
     }
   }
 }
