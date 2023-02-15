@@ -8,6 +8,7 @@ import { HomeMobileComponent } from './mobile/home.mobile.component';
 import { HomeDesktopComponent } from './desktop/home.desktop.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InputDesktopComponent } from '@app/shared/components/input/desktop/input.desktop.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeDesktopComponent,
   ],
   imports: [
+    InputDesktopComponent,
     CommonModule,
     HomeRoutingModule,
     HttpClientModule,

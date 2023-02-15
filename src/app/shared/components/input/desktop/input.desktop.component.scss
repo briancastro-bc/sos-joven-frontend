@@ -1,0 +1,33 @@
+.label__input {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    .input {
+        width: 100%;
+        border: 1px solid var(--grey-10-color);
+        border-radius: 7px;
+        padding: 10px 14px;
+        outline: none;
+        transition: all ease-in-out 050ms;
+        font-size: 16.5px;
+
+        &::placeholder {
+            color: var(--grey-4-color);
+        }
+
+        &:focus {
+            outline: 2px solid var(--primary-alt-color);
+
+            & ~ .label {
+                color: var(--primary-alt-color);
+            }
+        }
+    }
+
+    .label {
+        transition: all ease-in-out 100ms;
+        font-size: 15px;
+        margin: 0 0 5px 0;
+        color: var(--grey-2-color);
+    }
+}
