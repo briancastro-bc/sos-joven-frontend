@@ -1,0 +1,70 @@
+@import "src/sass/variables";
+
+.header-mobile {
+  height: calc($mobile-navbar-height + 10px);
+  position: sticky;
+  top: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  fill: var(--light-color);
+  color: var(--light-color);
+  transition: all .3s ease-in;
+  z-index: 1;
+
+  &__scrolling {
+    height: $mobile-navbar-height;
+    border-radius: 0 0 15px 15px;
+    transition: all .3s ease-in;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: unset;
+    align-items: center;
+    border-radius: inherit;
+    background-color: var(--primary-alt-color);
+
+    &__brand {
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+
+      &--name {
+        font-size: 2.5rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+      }
+
+      &--complement {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__navigation {
+      display: flex;
+      justify-content: flex-end;
+      gap: .85rem;
+
+      .icon-button {
+        padding: .5rem;
+        border-radius: 1rem;
+        border: 1px solid var(--light-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 316px) {
+  .header-mobile__wrapper__brand--complement {
+    display: none;
+  }
+}

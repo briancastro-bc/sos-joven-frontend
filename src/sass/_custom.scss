@@ -1,0 +1,94 @@
+%_button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.86, 0.01, 0.15, 0.99);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.eq-btn {
+  @extend %_button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &-sm {
+    height: 32px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &-md {
+    height: 36px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &-lg {
+    height: 44px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &-primary {
+    @apply px-4;
+    width: 100%;
+    background-color: var(--primary-alt-color);
+    border-radius: .35rem;
+    color: var(--light-color);
+    min-width: 64px;
+    max-width: 144px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    box-shadow: 1.5px 1.5px 20px 2.5px var(--border-theme);
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &-secondary {
+    @extend .eq-btn-primary;
+    background-color: var(--light-color);
+    color: var(--primary-alt-color);
+    border: 1px solid var(--border-theme);
+
+    &:hover {
+      background-color: var(--light-alt-color);
+    }
+  }
+}
+
+.eq-ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: var(--light-alt-color);
+}
+
+.bg {
+
+  &-primary {
+    background: var(--primary-alt-color);
+  }
+
+  &-facebook {
+    background: var(--background-facebook);
+  }
+
+  &-instagram {
+    background: var(--background-instagram);
+  }
+
+  &-twitter {
+    background: var(--background-twitter);
+  }
+
+  &-linkedin {
+    background: var(--background-linkedin);
+  }
+}

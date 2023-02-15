@@ -35,6 +35,11 @@
   --grey-9-color: #{$grey-9-color};
   --grey-10-color: #{$grey-10-color};
 
+  --background-facebook: #1196F5;
+  --background-twitter: #00acee;
+  --background-instagram: radial-gradient(circle farthest-corner at 35% 90%, #fe6464, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  --background-linkedin: #0e76a8;
+
   --mobile-navbar-height: #{$mobile-navbar-height};
   --mobile-footer-height: #{$mobile-footer-height};
 
@@ -42,6 +47,10 @@
   --desktop-content-padding: #{$desktop-content-padding};
 
   --carrousel-lenght: 7;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -57,8 +66,8 @@ body.light-theme {
   --border-alt-theme: 0 1.5px 2.5px 0 var(--border-theme);
   --background-theme: var(--light-color);
   --background-alt-theme: var(--light-alt-color);
-  --against-theme: var(--dark-color);
-  --againts-alt-theme: var(--dark-alt-color);
+  --against-theme: var(--light-color);
+  --againts-alt-theme: var(--light-alt-color);
 }
 
 body.dark-theme {

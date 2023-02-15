@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { SharedModule } from '@shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HomeMobileComponent } from './mobile/home.mobile.component';
 import { HomeDesktopComponent } from './desktop/home.desktop.component';
-import { SharedModule } from '@app/shared/shared.module';
-import { TranslateModule } from '@ngx-translate/core';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HomeMobileComponent,
-    HomeDesktopComponent
+    HomeDesktopComponent,
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
+    HttpClientModule,
     SharedModule,
-    TranslateModule
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }

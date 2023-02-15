@@ -1,0 +1,79 @@
+<div class="sidebar-mobile--overlay" (click)="displaySidebar()">
+</div>
+<aside [@openClose]="isDisplayedSidebar" class="sidebar-mobile" role="navigation" #sidebar>
+  <div class="sidebar-mobile__wrapper">
+    <div class="sidebar-mobile__wrapper--header">
+      <div class="sidebar-mobile__wrapper--header__container">
+        <div class="sidebar-mobile__wrapper--header__container--photo">
+          <img class="picture" src="assets/images/user.svg" alt="">
+        </div>
+        <div class="sidebar-mobile__wrapper--header__container--information">
+          <h3 class="greet greet-one leading-4 mb-1">
+            {{ 'layout.sidebar.information.greet' | translate }}
+          </h3>
+          <h2 class="greet greet-two">
+            {{ 'layout.sidebar.information.good_day' | translate }}
+          </h2>
+        </div>
+        <div class="sidebar-mobile__wrapper--header__container--theme ml-auto">
+          <button class="eq-btn icon-button" appRipple (click)="toggleTheme()">
+            <ng-container [ngSwitch]="currentTheme$ | async">
+              <ng-container *ngSwitchCase="'light-theme'">
+                <box-icon class="eq-icon-button" type="solid" name="moon"></box-icon>
+              </ng-container>
+              <ng-container *ngSwitchCase="'dark-theme'">
+                <box-icon class="eq-icon-button" type="solid" name="sun"></box-icon>
+              </ng-container>
+            </ng-container>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-mobile__wrapper--body">
+      <div class="sidebar-mobile__wrapper--body__link-group">
+        <span class="sidebar-mobile__wrapper--body__link-group--label">General</span>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-primary" appRipple>
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Link1</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-primary" appRipple>
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Link2</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-primary" appRipple>
+          <box-icon type="solid" name="home"></box-icon>
+          <span class="link__text">Link3</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+      </div>
+      <div class="sidebar-mobile__wrapper--body__link-group">
+        <span class="sidebar-mobile__wrapper--body__link-group--label">Redes sociales</span>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-facebook" appRipple>
+          <box-icon type="logo" name="facebook"></box-icon>
+          <span class="link__text">Facebook</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-twitter" appRipple>
+          <box-icon type="logo" name="twitter"></box-icon>
+          <span class="link__text">Twitter</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-linkedin" appRipple>
+          <box-icon type="logo" name="linkedin"></box-icon>
+          <span class="link__text">Linkedin</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+        <a class="sidebar-mobile__wrapper--body__link-group--link bg-instagram" appRipple>
+          <box-icon type="logo" name="instagram"></box-icon>
+          <span class="link__text">Instagram</span>
+          <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
+        </a>
+      </div>
+    </div>
+    <div class="sidebar-mobile__wrapper--footer">
+      App version
+    </div>
+  </div>
+</aside>
