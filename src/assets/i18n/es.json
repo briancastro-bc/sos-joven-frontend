@@ -15,6 +15,7 @@
       "information": {
         "greet": "Hola, saiuser",
         "good_day": "Buen día",
+        "title": "Menú",
         "categories": [
           {
             "name": "General",

@@ -15,8 +15,18 @@ const routes: Routes = [
       },
       {
         path: 'home',
+        data: {
+          title: 'SAI Soluciones Informáticas'
+        },
         loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
-      }
+      },
+      {
+        path: 'us',
+        data: {
+          title: 'Quienes somos'
+        },
+        loadChildren: () => import('./modules/us/us.module').then(m => m.UsModule)
+      },
     ]
   },
   {

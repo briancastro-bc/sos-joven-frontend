@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, ComponentRef, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 import { CustomDeviceDetectorService, DisplaySidebarService } from '@shared/services';
 import { SidebarComponent } from '@shared/components/sidebar/sidebar.component';
 import { SidebarDirective } from '@shared/components/sidebar/sidebar.directive';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-layout',
@@ -19,6 +19,7 @@ import { Subscription } from 'rxjs';
 
     <app-footer-mobile *ngIf="isMobile$ | async"></app-footer-mobile>
   `,
+  styleUrls: ['./layout.component.scss'],
 })
 export class LayoutComponent implements AfterViewInit, OnDestroy {
 

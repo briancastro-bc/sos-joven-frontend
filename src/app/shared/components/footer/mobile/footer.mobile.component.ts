@@ -33,8 +33,8 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'us',
         routeActive: 'link__active',
         icon: {
-          type: 'solid',
-          name: 'business',
+          type: 'regular',
+          name: 'globe',
         }
       },
       {
@@ -42,7 +42,7 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'services',
         routeActive: 'link__active',
         icon: {
-          type: 'solid',
+          type: 'regular',
           name: 'grid-alt',
         }
       },
@@ -61,8 +61,8 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'products',
         routeActive: 'link__active',
         icon: {
-          type: 'solid',
-          name: 'shopping-bags',
+          type: 'regular',
+          name: 'package',
         }
       },
       {
@@ -70,7 +70,7 @@ export class FooterMobileComponent implements AfterViewInit {
         route: 'contact',
         routeActive: 'link__active',
         icon: {
-          type: 'solid',
+          type: 'regular',
           name: 'phone',
         }
       },

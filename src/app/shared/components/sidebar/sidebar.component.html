@@ -4,7 +4,7 @@
   <div class="sidebar-mobile__wrapper">
     <div class="sidebar-mobile__wrapper--header">
       <div class="sidebar-mobile__wrapper--header__container">
-        <div class="sidebar-mobile__wrapper--header__container--photo">
+        <!-- <div class="sidebar-mobile__wrapper--header__container--photo">
           <img class="picture" src="assets/images/user.svg" alt="">
         </div>
         <div class="sidebar-mobile__wrapper--header__container--information">
@@ -14,8 +14,13 @@
           <h2 class="greet greet-two">
             {{ 'layout.sidebar.information.good_day' | translate }}
           </h2>
+        </div> -->
+        <div class="sidebar-mobile__wrapper--header__container--information">
+          <h2 class="sidebar-mobile__wrapper--header__container--information__title">
+            {{ 'layout.sidebar.information.title' | translate }}
+          </h2>
         </div>
-        <div class="sidebar-mobile__wrapper--header__container--theme ml-auto">
+        <div class="sidebar-mobile__wrapper--header__container--theme">
           <button class="eq-btn icon-button" appRipple (click)="toggleTheme()">
             <ng-container [ngSwitch]="currentTheme$ | async">
               <ng-container *ngSwitchCase="'light-theme'">

@@ -20,6 +20,7 @@ import { RippleDirective } from './directives';
 import { SidebarDirective } from './components/sidebar/sidebar.directive';
 import { IllustrationComponent } from './components/illustration/illustration.component';
 import { SliderDesktopComponent } from './components/slider/desktop/slider.desktop.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SliderDesktopComponent } from './components/slider/desktop/slider.deskt
     SidebarDirective,
     RippleDirective,
     SliderDesktopComponent,
+    SliderComponent,
   ],
   imports: [
     CommonModule,

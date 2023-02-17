@@ -3,7 +3,7 @@
 .footer-mobile {
   width: 100%;
   height: $mobile-footer-height;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   border-radius: 20px 20px 0 0;
   box-shadow: 0px -1px 25px 1.5px var(--border-theme);

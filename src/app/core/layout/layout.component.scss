@@ -1,0 +1,12 @@
+@import "src/sass/variables";
+
+main {
+  height: calc(100vh - $desktop-navbar-height);
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    height: calc(100vh - ($mobile-navbar-height + $mobile-footer-height));
+    overflow: hidden;
+  }
+}

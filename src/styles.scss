@@ -66,8 +66,8 @@ body.light-theme {
   --border-alt-theme: 0 1.5px 2.5px 0 var(--border-theme);
   --background-theme: var(--light-color);
   --background-alt-theme: var(--light-alt-color);
-  --against-theme: var(--light-color);
-  --againts-alt-theme: var(--light-alt-color);
+  --against-theme: var(--dark-color);
+  --againts-alt-theme: var(--dark-alt-color);
 }
 
 body.dark-theme {
