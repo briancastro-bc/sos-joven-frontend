@@ -6,10 +6,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { AppRoutingModule } from '@app/app-routing.module';
-import { AppComponent } from '@app/app.component';
 import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
+import { RouteService } from '@shared/services';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { AppComponent } from '@app/app.component';
 
 export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
   const http = new HttpClient(handler);
@@ -41,7 +42,9 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
       useDefaultLang: true
     })
   ],
-  providers: [],
+  providers: [
+    RouteService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

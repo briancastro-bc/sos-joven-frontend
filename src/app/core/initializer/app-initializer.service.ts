@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ThemeService } from '@app/shared/services';
+import { RouteService, ThemeService } from '@shared/services';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -8,12 +8,15 @@ import { Observable } from 'rxjs';
 export class AppInitializerService {
 
   constructor(
-    private readonly themeService: ThemeService
+    private readonly themeService: ThemeService,
+    private readonly routeService: RouteService,
   ) {}
 
   load(): Observable<void> {
 
     this.themeService.initialize();
+
+    this.routeService.handleViewsTitle();
 
     return new Observable<void>(subscriber => {
       subscriber.complete();

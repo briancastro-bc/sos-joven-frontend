@@ -2,6 +2,7 @@
 
 main {
   height: calc(100vh - $desktop-navbar-height);
+  background-color: inherit;
 }
 
 @media screen and (max-width: 500px) {

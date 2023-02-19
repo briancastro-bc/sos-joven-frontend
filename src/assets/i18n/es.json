@@ -1,4 +1,13 @@
 {
+  "titles": {
+    "home": "SAI Soluciones Informáticas",
+    "us": "Quienes Somos",
+    "services": "Nuestros servicios",
+    "sainonline": "SAI en línea",
+    "products": "Nuestros productos",
+    "contact": "Contáctanos",
+    "not_found": "404"
+  },
   "layout": {
     "navbar": {
       "mobile": {
@@ -77,6 +86,23 @@
           "meaning": "Software Integrado Financiero Asistencial",
           "description": "Implementado en IPS alrededor de Colombia. Empresas sociales del estado, clínicas privadsa y profesionales independientes."
         }
+      },
+      "principles": {
+        "title": "Los valores de | SAI Soluciones Informáticas | se basan en",
+        "list": [
+          {
+            "principle": "Responsabilidad"
+          },
+          {
+            "principle": "Calidad"
+          },
+          {
+            "principle": "Honestidad"
+          },
+          {
+            "principle": "Competitividad"
+          }
+        ]
       },
       "clients": {
         "title": "Nuestros clientes",
@@ -215,6 +241,15 @@
         "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
         "https://www.equiposai.com/views/images/galeria/medicavivir.jpg"
       ]
+    }
+  },
+  "us": {
+    "mobile": {
+      "description": {
+        "subtitle": "Te contamos más acerca de...",
+        "title": "¿Quienes somos? | SAI Soluciones Informáticas",
+        "explanation": "Somos una empresa legalmente constituida ante la cámara y comercio de la ciudad de Armenia, Quindío. Nacimos el 13 de mayo de 2011. Nuestra actividad económica se centra en el desarrollo de soluciones informáticas en lo cuál llevamos más de 10 años de experiencia en la industria."
+      }
     }
   },
   "not_found": {

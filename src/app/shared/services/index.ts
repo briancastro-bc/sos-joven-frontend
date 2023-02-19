@@ -1,3 +1,4 @@
+export { RouteService } from './route.service';
 export { ThemeService, ThemeType } from './theme.service';
 export { LocalStorageService } from './local-storage.service';
 export { SessionStorageService } from './session-storage.service';

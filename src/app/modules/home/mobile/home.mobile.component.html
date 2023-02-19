@@ -22,27 +22,16 @@
   </div>
   <div class="home-mobile--principles">
     <h2 class="home-mobile--principles__title">
-      Los valores de <span class="marked">SAI Soluciones Informáticas</span> se basan en
+      {{ 'home.mobile.principles.title' | translate | translateCut:0 }}
+      <span class="marked">
+        {{ 'home.mobile.principles.title' | translate | translateCut:1 }}
+      </span>
+      {{ 'home.mobile.principles.title' | translate | translateCut:2 }}
     </h2>
     <div class="home-mobile--principles__wrapper">
-      <div class="home-mobile--principles__wrapper__principle">
+      <div class="home-mobile--principles__wrapper__principle" *ngFor="let element of 'home.mobile.principles.list' | translate">
         <span class="home-mobile--principles__wrapper__principle--text">
-          Responsabilidad
-        </span>
-      </div>
-      <div class="home-mobile--principles__wrapper__principle">
-        <span class="home-mobile--principles__wrapper__principle--text">
-          Calidad
-        </span>
-      </div>
-      <div class="home-mobile--principles__wrapper__principle">
-        <span class="home-mobile--principles__wrapper__principle--text">
-          Honestidad
-        </span>
-      </div>
-      <div class="home-mobile--principles__wrapper__principle">
-        <span class="home-mobile--principles__wrapper__principle--text">
-          Competitividad
+          {{ element.principle }}
         </span>
       </div>
     </div>

@@ -1,0 +1,56 @@
+@import "src/sass/variables";
+
+.us-mobile {
+  height: 100%;
+  overflow: auto;
+
+  &--description {
+    position: relative;
+
+    &__wrapper {
+      @apply px-6 py-4;
+      display: flex;
+      flex-direction: column;
+
+      &__heading {
+        @apply mb-3;
+        font-family: 'Montserrat Alternates', sans-serif;
+
+        &--subtitle {
+          @apply mb-2.5;
+          font-weight: 600;
+          font-size: 1.125rem;
+          line-height: 1.125rem;
+          color: var(--grey-4-color);
+        }
+
+        &--title {
+          @apply text-2xl;
+          line-height: 1.5rem;
+          font-weight: 700;
+
+          .marked {
+            color: var(--primary-alt-color);
+          }
+        }
+      }
+
+      &__explanation {
+        @apply text-sm mb-3;
+        line-height: 0.895rem;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: calc(42.5vh - $mobile-navbar-height);
+      width: 100%;
+      top: -$mobile-navbar-height;
+      left: 0;
+      background-color: var(--background-alt-theme);
+      border-radius: 0% 0px 74% 74% / 0% 0px 30% 30%;
+      z-index: -1;
+    }
+  }
+}

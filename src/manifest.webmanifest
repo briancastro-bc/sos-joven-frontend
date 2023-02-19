@@ -1,9 +1,12 @@
 {
   "name": "SAI Soluciones Informáticas",
-  "short_name": "EquipoSAI",
-  "theme_color": "#394285",
+  "short_name": "SAI",
+  "lang": "es-ES",
+  "description": "Lorem Ipsum",
+  "theme_color": "#4a81ff",
   "background_color": "#eceff4",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "./",
   "start_url": "./",
   "permissions": {
