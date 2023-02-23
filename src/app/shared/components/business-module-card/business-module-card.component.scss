@@ -1,0 +1,24 @@
+:host {
+  @apply w-full;
+}
+
+article {
+  @apply p-8 w-full bg-white text-black rounded-xl border-gray-300 border;
+
+  header {
+
+    section {
+      @apply w-28 h-28 mb-8 rounded-full bg-gray-200 overflow-clip;
+    }
+
+    p {
+      @apply text-3xl text-gray-400;
+    }
+
+    @apply mb-4;
+  }
+
+  main {
+    @apply mb-32 text-sm leading-6;
+  }
+}

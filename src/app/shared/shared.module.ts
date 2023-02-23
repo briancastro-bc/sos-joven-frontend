@@ -20,6 +20,8 @@ import { RippleDirective } from './directives';
 import { SidebarDirective } from './components/sidebar/sidebar.directive';
 import { IllustrationComponent } from './components/illustration/illustration.component';
 import { SliderDesktopComponent } from './components/slider/desktop/slider.desktop.component';
+import { BusinessModuleCardComponent } from './components/business-module-card/business-module-card.component';
+import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { SliderDesktopComponent } from './components/slider/desktop/slider.deskt
     SidebarDirective,
     RippleDirective,
     SliderDesktopComponent,
+    BusinessModuleCardComponent,
+    AsParagraphPipe,
   ],
   imports: [
     CommonModule,
@@ -53,6 +57,8 @@ import { SliderDesktopComponent } from './components/slider/desktop/slider.deskt
     TranslateModule,
     NgxTranslateCutModule,
     SlickCarouselModule,
+    BusinessModuleCardComponent,
+    AsParagraphPipe,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
