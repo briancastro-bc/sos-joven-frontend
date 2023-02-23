@@ -1,15 +1,21 @@
 <app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="5000"></app-banner-desktop>
 
 <section class="about__section">
-  <div class="center_about_section">
-    <div class="about__content">
-      <div>
-        <div class="__content">
-          <h1 class="about__title">{{ 'home.about.title' | translate }}</h1>
-          <p class="about__subtitle">{{ 'home.about.subtitle' | translate }}</p>
+    <div class="center_about_section">
+        <div class="about__content">
+            <div>
+                <div class="__content">
+                    <h1 class="about__title">{{ 'home.about.title' | translate }}</h1>
+                    <p class="about__subtitle">{{ 'home.about.subtitle' | translate }}</p>
+                </div>
+                <p class="about__sai">{{ 'home.about.content' | translate }}</p>
+            </div>
+
+            <a class="button_learn__more" [routerLink]="'/about'">
+                <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
+                <i class="fa solid fa-arrow-right arrow__icon"></i>
+            </a>
         </div>
-        <p class="about__sai">{{ 'home.about.content' | translate }}</p>
-      </div>
 
       <a class="button_learn__more" [routerLink]="'/about'">
         <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
@@ -18,7 +24,6 @@
     </div>
 
     <div class="about__ilustration">ashd</div>
-  </div>
 </section>
 
 <section class="products__section">
@@ -28,12 +33,16 @@
     </div>
     <div class="body__products">
 
-      <div class="product">
-        <i class="product__icon fa solid fa-desktop"></i>
-        <div class="product__information">
-          <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
-          <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
-          <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
+            <div class="product">
+                <div>
+                    <i class="fa-solid fa-desktop product__icon"></i>
+                </div>
+                <div class="product__information">
+                    <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
+                    <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
+                    <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
+                </div>
+            </div>
 
           <a [routerLink]="'/product/sifab'">
             <div class="product__link">
@@ -44,13 +53,20 @@
           </a>
         </div>
       </div>
-
-      <div class="product">
-        <i class="product__icon fa solid fa-window-maximize"></i>
-        <div class="product__information">
-          <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
-          <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
-          <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
+      <div>
+        <div>
+          <div>
+            <div>
+            <div class="product">
+                <div>
+                    <i class="fa-solid fa-window-maximize product__icon"></i>
+                </div>
+                <div class="product__information">
+                    <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
+                    <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
+                    <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
+                </div>
+            </div>
 
 
           <a [routerLink]="'/product/sifapp'">
@@ -71,8 +87,117 @@
     <div class="header__clients__section">
       <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
     </div>
-    <div class="body__clients__section">
-      <app-slider-desktop [brands]=" 'home.clients.images' | translate  "></app-slider-desktop>
-    </div>
   </div>
+</section>
+
+<section class="securities__section">
+    <div class="center__securities__section">
+        <div class="header__securities">
+            <p class="title__header_securities">{{'home.securities.title' | translate }}</p>
+        </div>
+        <div class="body__securities">
+
+            <div class="security">
+                <i class="fa-solid fa-hands-holding-child security__icon"></i>
+                <p class="security__title">{{'home.securities.responsability.title' | translate }}</p>
+                <p class="security__body">{{'home.securities.responsability.body' | translate }}</p>
+            </div>
+
+
+            <div class="security">
+                <i class="fa-solid fa-handshake-angle security__icon"></i>
+                <!-- <i class="fa-solid fa-handshake security__icon"></i> -->
+                <p class="security__title">{{'home.securities.honestly.title' | translate }}</p>
+                <p class="security__body">{{'home.securities.honestly.body' | translate }}</p>
+            </div>
+
+
+            <div class="security">
+                <i class="fa-solid fa-stamp security__icon"></i>
+                <p class="security__title">{{'home.securities.cuality.title' | translate }}</p>
+                <p class="security__body">{{'home.securities.cuality.body' | translate }}</p>
+            </div>
+
+
+            <div class="security">
+                <!-- <i class="fa-solid fa-hands-holding-diamond security__icon"></i> -->
+                <i class="fa-solid fa-hands-holding-circle security__icon"></i>
+                <p class="security__title">{{'home.securities.competitiveness.title' | translate }}</p>
+                <p class="security__body">{{'home.securities.competitiveness.body' | translate }}</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="module-display__section">
+  <app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
+    <img image src="https://img.freepik.com/foto-gratis/perrito-joven-posando-alegre_155003-28765.jpg" alt="">
+    <p content> Hola mundo </p>
+  </app-business-module-card>
+<app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
+  </app-business-module-card>
+<app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
+  </app-business-module-card>
+</section>
+
+<section class="formcontact__section">
+    <div class="center__formcontact__section">
+        <div class="contactform__section">
+            <div class="header__formcontact">
+                <h1 class="title__formcontact">Contactanos</h1>
+                <p class="subtitle__formcontact">Has realidad tu proyecto</p>
+            </div>
+            <div class="body__form__contact">
+                <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="sendEmail(contactForm.value)">
+
+                    <app-input-desktop type="text" placeholder="Nombre" label="Nombre"
+                    formControlName="name"></app-input-desktop>
+
+                    <app-input-desktop type="text" placeholder="Apellido" label="Apellido"
+                        formControlName="name"></app-input-desktop>
+
+                    <app-input-desktop class="full" type="text" placeholder="Correo" label="Correo electronico"
+                        formControlName="email"></app-input-desktop>
+
+                    <app-input-desktop class="full" type="text" placeholder="Telefofno" label="Telefono (Opcional)"
+                        formControlName="phone"></app-input-desktop>
+
+                    <app-input-desktop class="full" type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
+                        formControlName="message"></app-input-desktop>
+
+                    <button class="full formcontact__button">Enviar mensaje</button>
+                </form>
+                <div *ngIf="formMessage != ''">
+                    <p class="message__form">{{formMessage}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="location__map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Sai Soluciones Y Asesorias Informáticas, Armenia, Quindío&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://2yu.co">2yu</a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    </style><a href="https://embedgooglemap.2yu.co/">html embed google map</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

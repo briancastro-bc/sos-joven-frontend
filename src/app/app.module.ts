@@ -11,6 +11,7 @@ import { SharedModule } from '@shared/shared.module';
 import { RouteService } from '@shared/services';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
   const http = new HttpClient(handler);
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
     AppRoutingModule,
     CoreModule,
     SharedModule,
+    ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'

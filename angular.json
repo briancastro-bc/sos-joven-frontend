@@ -35,20 +35,21 @@
               "./node_modules/tailwindcss/components.css",
               "./node_modules/tailwindcss/utilities.css",
               "./node_modules/boxicons/css/boxicons.min.css",
-              "./node_modules/slick-carousel/slick/slick.scss",
-              "./node_modules/slick-carousel/slick/slick-theme.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [
               "./node_modules/boxicons/dist/boxicons.js",
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/slick-carousel/slick/slick.min.js"
+              "node_modules/slick-carousel/slick/slick.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
-            "production": {
+             "production": {
               "budgets": [
                 {
                   "type": "initial",

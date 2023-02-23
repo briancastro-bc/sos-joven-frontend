@@ -6,17 +6,23 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { HomeMobileComponent } from './mobile/home.mobile.component';
 import { HomeDesktopComponent } from './desktop/home.desktop.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InputDesktopComponent } from '@app/shared/components/input/desktop/input.desktop.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HomeMobileComponent,
-    HomeDesktopComponent
+    HomeDesktopComponent,
   ],
   imports: [
+    InputDesktopComponent,
     CommonModule,
     HomeRoutingModule,
+    HttpClientModule,
     SharedModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }
