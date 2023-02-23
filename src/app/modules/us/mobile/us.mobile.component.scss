@@ -44,7 +44,7 @@
     &::after {
       position: absolute;
       content: "";
-      height: calc(42.5vh - $mobile-navbar-height);
+      height: calc(390px - $mobile-navbar-height);
       width: 100%;
       top: -$mobile-navbar-height;
       left: 0;

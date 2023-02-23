@@ -53,7 +53,7 @@ const routes: Routes = [
   {
     path: 'saionline',
     data: {
-      title: 'tiles.saionline',
+      title: 'titles.saionline',
     },
     loadChildren: () => import('./modules/saionline/saionline.module').then(m => m.SaionlineModule)
   },

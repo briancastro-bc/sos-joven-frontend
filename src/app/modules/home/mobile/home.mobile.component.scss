@@ -33,17 +33,17 @@
         }
       }
 
-      &--description {
-        @apply text-sm mb-3;
-        line-height: .895rem;
-      }
+      // &--description {
+      //   @apply text-sm mb-3;
+      //   line-height: .895rem;
+      // }
 
       &::after {
         position: absolute;
         content: "";
         top: -$mobile-navbar-height;
         left: 0;
-        height: calc(480px - ($mobile-navbar-height + $mobile-footer-height));
+        height: calc(420px - ($mobile-navbar-height + $mobile-footer-height));
         width: 100%;
         background-color: var(--background-alt-theme);
         border-radius: 0% 100% 21% 79% / 78% 0% 100% 22%;
