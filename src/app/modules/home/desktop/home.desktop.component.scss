@@ -303,3 +303,7 @@
         }
     }
 }
+
+.module-display__section {
+  @apply bg-white grid grid-cols-3 gap-8 px-8 py-12 pb-16;
+}
