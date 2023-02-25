@@ -21,8 +21,7 @@ import { InputDesktopComponent } from '@app/shared/components/input/desktop/inpu
     CommonModule,
     HomeRoutingModule,
     HttpClientModule,
-    SharedModule,
-    ReactiveFormsModule
+    SharedModule
   ]
 })
 export class HomeModule { }

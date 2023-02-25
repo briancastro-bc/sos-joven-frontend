@@ -1,38 +1,45 @@
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, Input, OnInit } from '@angular/core';
-import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
 
 @Component({
   standalone: true,
   selector: 'app-input-desktop',
   templateUrl: './input.desktop.component.html',
   styleUrls: ['./input.desktop.component.scss'],
-  imports: [CommonModule, FormsModule],
-	providers: [
-		{
-			provide: NG_VALUE_ACCESSOR,
-			useExisting: forwardRef(() => InputDesktopComponent),
-			multi: true
-		}
-	]
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => InputDesktopComponent),
+      multi: true
+    }
+  ]
 })
-export class InputDesktopComponent implements ControlValueAccessor {
+export class InputDesktopComponent implements OnInit, ControlValueAccessor {
 
   input!: string
-	@Input() placeholder = 'input'
-	@Input() label = 'input'
-	@Input() type = 'text'
+  @Input() placeholder = 'input'
+  @Input() label = 'input'
+  @Input() type = 'text'
+  @Input() error? = ''
+  @Input() valid: ValidationErrors | null | undefined
 
-  writeValue(obj: any): void {
-    throw new Error('Method not implemented.');
+  onChange: any = () => {}
+	onTouched: any = () => {}
+
+	ngOnInit(): void {
   }
-  registerOnChange(fn: any): void {
-    throw new Error('Method not implemented.');
+  
+	writeValue(obj: any): void {
+    this.input = obj
+	}
+
+	registerOnChange(fn: any): void {
+		this.onChange = fn
   }
-  registerOnTouched(fn: any): void {
-    throw new Error('Method not implemented.');
-  }
-  setDisabledState?(isDisabled: boolean): void {
-    throw new Error('Method not implemented.');
-  }
+
+	registerOnTouched(fn: any): void {
+		this.onTouched = fn
+	}
 }

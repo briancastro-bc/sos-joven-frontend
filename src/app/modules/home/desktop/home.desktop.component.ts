@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailTemplate } from '@app/common/interfaces/email.interface';
 import { EmailService } from '@app/common/services/email.service';
+import { finalize } from 'rxjs';
 
 @Component({
   selector: 'app-home-desktop',
@@ -10,21 +11,34 @@ import { EmailService } from '@app/common/services/email.service';
 })
 export class HomeDesktopComponent {
   public formMessage = ''
+  public formContact: FormGroup
+  public isLoading!: boolean
+  public isSend: boolean = false
 
   constructor(
-    private readonly emailService: EmailService
-  ) {}
-
-  contactForm: FormGroup = new FormGroup({
-    name: new FormControl('', Validators.compose([Validators.required])),
-    email: new FormControl('', Validators.compose([Validators.required])),
-    phone: new FormControl('', Validators.compose([Validators.required])),
-    message: new FormControl('', Validators.compose([Validators.required]))
-  })
+    private readonly emailService: EmailService,
+    private formBuilder: FormBuilder
+  ) {
+    this.formContact = this.formBuilder.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['', [Validators.pattern(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)]],
+      message: ['',[Validators.required]]
+    })
+  }
 
   sendEmail(value: EmailTemplate): void {
-    this.emailService.send(value).subscribe((res) => {
-      this.formMessage = 'Correo enviado exitosamente';
-    });
+    this.isLoading = true
+    this.formContact.valid ?
+      this.emailService.send(value)
+        .pipe(
+          finalize(() => {
+            this.isLoading = false
+            this.isSend = true
+          })
+        )
+        .subscribe()
+      :
+      null
   }
 }

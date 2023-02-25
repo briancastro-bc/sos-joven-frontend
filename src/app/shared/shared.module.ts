@@ -23,6 +23,7 @@ import { SliderDesktopComponent } from './components/slider/desktop/slider.deskt
 import { SliderComponent } from './components/slider/slider.component';
 import { BusinessModuleCardComponent } from './components/business-module-card/business-module-card.component';
 import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
     TranslateModule,
     NgxTranslateCutModule,
     SlickCarouselModule,
+    ReactiveFormsModule
   ],
   exports: [
     IllustrationComponent,
@@ -61,6 +63,7 @@ import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
     SlickCarouselModule,
     BusinessModuleCardComponent,
     AsParagraphPipe,
+    ReactiveFormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
