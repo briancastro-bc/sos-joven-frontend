@@ -120,7 +120,7 @@
           "route": "Home"
         },
         {
-          "to": "about",
+          "to": "us",
           "route": "Quienes somos",
           "subtitle": "Sobre nosotros",
           "sub_routes": [
@@ -165,7 +165,7 @@
           ]
         },
         {
-          "to": "products",
+          "to": "products/sifab",
           "route": "Productos"
         },
         {
@@ -260,6 +260,40 @@
         "title":"Competitividad",
         "body":"La pasión, la motivación y el progreso nos anima a ser mejores cada día."
       }
+    }
+  },
+  "products": {
+    "sifab": {
+      "banner": [
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide02.jpg",
+          "information": {
+            "title": "SIFAB - Software Integrado Financiero y Asistencial",
+            "body": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide03.jpg",
+          "information": {
+            "title": "Historias Clínicas Robustas, Parametrizables",
+            "body": "Nuestros Clientes pueden decidir que formatos implementar o usar alguno de los más de 120 formatos ya listos para usar"
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide01.jpg",
+          "information": {
+            "title": "Con SIFAB todo es más fácil",
+            "body": "Los usuarios de nuestro sistema de información así lo afirman"
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide04.jpg",
+          "information": {
+            "title": "Con SIFAB todo es más fácil",
+            "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
+          }
+        }
+      ]
     }
   },
   "us": {

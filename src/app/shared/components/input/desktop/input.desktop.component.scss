@@ -13,7 +13,7 @@
         font-size: 16.5px;
 
         &::placeholder {
-            color: var(--grey-4-color);
+            color: var(--grey-7-color);
         }
 
         &:focus {
@@ -37,27 +37,16 @@
         top: 100%;
         height: 40px;
         color: #de3333;
-        font-size: 14px;
+        font-size: 12px;
         padding: 5px 0 0 0;
         animation: opacity linear 300ms;
         
         & ~ .input {
-            outline: 3px solid red;
+            outline: 3px solid #e64444;
 
             & ~ .label {
-                color: red;
+                color: #e64444;
             }
         }
-    }
-
-
-    @keyframes opacity {
-        from {
-            opacity: 0;
-            transition: all ease-in 300ms;
-        }   
-        to {
-            opacity: 1;
-        } 
     }
 }

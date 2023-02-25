@@ -1,0 +1,22 @@
+.module__section {
+
+   
+
+    .center__module__section {
+        max-width: var(--max-width-desktop);
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: var(--desktop-content-padding);
+
+        .module__info {
+            color: #747474;
+        }
+
+        .card__icon {
+            font-size: 4em;
+            color: var(--primary-alt-color);
+        }
+    }
+}

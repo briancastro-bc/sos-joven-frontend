@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { Banner } from '@app/common/interfaces/banner.inteface';
 import { interval } from 'rxjs';
 
@@ -10,11 +10,8 @@ import { interval } from 'rxjs';
 export class BannerDesktopComponent {
 
   @Input() information!: Banner[];
-
   @Input() velocity!: number;
-
   @ViewChild('slide', { static: true }) slide!: any;
-
   bannerState = 0;
 
   ngOnInit(): void {

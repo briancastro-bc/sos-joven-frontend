@@ -3,22 +3,22 @@
 }
 
 article {
-  @apply p-8 w-full bg-white text-black rounded-xl border-gray-300 border;
+  @apply p-9 w-full bg-white text-black rounded-xl border-gray-200 border;
 
   header {
 
     section {
-      @apply w-28 h-28 mb-8 rounded-full bg-gray-200 overflow-clip;
+      @apply w-28 h-28 mb-2 overflow-clip;
     }
 
     p {
-      @apply text-3xl text-gray-400;
+      @apply text-3xl text-[#4a81ff];
     }
 
     @apply mb-4;
   }
 
   main {
-    @apply mb-32 text-sm leading-6;
+    @apply mb-20 text-sm leading-6;
   }
 }

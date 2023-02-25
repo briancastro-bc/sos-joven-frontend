@@ -2,6 +2,7 @@
 
 <section class="about__section">
   <div class="center_about_section">
+    
     <div class="about__content">
       <div>
         <div class="__content">
@@ -10,90 +11,24 @@
         </div>
         <p class="about__sai">{{ 'home.about.content' | translate }}</p>
       </div>
-
+      
       <a class="button_learn__more" [routerLink]="'/about'">
         <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
         <i class="fa solid fa-arrow-right arrow__icon"></i>
       </a>
     </div>
-
-    <a class="button_learn__more" [routerLink]="'/about'">
-      <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
-      <i class="fa solid fa-arrow-right arrow__icon"></i>
-    </a>
-  </div>
-
-  <div class="about__ilustration">ashd</div>
-</section>
-
-<section class="products__section">
-  <div class="center__products__section">
-    <div class="header__products">
-      <p class="title__products">{{'home.products.title' | translate }}</p>
-    </div>
-    <div class="body__products">
-
-      <div class="product">
-        <div>
-          <i class="fa-solid fa-desktop product__icon"></i>
-        </div>
-        <div class="product__information">
-          <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
-          <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
-          <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
-        </div>
-      </div>
-
-      <a [routerLink]="'/product/sifab'">
-        <div class="product__link">
-          <p>
-            Mas sobre {{'home.products.SIFAB.title' | translate }}
-          </p>
-        </div>
-      </a>
+    
+    <div class="about__ilustration">
+      <img src="https://www.forbes.com/advisor/wp-content/uploads/2022/06/software_engineer.jpeg-900x510.jpg" alt="">
     </div>
   </div>
-  <div>
-    <div>
-      <div>
-        <div>
-          <div class="product">
-            <div>
-              <i class="fa-solid fa-window-maximize product__icon"></i>
-            </div>
-            <div class="product__information">
-              <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
-              <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
-              <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
-            </div>
-          </div>
-
-
-          <a [routerLink]="'/product/sifapp'">
-            <div class="product__link">
-              <p>
-                Mas sobre {{'home.products.SIFAPP.title' | translate }}
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="clients__section">
-  <div class="center__clients__section">
-    <div class="header__clients__section">
-      <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
-    </div>
-  </div>
+  
 </section>
 
 <section class="securities__section">
   <div class="center__securities__section">
     <div class="header__securities">
-      <p class="title__header_securities">{{'home.securities.title' | translate }}</p>
+      <!-- <p class="title__header_securities">{{'home.securities.title' | translate }}</p> -->
     </div>
     <div class="body__securities">
 
@@ -131,19 +66,65 @@
 
 </section>
 
-<!-- <section class="module-display__section">
-  <app-business-module-card title="Salud Ocupacional"
-    content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-    <img image src="https://img.freepik.com/foto-gratis/perrito-joven-posando-alegre_155003-28765.jpg" alt="">
-    <p content> Hola mundo </p>
-  </app-business-module-card>
-  <app-business-module-card title="Salud Ocupacional"
-    content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-  </app-business-module-card>
-  <app-business-module-card title="Salud Ocupacional"
-    content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-  </app-business-module-card>
+<section class="products__section">
+  <div class="center__products__section">
+
+    <div class="header__products">
+      <p class="title__products">{{'home.products.title' | translate }}</p>
+    </div>
+
+    <div class="body__products">
+
+      <div class="product">
+        <div>
+          <i class="fa-solid fa-desktop product__icon"></i>
+        </div>
+        <div class="product__information">
+          <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
+          <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
+          <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
+          <a [routerLink]="'/products/sifab'">
+            <div class="product__link">
+              <p>
+                Mas sobre {{'home.products.SIFAB.title' | translate }}
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="product">
+        <div>
+          <i class="fa-solid fa-desktop product__icon"></i>
+        </div>
+        <div class="product__information">
+          <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
+          <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
+          <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
+          <a [routerLink]="'/products/sifapp'">
+            <div class="product__link">
+              <p>
+                Mas sobre {{'home.products.SIFAPP.title' | translate }}
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- 
+<section class="clients__section">
+  <div class="center__clients__section">
+    <div class="header__clients__section">
+      <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
+    </div>
+  </div>
 </section> -->
+
+
 
 <section class="formcontact__section">
   <div class="center__formcontact__section">
@@ -151,8 +132,8 @@
     <ng-template #send>
       <div class="check_send">
         <div class="message__check">
-            <h1 class="title">Mensaje enviado</h1>
-            <p class="message">Gracias por contactarnos, pronto nos comunicaremos contigo</p> 
+          <h1 class="title">Mensaje enviado</h1>
+          <p class="message">Gracias por contactarnos, pronto nos comunicaremos contigo</p>
           <i class="fa-regular fa-circle-check icon_check"></i>
           <!-- <i class="fa-solid fa-circle-check icon_check"></i> -->
         </div>
@@ -165,17 +146,19 @@
         <p class="subtitle__formcontact">Has realidad tu proyecto</p>
       </div>
 
-      <div class="body__form__contact" >
-        <form class="contact__form" [formGroup]="formContact" (ngSubmit)="sendEmail(formContact.value)">
+      <div class="body__form__contact">
 
+        <form class="contact__form" [formGroup]="formContact" (ngSubmit)="sendEmail(formContact.value)">
           <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
             formControlName="name"></app-input-desktop>
-          
-          <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico" [valid]="formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
+
+          <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico"
+            [valid]="formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
             formControlName="email"></app-input-desktop>
 
           <app-input-desktop class="full" type="text" placeholder="3166250909" label="Telefono (Opcional)"
-            formControlName="phone"></app-input-desktop>
+            formControlName="phone" [valid]="formContact.get('phone')?.errors?.['pattern']"
+            [error]="'Numero telefonico incorrecto'"></app-input-desktop>
 
           <app-input-desktop class="full" type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
             formControlName="message"></app-input-desktop>
@@ -183,13 +166,12 @@
           <button class="full formcontact__button" [ngClass]="{'active': formContact.invalid}"
             [disabled]="formContact.invalid">
             <p *ngIf="!isLoading; else loader">Enviar mensaje</p>
-
             <ng-template #loader>
               <span class="loader"></span>
-            </ng-template>           
+            </ng-template>
           </button>
-
         </form>
+
       </div>
     </div>
 

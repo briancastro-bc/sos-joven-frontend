@@ -39,7 +39,18 @@ const routes: Routes = [
         data: {
           title: 'titles.products'
         },
-        loadChildren: () => import('./modules/products/products.module').then(m => m.ProductsModule)
+
+        children: [
+          {
+            path: 'sifab',
+            loadChildren: () => import('./modules/products/sifab/products.module').then(m => m.ProductsModule)
+          },
+          {
+            path: 'sifapp',
+            loadChildren: () => import('./modules/products/sifapp/products.module').then(m => m.ProductsModule)
+          }
+        ]
+
       },
       {
         path: 'contact',
