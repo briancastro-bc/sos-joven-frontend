@@ -1,5 +1,15 @@
 @import "src/sass/variables";
 
+:host ::ng-deep {
+  .card-illustration {
+
+    svg {
+      width: 100%;
+      height: 150px;
+    }
+  }
+}
+
 .us-mobile {
   height: 100%;
   overflow: auto;
@@ -51,6 +61,220 @@
       background-color: var(--background-alt-theme);
       border-radius: 0% 0px 74% 74% / 0% 0px 30% 30%;
       z-index: -1;
+    }
+  }
+
+  &--principles {
+    @apply px-6 py-4;
+    position: relative;
+
+    &__wrapper {
+      display: inline-grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      &__card {
+        @apply shadow-md;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        background-color: var(--background-theme);
+        border: 1px solid var(--border-theme);
+
+        &--illustration {
+          @apply p-2;
+          width: 100%;
+          border-radius: inherit;
+          background-color: var(--background-alt-theme);
+        }
+
+        &--title {
+          @apply mt-5;
+          line-height: 1rem;
+          font-weight: 700;
+          color: var(--primary-alt-color);
+        }
+
+        &--description {
+          @apply p-4;
+          font-size: 0.775rem;
+          line-height: 0.875rem;
+          text-align: center;
+          color: var(--grey-4-color);
+        }
+      }
+    }
+  }
+
+  &--objective {
+    position: relative;
+
+    &__wrapper {
+      @apply px-6 py-4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__title {
+        @apply mb-4;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 1.375rem;
+        line-height: 1.885rem;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        .marked {
+          color: var(--primary-alt-color);
+        }
+      }
+
+      &__illustration {
+        @apply mb-4;
+      }
+
+      &__description {
+        text-align: center;
+        line-height: 1.255rem;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+
+  &--team {
+    position: relative;
+    $member-height: 250px;
+
+    &__wrapper {
+      @apply px-6 py-4;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      &--title {
+        @apply mb-4;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 1.375rem;
+        line-height: 1.885rem;
+        font-weight: 700;
+
+        .marked {
+          color: var(--primary-alt-color);
+        }
+      }
+
+      &__member {
+        height: $member-height;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        border-radius: 20px;
+
+        &__container {
+          @apply my-auto shadow-md;
+          width: 90%;
+          height: 100%;
+          max-height: calc($member-height - 100px);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--background-alt-theme);
+          border-radius: 15px;
+          // box-shadow: var(--box-shadow-1);
+
+          &__photo {
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: -30%;
+            border: 2px solid var(--border-theme);
+            border-radius: 50%;
+
+            &--image {
+              @apply mx-auto;
+              height: 90%;
+              width: 90%;
+              position: relative;
+              top: 5%;
+              object-fit: contain;
+              background-color: var(--light-color);
+              border-radius: inherit
+            }
+          }
+
+          &__information {
+            @apply p-4 shadow-md;
+            width: 100%;
+            max-width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            position: absolute;
+            bottom: -15%;
+            border-radius: inherit;
+            background-color: var(--background-theme);
+            text-align: center;
+
+            &--name {
+              font-weight: 700;
+              font-size: 1.25rem;
+              line-height: 1.35rem;
+              color: var(--primary-alt-color);
+            }
+
+            &--role {
+              font-size: .885rem;
+              line-height: .985rem;
+              color: var(--grey-4-color);
+              text-transform: uppercase;
+              font-weight: 500;
+            }
+          }
+        }
+
+        // &:nth-child(even) {
+        //   .us-mobile--team__wrapper__member__container {
+        //     background-color: var(--primary-alt-color);
+
+        //     &__information {
+        //       background-color: var(--background-alt-theme);
+        //     }
+        //   }
+        // }
+
+        // &:nth-child(odd) {
+        //   .us-mobile--team__wrapper__member__container {
+        //     background-color: var(--background-alt-theme);
+
+        //     &__information {
+        //       background-color: var(--primary-alt-color);
+
+        //       &--role,
+        //       &--name {
+        //         color: var(--light-color);
+        //       }
+        //     }
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .us-mobile {
+    &--principles {
+      &__wrapper {
+        grid-template-columns: auto;
+      }
     }
   }
 }

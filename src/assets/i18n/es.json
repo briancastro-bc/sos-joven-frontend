@@ -268,7 +268,96 @@
         "subtitle": "Te contamos más acerca de...",
         "title": "¿Quienes somos? | SAI Soluciones Informáticas",
         "explanation": "Somos una empresa legalmente constituida ante la cámara y comercio de la ciudad de Armenia, Quindío. Nacimos el 13 de mayo de 2011. Nuestra actividad económica se centra en el desarrollo de soluciones informáticas en lo cuál llevamos más de 10 años de experiencia en la industria."
-      }
+      },
+      "principles": [
+        {
+          "title": "Responsabilidad",
+          "illustration": {
+            "source": "assets/illustrations/responsability.svg",
+            "style": "card-illustration"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        },
+        {
+          "title": "Honestidad",
+          "illustration": {
+            "source": "assets/illustrations/honesty.svg",
+            "style": "card-illustration"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        },
+        {
+          "title": "Calidad",
+          "illustration": {
+            "source": "assets/illustrations/quality.svg",
+            "style": "card-illustration"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        },
+        {
+          "title": "Competitividad",
+          "illustration": {
+            "source": "assets/illustrations/competitivity.svg",
+            "style": "card-illustration"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        }
+      ],
+      "objectives": [
+        {
+          "title": "Nuestra | misión",
+          "illustration": {
+            "source": "assets/illustrations/bg-home.svg",
+            "style": "bg-illustration-mission"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        },
+        {
+          "title": "Nuestra | visión",
+          "illustration": {
+            "source": "assets/illustrations/bg-map.svg",
+            "style": "bg-illustration-vision"
+          },
+          "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
+        }
+      ],
+      "members": [
+        {
+          "name": "Willington Rincón",
+          "role": "CEO",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "Sergio Ramírez",
+          "role": "Tech Lead",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "Edwin Rozo",
+          "role": "Project Manager",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "James Valencia",
+          "role": "Developer",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "Andrés Sierra",
+          "role": "Developer",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "Camilo Velásquez",
+          "role": "Developer",
+          "photo": "assets/images/user.svg"
+        },
+        {
+          "name": "Brian Castro",
+          "role": "Developer",
+          "photo": "assets/images/user.svg"
+        }
+      ]
     }
   },
   "not_found": {

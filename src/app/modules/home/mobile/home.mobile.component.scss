@@ -17,8 +17,10 @@
         font-family: 'Montserrat Alternates', sans-serif;
 
         &--welcome {
-          @apply text-sm leading-3 mb-2.5;
+          @apply mb-2.5;
           font-weight: 600;
+          font-size: 1.125rem;
+          line-height: 1.125rem;
           color: var(--grey-4-color);
         }
 
