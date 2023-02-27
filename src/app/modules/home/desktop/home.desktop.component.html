@@ -82,8 +82,9 @@
             <i class="fa-solid fa-display product__icon"></i>
           </div>
           <div class="product__information">
+
             <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
-            <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
+            <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}  </p>
             <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
             <div class="product__link">
               <p>
@@ -100,6 +101,7 @@
             <i class="fa-regular fa-window-maximize product__icon"></i>
           </div>
           <div class="product__information">
+
             <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
             <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
             <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
@@ -113,7 +115,7 @@
       </a>
     </div>
 
-    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="150000"></app-carrowsel-desktop>
+    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="350000"></app-carrowsel-desktop>
   </div>
 </section>
 
@@ -139,13 +141,14 @@
 
       <div class="body__form__contact">
 
-        <form class="contact__form" [formGroup]="formContact" #localForm="ngForm" (ngSubmit)="sendEmail(formContact.value)">
+        <form class="contact__form" [formGroup]="formContact" #localForm="ngForm"
+          (ngSubmit)="sendEmail(formContact.value)">
           <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
             formControlName="name"></app-input-desktop>
 
           <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico"
             [valid]=" formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
-            formControlName="email" ></app-input-desktop>
+            formControlName="email"></app-input-desktop>
 
           <app-input-desktop class="full" type="text" placeholder="3166250909" label="Telefono (Opcional)"
             formControlName="phone" [valid]="formContact.get('phone')?.errors?.['pattern']"

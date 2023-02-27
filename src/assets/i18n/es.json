@@ -207,16 +207,16 @@
     "about": {
       "title": "SAI",
       "subtitle": "Soluciones informáticas",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos omnis a et, cumque voluptatibus quisquam fugiat magni repudiandae cum facilis quos consectetur. Nisi, expedita ex! Expedita vitae architecto eos?",
+      "content": "Somos una empresa con mas de 10 años de experiencia en el campo de la tecnología, nos enfocamos en ofrecer soluciones innovadoras y personalizadas que ayuden a mejorar la eficiencia y productividad de nuestros clientes.",
       "button_learn_more": "Saber mas sobre SAI"
     },
     "products": {
-      "title":"Productos desarrollados por nosotros",
+      "title":"Soluciones de software para mejorar su negocio",
       "subtitle":"Inicialmente contamos con dos productos",
       "SIFAB": {
         "title": "SIFAB",
-        "subtitle":"Software Integrado Financiero y Asistencial",
-        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes",
+        "subtitle":"Software Integrado Financiero y Asistencial.",
+        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes.",
         "learn_more" :" Saber mas →"
       },
       "SIFAPP": {
