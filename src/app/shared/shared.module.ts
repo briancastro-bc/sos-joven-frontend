@@ -26,6 +26,12 @@ import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarrowselDesktopComponent } from './components/carrowsel/carrowsel.desktop.component';
 
+// reCaptcha
+import { RECAPTCHA_SETTINGS, RECAPTCHA_V3_SITE_KEY, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings, RecaptchaV3Module } from 'ng-recaptcha';
+import { environment } from '@environment/environment.dev';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgxCaptchaModule } from 'ngx-captcha';
+
 @NgModule({
   declarations: [
     IllustrationComponent,
@@ -48,7 +54,9 @@ import { CarrowselDesktopComponent } from './components/carrowsel/carrowsel.desk
     TranslateModule,
     NgxTranslateCutModule,
     SlickCarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RecaptchaModule,
+    NgxCaptchaModule
   ],
   exports: [
     IllustrationComponent,
@@ -66,10 +74,19 @@ import { CarrowselDesktopComponent } from './components/carrowsel/carrowsel.desk
     BusinessModuleCardComponent,
     AsParagraphPipe,
     ReactiveFormsModule,
-    CarrowselDesktopComponent
+    CarrowselDesktopComponent,
+    NgxCaptchaModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: {
+        siteKey: environment.recaptcha.siteKey,
+      } as RecaptchaSettings,
+    },
+  ]
 })
 export class SharedModule { }

@@ -1,7 +1,9 @@
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EmailTemplate } from '@app/common/interfaces/email.interface';
 import { EmailService } from '@app/common/services/email.service';
+import { environment } from '@environment/environment.prod';
 import { finalize } from 'rxjs';
 
 @Component({
@@ -14,16 +16,20 @@ export class HomeDesktopComponent {
   public formContact: FormGroup
   public isLoading!: boolean
   public isSend: boolean = false
+  public siteKey!: string;
 
   constructor(
     private readonly emailService: EmailService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
   ) {
+    
+    this.siteKey = environment.recaptcha.siteKey
     this.formContact = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.pattern(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/)]],
-      message: ['',[Validators.required]]
+      message: ['', [Validators.required]],
+      captcha: ['', Validators.required]
     })
   }
 

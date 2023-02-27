@@ -2,7 +2,7 @@
 
 <section class="about__section">
   <div class="center_about_section">
-    
+
     <div class="about__content">
       <div>
         <div class="__content">
@@ -11,18 +11,18 @@
         </div>
         <p class="about__sai">{{ 'home.about.content' | translate }}</p>
       </div>
-      
-      <a class="button_learn__more" [routerLink]="'/about'">
+
+      <a class="button_learn__more" [routerLink]="'/us'">
         <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
         <i class="fa solid fa-arrow-right arrow__icon"></i>
       </a>
     </div>
-    
+
     <div class="about__ilustration">
       <img src="https://www.forbes.com/advisor/wp-content/uploads/2022/06/software_engineer.jpeg-900x510.jpg" alt="">
     </div>
   </div>
-  
+
 </section>
 
 <section class="securities__section">
@@ -71,53 +71,51 @@
 
     <div class="header__products">
       <p class="title__products">{{'home.products.title' | translate }}</p>
+      <p class="subtitle__products">{{'home.products.subtitle' | translate }}</p>
     </div>
 
     <div class="body__products">
 
-      <div class="product">
-        <div>
-          <i class="fa-solid fa-desktop product__icon"></i>
-        </div>
-        <div class="product__information">
-          <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
-          <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
-          <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
-          <a [routerLink]="'/products/sifab'">
+      <a [routerLink]="'/products/sifab'">
+        <div class="product">
+          <div>
+            <i class="fa-solid fa-display product__icon"></i>
+          </div>
+          <div class="product__information">
+            <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
+            <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
+            <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
             <div class="product__link">
               <p>
-                Mas sobre {{'home.products.SIFAB.title' | translate }}
+                Mas sobre {{'home.products.SIFAB.title' | translate }} →
               </p>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
 
-      <div class="product">
-        <div>
-          <i class="fa-solid fa-desktop product__icon"></i>
-        </div>
-        <div class="product__information">
-          <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
-          <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
-          <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
-          <a [routerLink]="'/products/sifapp'">
+      <a [routerLink]="'/products/sifapp'">
+        <div class="product">
+          <div>
+            <i class="fa-regular fa-window-maximize product__icon"></i>
+          </div>
+          <div class="product__information">
+            <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
+            <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
+            <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
             <div class="product__link">
               <p>
-                Mas sobre {{'home.products.SIFAPP.title' | translate }}
+                Mas sobre {{'home.products.SIFAPP.title' | translate }} →
               </p>
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-
-
+      </a>
     </div>
 
+    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="90000"></app-carrowsel-desktop>
   </div>
 </section>
-
-<app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="100000"></app-carrowsel-desktop>
 
 <section class="formcontact__section">
   <div class="center__formcontact__section">
@@ -141,7 +139,7 @@
 
       <div class="body__form__contact">
 
-        <form class="contact__form" [formGroup]="formContact" (ngSubmit)="sendEmail(formContact.value)">
+        <form class="contact__form" #form="ngForm" [formGroup]="formContact" (ngSubmit)="sendEmail(formContact.value)">
           <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
             formControlName="name"></app-input-desktop>
 
@@ -156,6 +154,9 @@
           <app-input-desktop class="full" type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
             formControlName="message"></app-input-desktop>
 
+          <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="captcha">
+          </ngx-recaptcha2>
+
           <button class="full formcontact__button" [ngClass]="{'active': formContact.invalid}"
             [disabled]="formContact.invalid">
             <p *ngIf="!isLoading; else loader">Enviar mensaje</p>
@@ -168,7 +169,8 @@
       </div>
     </div>
 
-    <div class="location__map">
+
+    <!-- <div class="location__map">
       <div class="mapouter">
         <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
             src="https://maps.google.com/maps?q=Sai Soluciones Y Asesorias Informáticas, Armenia, Quindío&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -192,6 +194,6 @@
           </style>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

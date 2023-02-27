@@ -211,11 +211,12 @@
       "button_learn_more": "Saber mas sobre SAI"
     },
     "products": {
-      "title":"Nuestros productos",
+      "title":"Productos desarrollados por nosotros",
+      "subtitle":"Inicialmente contamos con dos productos",
       "SIFAB": {
         "title": "SIFAB",
         "subtitle":"Software Integrado Financiero y Asistencial",
-        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes"
       },
       "SIFAPP": {
         "title": "SIFAPP",

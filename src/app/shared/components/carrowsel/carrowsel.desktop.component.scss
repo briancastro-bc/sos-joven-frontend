@@ -11,7 +11,7 @@ $animationSpeed: 10s;
     }
 
     100% {
-        transform: translateX(calc(-250px * var(--carrousel-lenght)))
+        transform: translateX(calc(-200px * var(--carrousel-lenght)))
     }
 }
 
@@ -31,7 +31,7 @@ $animationSpeed: 10s;
         content: "";
         height: 100px;
         position: absolute;
-        width: 200px;
+        width: 100px;
         z-index: 2;
     }
 
@@ -49,17 +49,26 @@ $animationSpeed: 10s;
     .slide-track {
         animation: scroll var(--carrousel-velocity) linear infinite;
         display: flex;
-        width: calc(250px * (var(--carrousel-lenght) * 2));
+        width: calc(200px * (var(--carrousel-lenght) * 2));
+
+        &:hover {
+            animation-play-state: paused;
+        }
     }
 
     .slide {
         height: 100px;
-        width: 250px;
+        width: 200px;
         display: flex;
         justify-content: center;
 
         img {
             height: 85%;
+            transition: all ease 100ms;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
         }
     }
 }
