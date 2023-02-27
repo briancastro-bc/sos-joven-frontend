@@ -87,7 +87,7 @@
             <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
             <div class="product__link">
               <p>
-                Mas sobre {{'home.products.SIFAB.title' | translate }} →
+                {{'home.products.SIFAB.learn_more' | translate }}
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@
             <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
             <div class="product__link">
               <p>
-                Mas sobre {{'home.products.SIFAPP.title' | translate }} →
+                {{'home.products.SIFAPP.learn_more' | translate }}
               </p>
             </div>
           </div>
@@ -113,7 +113,7 @@
       </a>
     </div>
 
-    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="90000"></app-carrowsel-desktop>
+    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="150000"></app-carrowsel-desktop>
   </div>
 </section>
 
@@ -139,13 +139,13 @@
 
       <div class="body__form__contact">
 
-        <form class="contact__form" #form="ngForm" [formGroup]="formContact" (ngSubmit)="sendEmail(formContact.value)">
+        <form class="contact__form" [formGroup]="formContact" #localForm="ngForm" (ngSubmit)="sendEmail(formContact.value)">
           <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
             formControlName="name"></app-input-desktop>
 
           <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico"
-            [valid]="formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
-            formControlName="email"></app-input-desktop>
+            [valid]=" formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
+            formControlName="email" ></app-input-desktop>
 
           <app-input-desktop class="full" type="text" placeholder="3166250909" label="Telefono (Opcional)"
             formControlName="phone" [valid]="formContact.get('phone')?.errors?.['pattern']"
@@ -158,7 +158,7 @@
           </ngx-recaptcha2>
 
           <button class="full formcontact__button" [ngClass]="{'active': formContact.invalid}"
-            [disabled]="formContact.invalid">
+            [disabled]="!formContact.valid">
             <p *ngIf="!isLoading; else loader">Enviar mensaje</p>
             <ng-template #loader>
               <span class="loader"></span>
@@ -168,6 +168,7 @@
 
       </div>
     </div>
+
 
 
     <!-- <div class="location__map">

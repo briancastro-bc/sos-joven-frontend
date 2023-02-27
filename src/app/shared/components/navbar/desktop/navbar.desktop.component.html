@@ -21,7 +21,7 @@
             <nav class="app_nav">
                 <a class="link" *ngFor=" let link of 'home.nav.links' | translate" [routerLink]="link.to"
                     [routerLinkActive]="'active'">{{link.route}}</a>
-                    
+
                 <div class="saienlinea link">
                     <a [routerLink]="'saienlinea'" [routerLinkActive]="'active'">Sai en linea</a>
                 </div>
@@ -29,4 +29,10 @@
         </div>
     </header>
 
+    <a href="https://api.whatsapp.com/send?phone=3122890738&text=Hola,%20Quisiera%20cotizar%20un%20producto" target="_blank">
+        <div class="whatsapp__button">
+            <i class="fa-brands fa-whatsapp whatsapp__icon"></i>
+            <!-- <i class="fa-brands fa-square-whatsapp whatsapp__icon"></i> -->
+        </div>
+    </a>
 </div>

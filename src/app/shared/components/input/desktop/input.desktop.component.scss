@@ -42,10 +42,10 @@
         animation: opacity linear 300ms;
         
         & ~ .input {
-            outline: 2px solid #e64444;
+            // outline: 2px solid #e64444;
 
             & ~ .label {
-                color: #e64444;
+                // color: #e64444;
             }
         }
     }

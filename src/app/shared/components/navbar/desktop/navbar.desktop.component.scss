@@ -75,6 +75,7 @@
 
                 .link {
                     &:hover {
+
                         // cursor: pointer;
                         // background: #000;
                         .submenu {
@@ -100,5 +101,27 @@
                 }
             }
         }
+    }
+
+    .whatsapp__button {
+        position: fixed;
+        bottom: 3em;
+        right: 3em;
+        z-index: 4;
+        background: #43c754;
+        padding: 5px 8px;
+        border-radius: 7px;
+        transition: all ease-in 050ms;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+    }
+
+    .whatsapp__icon {
+        color: #FFFF;
+        font-size: 2.4em;
+        overflow: hidden;
     }
 }

@@ -216,12 +216,14 @@
       "SIFAB": {
         "title": "SIFAB",
         "subtitle":"Software Integrado Financiero y Asistencial",
-        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes"
+        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes",
+        "learn_more" :" Saber mas →"
       },
       "SIFAPP": {
         "title": "SIFAPP",
         "subtitle":"Lorem ipsum dolor sit amet, consectetur",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus."
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus.",
+        "learn_more" :" Saber mas →"
       }
     },
     "clients": {

@@ -173,6 +173,12 @@
 
                 &:hover {
                     transform: scale(1.02);
+                    
+                    .product__information {
+                        .product__link {
+                            border-bottom: 1px solid var(--primary-alt-color);
+                        }
+                    }
                 }
 
                 .product__icon {
@@ -213,12 +219,7 @@
                         color: var(--primary-alt-color);
                         margin: 30px 0 0 0;
                         transition: all ease 200ms;
-                        // background: #2d4e9c09;
-
-                        &:hover {
-                            // background: #2d4e9c1c;
-                            border-bottom: 1px solid var(--primary-alt-color);
-                        }
+                        // background: #2d4e9c09;                   
 
                         p {
                             font-size: 14px;
