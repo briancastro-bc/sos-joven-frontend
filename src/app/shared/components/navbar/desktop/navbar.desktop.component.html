@@ -19,17 +19,14 @@
             </div>
 
             <nav class="app_nav">
-                <div *ngFor=" let link of 'home.nav.links' | translate">
-                    <div class="link">
-                        <a [routerLink]="link.to" [routerLinkActive]="'active'">{{link.route}}</a>                       
-                    </div>
-                </div>
-
+                <a class="link" *ngFor=" let link of 'home.nav.links' | translate" [routerLink]="link.to"
+                    [routerLinkActive]="'active'">{{link.route}}</a>
+                    
                 <div class="saienlinea link">
                     <a [routerLink]="'saienlinea'" [routerLinkActive]="'active'">Sai en linea</a>
                 </div>
             </nav>
         </div>
     </header>
-    
+
 </div>

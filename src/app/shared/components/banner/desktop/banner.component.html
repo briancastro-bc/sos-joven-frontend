@@ -1,12 +1,10 @@
 <div class="banner">
-
-    <div class="information">
+    <div class="information" [ngClass]="{opacity: 'opacity'}">
         <div class="center_banner_information">
             <ng-container *ngIf="information[bannerState]">
-              <p class="title">{{information[bannerState].information.title}}</p>
-              <p class="body">{{information[bannerState].information.body}}</p>
+                <p class="title">{{information[bannerState].information.title}}</p>
+                <p class="body">{{information[bannerState].information.body}}</p>
             </ng-container>
-
             <div class="elements">
                 <div *ngFor="let item of information; let i = index">
                     <div class="element" [ngClass]=" {'active' : bannerState == i}" (click)="changeBanner(i)"></div>
@@ -20,3 +18,4 @@
         </div>
     </div>
 </div>
+

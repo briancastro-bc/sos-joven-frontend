@@ -17,7 +17,7 @@
         }
 
         &:focus {
-            outline: 3px solid var(--primary-alt-color);
+            outline: 2px solid var(--primary-alt-color);
 
             & ~ .label {
                 color: var(--primary-alt-color);
@@ -42,7 +42,7 @@
         animation: opacity linear 300ms;
         
         & ~ .input {
-            outline: 3px solid #e64444;
+            outline: 2px solid #e64444;
 
             & ~ .label {
                 color: #e64444;

@@ -176,7 +176,7 @@
     },
     "banner": [
       {
-        "url": "https://img.freepik.com/vector-gratis/concepto-isometrico-cms_23-2148807389.jpg?w=2000",
+        "url": "https://www.wyzowl.com/wp-content/uploads/2020/03/Free-Project-Management-Software-Tools-for-2020.png",
         "information": {
           "title": "SIFAB - Software Integrado Financiero y Asistencial",
           "body": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
@@ -226,20 +226,162 @@
     "clients": {
       "title": "Nuestros clientes",
       "images":[
-        "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
-        "https://www.equiposai.com/views/images/galeria/happy.jpg",
-        "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
-        "https://www.equiposai.com/views/images/galeria/ral.jpg",
-        "https://www.equiposai.com/views/images/galeria/jdsuministros.jpg",
-        "https://www.equiposai.com/views/images/galeria/medinped.jpg",
-        "https://www.equiposai.com/views/images/galeria/somti.jpg",
-        "https://www.equiposai.com/views/images/galeria/esedorada.jpg",
-        "https://www.equiposai.com/views/images/galeria/integrasalud.jpg",
-        "https://www.equiposai.com/views/images/galeria/kostar.jpg",
-        "https://www.equiposai.com/views/images/galeria/monicaestrada.jpg",
-        "https://www.equiposai.com/views/images/galeria/oscarelias.jpg",
-        "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
-        "https://www.equiposai.com/views/images/galeria/medicavivir.jpg"
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/vivessalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/tricauma.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/filadelfia.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/esedorada.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/ral.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/higea.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/happy.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/valsalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/imeco.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/jaimealvarez.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/cardiologiasas.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/casadelasalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/fertilab.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/orientesalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/saludserv.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/tian.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/medicavivir.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/biomedicas.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/integrasalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/aleyda.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/urpecv.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/carolinaherrera.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/kostar.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/unisalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/canamomo.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/manueltoscano.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/medinped.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/aslosalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/condufiable.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/monicaestrada.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/oscarelias.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/gilmaclemencia.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/somti.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/olgadelsy.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/promocionsocial.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/jdsuministros.jpg",
+          "url":""
+        }
       ]
     },
     "securities": {

@@ -71,7 +71,6 @@
             .app_nav {
                 display: flex;
                 gap: 25px;
-                padding: 30px 0;
                 position: relative;
 
                 .link {
@@ -83,16 +82,14 @@
                         }
                     }
 
-                    a {
-                        color: var(--grey-6-color);
-                        padding: 30px 0;
-                    }
+                    color: var(--grey-6-color);
+                    padding: 30px 0;
 
-                    .active {
-                        border-bottom: 3px solid var(--primary-alt-color);
-                        border-bottom: -3px;
-                        color: var(--grey-2-color);
-                    }
+                }
+
+                .active {
+                    border-bottom: 3px solid var(--primary-alt-color);
+                    color: var(--grey-2-color);
                 }
 
                 .saienlinea {

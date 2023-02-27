@@ -1,4 +1,4 @@
-<app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="5000"></app-banner-desktop>
+<app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="7000"></app-banner-desktop>
 
 <section class="about__section">
   <div class="center_about_section">
@@ -113,18 +113,11 @@
 
 
     </div>
+
   </div>
 </section>
-<!-- 
-<section class="clients__section">
-  <div class="center__clients__section">
-    <div class="header__clients__section">
-      <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
-    </div>
-  </div>
-</section> -->
 
-
+<app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="100000"></app-carrowsel-desktop>
 
 <section class="formcontact__section">
   <div class="center__formcontact__section">

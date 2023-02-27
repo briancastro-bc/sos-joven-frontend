@@ -24,7 +24,6 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "boxicons": "^2.1.4",
-    "jquery": "^3.6.3",
     "ngx-device-detector": "^5.0.1",
     "ngx-translate-cut": "^4.0.2",
     "ngx-slick-carousel": "^15.0.0",

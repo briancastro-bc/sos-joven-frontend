@@ -24,6 +24,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { BusinessModuleCardComponent } from './components/business-module-card/business-module-card.component';
 import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CarrowselDesktopComponent } from './components/carrowsel/carrowsel.desktop.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SliderComponent,
     BusinessModuleCardComponent,
     AsParagraphPipe,
+    CarrowselDesktopComponent,
   ],
   imports: [
     CommonModule,
@@ -63,7 +65,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SlickCarouselModule,
     BusinessModuleCardComponent,
     AsParagraphPipe,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarrowselDesktopComponent
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

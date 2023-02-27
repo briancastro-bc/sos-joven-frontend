@@ -46,7 +46,10 @@
   --max-width-desktop: #{$max-width-desktop};
   --desktop-content-padding: #{$desktop-content-padding};
 
-  --carrousel-lenght: 7;
+  --banner-velocity: ;
+  
+  --carrousel-lenght: 0;
+  --carrousel-velocity: 0ms;
 }
 
 * {
