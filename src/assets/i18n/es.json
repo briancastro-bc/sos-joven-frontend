@@ -9,6 +9,9 @@
     "not_found": "404"
   },
   "layout": {
+    "loader": {
+      "fullscreen": "Cargando..."
+    },
     "navbar": {
       "mobile": {
         "brand": {
@@ -84,7 +87,7 @@
         "sifab": {
           "initialism": "SIFAB",
           "meaning": "Software Integrado Financiero Asistencial",
-          "description": "Implementado en IPS alrededor de Colombia. Empresas sociales del estado, clínicas privadsa y profesionales independientes."
+          "description": "Implementado en IPS alrededor de Colombia. Empresas sociales del estado, clínicas privadas y profesionales independientes."
         }
       },
       "principles": {
@@ -211,21 +214,21 @@
       "button_learn_more": "Saber mas sobre SAI"
     },
     "products": {
-      "title":"Nuestros productos",
+      "title": "Nuestros productos",
       "SIFAB": {
         "title": "SIFAB",
-        "subtitle":"Software Integrado Financiero y Asistencial",
+        "subtitle": "Software Integrado Financiero y Asistencial",
         "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
       },
       "SIFAPP": {
         "title": "SIFAPP",
-        "subtitle":"Lorem ipsum dolor sit amet, consectetur",
+        "subtitle": "Lorem ipsum dolor sit amet, consectetur",
         "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus."
       }
     },
     "clients": {
       "title": "Nuestros clientes",
-      "images":[
+      "images": [
         "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
         "https://www.equiposai.com/views/images/galeria/happy.jpg",
         "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
@@ -243,22 +246,22 @@
       ]
     },
     "securities": {
-      "title":"Nuestros valores",
+      "title": "Nuestros valores",
       "responsability": {
-        "title":"Responsabilidad",
-        "body":"Nuestros compromisos son respetados y nuestros clientes son valorados."
+        "title": "Responsabilidad",
+        "body": "Nuestros compromisos son respetados y nuestros clientes son valorados."
       },
       "honestly": {
-        "title":"Honestidad",
-        "body":"Actuamos de una forma sincera y hacemos siempre nuestro mejor esfuerzo."
+        "title": "Honestidad",
+        "body": "Actuamos de una forma sincera y hacemos siempre nuestro mejor esfuerzo."
       },
       "cuality": {
-        "title":"Calidad",
-        "body":"Nuestros productos cumplen con los parámetros establecidos y prometidos."
+        "title": "Calidad",
+        "body": "Nuestros productos cumplen con los parámetros establecidos y prometidos."
       },
       "competitiveness": {
-        "title":"Competitividad",
-        "body":"La pasión, la motivación y el progreso nos anima a ser mejores cada día."
+        "title": "Competitividad",
+        "body": "La pasión, la motivación y el progreso nos anima a ser mejores cada día."
       }
     }
   },
@@ -321,43 +324,46 @@
           "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odit atque iste sapiente cum, pariatur blanditiis neque corrupti nobis voluptatibus amet consectetur beatae eos odio. Quod architecto, vitae ipsum aliquam, accusamus obcaecati maxime molestiae, dolor ducimus culpa repudiandae. A, hic."
         }
       ],
-      "members": [
-        {
-          "name": "Willington Rincón",
-          "role": "CEO",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "Sergio Ramírez",
-          "role": "Tech Lead",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "Edwin Rozo",
-          "role": "Project Manager",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "James Valencia",
-          "role": "Developer",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "Andrés Sierra",
-          "role": "Developer",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "Camilo Velásquez",
-          "role": "Developer",
-          "photo": "assets/images/user.svg"
-        },
-        {
-          "name": "Brian Castro",
-          "role": "Developer",
-          "photo": "assets/images/user.svg"
-        }
-      ]
+      "team": {
+        "title": "Conoce a todos los miembros de nuestro | equipo SAI",
+        "members": [
+          {
+            "name": "Willington Rincón",
+            "role": "CEO",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "Sergio Ramírez",
+            "role": "Tech Lead",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "Edwin Rozo",
+            "role": "Project Manager",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "James Valencia",
+            "role": "Developer",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "Andrés Sierra",
+            "role": "Developer",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "Camilo Velásquez",
+            "role": "Developer",
+            "photo": "assets/images/user.svg"
+          },
+          {
+            "name": "Brian Castro",
+            "role": "Developer",
+            "photo": "assets/images/user.svg"
+          }
+        ]
+      }
     }
   },
   "not_found": {

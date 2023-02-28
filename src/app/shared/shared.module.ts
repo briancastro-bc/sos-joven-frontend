@@ -10,6 +10,9 @@ import { NavbarDesktopComponent } from './components/navbar/desktop/navbar.deskt
 import { FooterMobileComponent } from './components/footer/mobile/footer.mobile.component';
 import { BannerDesktopComponent } from './components/banner/desktop/banner.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { FullscreenSpinnerComponent } from './components/loader/fullscreen-spinner/fullscreen-spinner.component';
+import { ProgressbarComponent } from './components/loader/progressbar/progressbar.component';
 
 /**
  *
@@ -38,6 +41,9 @@ import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
     SliderComponent,
     BusinessModuleCardComponent,
     AsParagraphPipe,
+    LoaderComponent,
+    FullscreenSpinnerComponent,
+    ProgressbarComponent,
   ],
   imports: [
     CommonModule,
@@ -61,6 +67,7 @@ import { AsParagraphPipe } from './pipes/as-paragraph.pipe';
     SlickCarouselModule,
     BusinessModuleCardComponent,
     AsParagraphPipe,
+    LoaderComponent,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

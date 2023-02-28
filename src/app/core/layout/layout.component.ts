@@ -8,6 +8,7 @@ import { SidebarDirective } from '@shared/components/sidebar/sidebar.directive';
 @Component({
   selector: 'app-layout',
   template: `
+    <app-loader></app-loader>
     <ng-container appSidebarHost></ng-container>
 
     <app-navbar-mobile *ngIf="isMobile$ | async"></app-navbar-mobile>

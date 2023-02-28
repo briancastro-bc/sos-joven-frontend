@@ -77,6 +77,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if(typeof this.subscription !== 'undefined') {
       this.subscription.unsubscribe();
+      this.subscription = undefined;
     }
   }
 }

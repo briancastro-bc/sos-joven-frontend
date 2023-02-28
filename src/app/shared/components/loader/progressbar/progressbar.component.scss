@@ -1,0 +1,21 @@
+@import "src/sass/variables";
+
+.progressbar {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 5px;
+	overflow: hidden;
+	z-index: 1000 !important;
+  transition: all 0.5s cubic-bezier(0.86, 0.01, 0.15, 0.99);
+
+	&__loader {
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		background-color: var(--primary-alt-color);
+		animation: 2s infiniteAnimation infinite linear;
+		transform-origin: 0% 50%;
+    transition: all 0.5s cubic-bezier(0.86, 0.01, 0.15, 0.99);
+	}
+}

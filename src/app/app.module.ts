@@ -8,7 +8,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
-import { RouteService } from '@shared/services';
 import { AppRoutingModule } from '@app/app-routing.module';
 import { AppComponent } from '@app/app.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -44,9 +43,7 @@ export function HttpLoaderFactory(handler: HttpBackend): TranslateHttpLoader {
       useDefaultLang: true
     })
   ],
-  providers: [
-    RouteService,
-  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -55,22 +55,22 @@
       </div>
       <div class="sidebar-mobile__wrapper--body__link-group">
         <span class="sidebar-mobile__wrapper--body__link-group--label">Redes sociales</span>
-        <a class="sidebar-mobile__wrapper--body__link-group--link bg-facebook" appRipple>
+        <a [routerLink]="[]" [queryParams]="{ redirect: 'https://facebook.com' }" class="sidebar-mobile__wrapper--body__link-group--link bg-facebook" appRipple>
           <box-icon type="logo" name="facebook"></box-icon>
           <span class="link__text">Facebook</span>
           <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
         </a>
-        <a class="sidebar-mobile__wrapper--body__link-group--link bg-twitter" appRipple>
+        <a [routerLink]="[]" [queryParams]="{ redirect: 'https://twitter.com' }" class="sidebar-mobile__wrapper--body__link-group--link bg-twitter" appRipple>
           <box-icon type="logo" name="twitter"></box-icon>
           <span class="link__text">Twitter</span>
           <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
         </a>
-        <a class="sidebar-mobile__wrapper--body__link-group--link bg-linkedin" appRipple>
+        <a [routerLink]="[]" [queryParams]="{ redirect: 'https://linkedin.com' }" class="sidebar-mobile__wrapper--body__link-group--link bg-linkedin" appRipple>
           <box-icon type="logo" name="linkedin"></box-icon>
           <span class="link__text">Linkedin</span>
           <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>
         </a>
-        <a class="sidebar-mobile__wrapper--body__link-group--link bg-instagram" appRipple>
+        <a [routerLink]="[]" [queryParams]="{ redirect: 'https://instagram.com' }" class="sidebar-mobile__wrapper--body__link-group--link bg-instagram" appRipple>
           <box-icon type="logo" name="instagram"></box-icon>
           <span class="link__text">Instagram</span>
           <box-icon class="ml-auto" type="regular" name="chevron-right"></box-icon>

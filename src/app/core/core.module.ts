@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Observable, take } from 'rxjs';
 
+import { RouteService } from '@shared/services';
 import { SharedModule } from '@shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { AppInitializerService } from './initializer/app-initializer.service';
@@ -25,6 +26,7 @@ export function AppInitializerFactory(appInitializerService: AppInitializerServi
     LayoutComponent
   ],
   providers: [
+    RouteService,
     AppInitializerService,
     {
       provide: APP_INITIALIZER,

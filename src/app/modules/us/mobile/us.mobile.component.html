@@ -51,12 +51,12 @@
   <div class="us-mobile--team">
     <div class="us-mobile--team__wrapper">
       <h2 class="us-mobile--team__wrapper--title">
-        Conoce a todos los miembros de nuestro
+        {{ 'us.mobile.team.title' | translate | translateCut:0 }}
         <span class="marked">
-          equipo SAI
+          {{ 'us.mobile.team.title' | translate | translateCut:1 }}
         </span>
       </h2>
-      <article class="us-mobile--team__wrapper__member" *ngFor="let member of 'us.mobile.members' | translate">
+      <article class="us-mobile--team__wrapper__member" *ngFor="let member of 'us.mobile.team.members' | translate">
         <div class="us-mobile--team__wrapper__member__container">
           <div class="us-mobile--team__wrapper__member__container__photo">
             <img class="us-mobile--team__wrapper__member__container__photo--image" [src]="member.photo" [alt]="member.name">
