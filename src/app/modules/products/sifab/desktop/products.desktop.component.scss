@@ -1,12 +1,35 @@
-.module__section {
+.header__modules__section {
+    background: var(--primary-alt-color);
 
-   
+    .center__modules__section {
+        max-width: var(--max-width-desktop);
+        padding: 4em var(--desktop-content-padding);
+        margin: auto;
+
+
+        .title__modules__section {
+            color: #FFFF;
+            font-weight: 600;
+            font-size: 2em;
+            text-align: center;
+            margin: 0 0 9px 0;
+        }
+
+        .info__modules__section {
+            color: #FFFF;
+            text-align: center;
+            font-size: 1em;
+        }
+    }
+}
+
+.module__section {
 
     .center__module__section {
         max-width: var(--max-width-desktop);
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
         gap: 30px;
         padding: var(--desktop-content-padding);
 
