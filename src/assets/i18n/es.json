@@ -197,7 +197,7 @@
         }
       },
       {
-        "url": "https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/types-of-software.png",
+        "url": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg",
         "information": {
           "title": "Con SIFAB todo es más fácil",
           "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
@@ -205,10 +205,10 @@
       }
     ],
     "about": {
-      "title": "SAI",
+      "title": "¿Quien es sai soluciones informaticas?",
       "subtitle": "Soluciones informáticas",
       "content": "Somos una empresa con mas de 10 años de experiencia en el campo de la tecnología, nos enfocamos en ofrecer soluciones innovadoras y personalizadas que ayuden a mejorar la eficiencia y productividad de nuestros clientes.",
-      "button_learn_more": "Saber mas sobre SAI"
+      "button_learn_more": "Saber mas"
     },
     "products": {
       "title":"Soluciones de software para mejorar su negocio",
@@ -438,7 +438,11 @@
             "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
           }
         }
+      ],
+      "modules": [
+        
       ]
+      
     }
   },
   "us": {
