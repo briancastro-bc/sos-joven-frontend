@@ -329,38 +329,43 @@
         "members": [
           {
             "name": "Willington Rincón",
-            "role": "CEO",
-            "photo": "assets/images/user.svg"
+            "role": "Director Ejecutivo",
+            "photo": "assets/images/male-avatar.svg"
+          },
+          {
+            "name": "Carolina Almanza",
+            "role": "Coordinadora Administrativa",
+            "photo": "assets/images/female-avatar.svg"
           },
           {
             "name": "Sergio Ramírez",
-            "role": "Tech Lead",
-            "photo": "assets/images/user.svg"
+            "role": "Líder técnico",
+            "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Edwin Rozo",
-            "role": "Project Manager",
-            "photo": "assets/images/user.svg"
+            "role": "Responsable de proyecto",
+            "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "James Valencia",
-            "role": "Developer",
-            "photo": "assets/images/user.svg"
+            "role": "Desarrollador",
+            "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Andrés Sierra",
-            "role": "Developer",
-            "photo": "assets/images/user.svg"
+            "role": "Desarrollador",
+            "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Camilo Velásquez",
-            "role": "Developer",
-            "photo": "assets/images/user.svg"
+            "role": "Desarrollador",
+            "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Brian Castro",
-            "role": "Developer",
-            "photo": "assets/images/user.svg"
+            "role": "Desarrollador",
+            "photo": "assets/images/male-avatar.svg"
           }
         ]
       }
