@@ -25,7 +25,7 @@
 
 .module__section {
     
-    background: #FFFF;
+    background: var(--desktop-background-theme);
 
     .center__module__section {
         max-width: var(--max-width-desktop);

@@ -105,8 +105,10 @@
 }
 
 .securities__section {
-    background: #FFFF;
-    border-bottom: 1px solid var(--grey-10-color);
+    // background: #FFFF;
+    background: var(--desktop-background-theme);    
+
+    border-bottom: 1px solid var(--border-theme);
 
     .center__securities__section {
         max-width: var(--max-width-desktop);
@@ -149,7 +151,7 @@
                     font-size: 20px;
                     font-weight: 500;
 
-                    color: var(--grey-1-color)
+                    color: var(--secondary-text)
                 }
 
                 .security__body {
@@ -165,8 +167,10 @@
 }
 
 .products__section {
-    background: #FFFF;
-    border-bottom: 1px solid var(--grey-10-color);
+    // background: #FFFF;
+    background: var(--desktop-background-theme);    
+
+    border-bottom: 1px solid var(--border-theme);
 
     .center__products__section {
         max-width: var(--max-width-desktop);
@@ -180,7 +184,7 @@
                 font-size: 2em;
                 text-align: center;
                 font-weight: 600;
-                color: var(--grey-1-color);
+                color: var(--text-theme);
                 margin: 0 0 0 1em;
             }
 
@@ -199,7 +203,7 @@
             .product {
                 padding: 30px;
                 border-radius: 5px;
-                border: 1px solid var(--grey-10-color);
+                border: 1px solid var(--border-theme);
                 display: flex;
                 flex-direction: column;
                 gap: 35px;
@@ -210,7 +214,7 @@
 
                     .product__information {
                         .product__link {
-                            border-bottom: 1px solid var(--primary-alt-color);
+                            border-bottom: 1px solid var(--border-alt-theme);
                         }
                     }
                 }
@@ -232,7 +236,7 @@
                         font-size: 1.6em;
                         font-weight: 600;
                         margin: 0 0 10px 0;
-                        color: var(--grey-2-color);
+                        color: var(--text-theme);
                     }
 
                     .product__subtitle {
@@ -241,7 +245,7 @@
                         // max-width: 300px;
                         font-size: 19px;
                         font-weight: 500;
-                        color: var(--grey-3-color);
+                        color: var(--text-theme);
                     }
 
                     .product__about {
@@ -268,8 +272,7 @@
 }
 
 .clients__section {
-    background: #FFFF;
-    border-bottom: 1px solid var(--grey-10-color);
+    border-bottom: 1px solid var(--border-theme);
 
     .center__clients__section {
         max-width: var(--max-width-desktop);
@@ -290,7 +293,8 @@
 }
 
 .formcontact__section {
-    background: #fafafa;
+    // background: #fafafa;
+    background: var(--desktop-background-theme);
 
     .center__formcontact__section {
         max-width: var(--max-width-desktop);
@@ -352,7 +356,7 @@
 
                         .icon__contact {
                             font-size: 20px;
-                            color: var(--grey-1-color);
+                            color: var(--text-theme);
                         }
                         
                         
@@ -362,7 +366,7 @@
                         .title__contact {
                             font-size: 18px;
                             font-weight: 600;
-                            color: var(--grey-2-color);
+                            color: var(--desktop-text-theme);
                         }
 
                         .subtitle__contact {
@@ -410,7 +414,7 @@
                     .icon_network {
                         transition: all ease 200ms;
                         font-size: 20px;
-                        color: var(--grey-1-color);
+                        color: var(--text-theme);
                     }
                 }
             }
@@ -466,7 +470,7 @@
 
                     .title__formcontact {
                         font-size: 2em;
-                        color: var(--grey-1-color);
+                        color: var(--text-theme);
                         font-weight: 600;
                     }
 

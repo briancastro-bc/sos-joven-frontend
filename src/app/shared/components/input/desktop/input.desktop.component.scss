@@ -5,12 +5,13 @@
 
     .input {
         width: 100%;
-        border: 1px solid var(--grey-10-color);
+        border: 1px solid var(--border-theme);
         border-radius: 7px;
         padding: 10px 14px;
         outline: none;
         transition: all ease-in-out 050ms;
         font-size: 16.5px;
+        background: var(--desktop-background-theme);
 
         &::placeholder {
             color: var(--grey-7-color);
