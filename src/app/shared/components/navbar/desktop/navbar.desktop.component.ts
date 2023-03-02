@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '@app/shared/services';
+import { ThemeService, ThemeType } from '@app/shared/services';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-navbar-desktop',
@@ -7,8 +8,15 @@ import { ThemeService } from '@app/shared/services';
   styleUrls: ['./navbar.desktop.component.scss']
 })
 export class NavbarDesktopComponent {
+  readonly currentTheme$: Observable<ThemeType> = this.themeService.theme$;
+
   constructor(
-    public theme: ThemeService
+    public themeService: ThemeService
   ) {}
 
+  ngOnInit()  {
+    let theme = 
+    console.log(this.themeService.currentTheme == 'light-theme');
+    
+  }
 }
