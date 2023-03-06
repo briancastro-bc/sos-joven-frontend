@@ -21,7 +21,8 @@
           </p>
         </div>
         <div class="contact-mobile--information__card__header--illustration">
-          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="envelope" size="lg"></box-icon>
+          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="envelope"
+            size="lg"></box-icon>
         </div>
       </div>
       <div class="contact-mobile--information__card__content">
@@ -41,7 +42,8 @@
           </p>
         </div>
         <div class="contact-mobile--information__card__header--illustration">
-          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="map-alt" size="lg"></box-icon>
+          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="map-alt"
+            size="lg"></box-icon>
         </div>
       </div>
       <div class="contact-mobile--information__card__content">
@@ -61,7 +63,8 @@
           </p>
         </div>
         <div class="contact-mobile--information__card__header--illustration">
-          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="phone" size="lg"></box-icon>
+          <box-icon class="contact-mobile--information__card__header--illustration__icon" type="solid" name="phone"
+            size="lg"></box-icon>
         </div>
       </div>
       <div class="contact-mobile--information__card__content">
@@ -73,23 +76,33 @@
         </span>
       </div>
     </article>
-    <!-- <ul class="contact-mobile--information__list">
-      <li class="contact-mobile--information__list__element">
-        <div class="contact-mobile--information__list__element--icon">
-          <box-icon class="contact-mobile--information__list__element--icon__svg" type="solid" name="envelope"></box-icon>
-        </div>
-        <div class="contact-mobile--information__list__element--content">
-          <span class="contact-mobile--information__list__element--content__heading">
-            Correo electr&oacute;nico
-          </span>
-          <span class="contact-mobile--information__list__element--content__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, numquam!
-          </span>
-          <span class="contact-mobile--information__list__element--content__important">
-            contacto@equiposai.com
-          </span>
-        </div>
-      </li>
-    </ul> -->
+  </div>
+  <div class="contact-mobile--fill">
+    <h2 class="contact-mobile--fill__title">
+      Rellena el formulario y te responderemos en breve
+    </h2>
+    <form class="contact-mobile--fill__form" [formGroup]="formContact" #localForm="ngForm" (ngSubmit)="send()">
+      <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
+        formControlName="name"></app-input-desktop>
+      <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico"
+        [valid]=" email.errors?.['email']" error="Correo electronico invalido"
+        formControlName="email"></app-input-desktop>
+      <app-input-desktop type="text" placeholder="3166250909" label="Telefono (Opcional)" formControlName="phone"
+        [valid]="phone.errors?.['pattern']"
+        [error]="'Numero telefonico incorrecto'"></app-input-desktop>
+      <app-input-desktop type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
+        formControlName="message"></app-input-desktop>
+      <ngx-recaptcha2 #captchaEl [siteKey]="siteKey" formControlName="captcha">
+      </ngx-recaptcha2>
+      <button class="eq-btn eq-btn-md eq-btn-primary" [ngClass]="{'active': formContact.invalid}"
+        [disabled]="!formContact.valid">
+        <!-- <span>Enviar</span> -->
+        Enviar
+        <!-- <p *ngIf="!isLoading; else loader">Enviar mensaje</p>
+        <ng-template #loader>
+          <span class="loader"></span>
+        </ng-template> -->
+      </button>
+    </form>
   </div>
 </section>

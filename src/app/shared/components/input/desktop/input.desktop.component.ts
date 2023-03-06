@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { CommonModule } from '@angular/common';
 import { Component, forwardRef, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
@@ -25,12 +26,13 @@ export class InputDesktopComponent implements OnInit, ControlValueAccessor {
   @Input() error? = ''
   @Input() valid: ValidationErrors | null | undefined
 
-  onChange: any = () => {}
-	onTouched: any = () => {}
+  onChange: any = () => { /* Do something */ }
+	onTouched: any = () => { /* Do something */ }
 
 	ngOnInit(): void {
+    // Do something
   }
-  
+
 	writeValue(obj: any): void {
     this.input = obj
 	}
