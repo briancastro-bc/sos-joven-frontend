@@ -2,23 +2,32 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { DOCUMENT } from '@angular/common';
-import { Inject, Injectable, OnDestroy, SecurityContext } from '@angular/core';
+import { Inject, Injectable, OnDestroy, OnInit, SecurityContext } from '@angular/core';
 import { DomSanitizer, Title } from '@angular/platform-browser';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { map, switchMap, filter, Observable, Subscription, interval, take } from 'rxjs';
+import { map, switchMap, filter, Observable, Subscription, interval, take, BehaviorSubject, delay, tap } from 'rxjs';
 
 import { environment } from '@environment/environment';
 import { LoaderService } from '@shared/services';
 
+interface Redirection {
+  url: string;
+  isExternal?: boolean;
+}
+
 @Injectable({
-  providedIn: null
+  providedIn: null,
 })
 export class RouteService implements OnDestroy {
 
   // onLanguageChange!: Observable<unknown>;
 
   onLanguageChangeSubscription: Subscription | undefined;
+
+  private readonly redirectionSubject$: BehaviorSubject<Redirection> = new BehaviorSubject<Redirection>(null!);
+
+  readonly redirection$: Observable<Redirection> = this.redirectionSubject$.asObservable();
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -33,14 +42,33 @@ export class RouteService implements OnDestroy {
     // this.onLanguageChangeSubscription = this.onLanguageChange.subscribe(_ => {
     //   // Do something
     // });
-    this.activatedRoute.queryParams
-      .subscribe(queryParams => {
-        const { redirect, } = queryParams;
+    this.redirection$
+      .pipe(
+        filter((r) => r !== null || r  != null),
+        map(redirection => {
+          this.router.navigate([],
+            {
+              relativeTo: this.activatedRoute,
+              queryParams: { redirect: redirection.url, isExternal: redirection.isExternal }
+            });
+          return redirection;
+        }),
+        delay(2000),
+      ).subscribe(redirection => {
+        this.document.defaultView?.open(redirection.url, '_blank');
 
-        if (redirect) {
-          this.secureRedirection(redirect);
-          return;
-        }
+        this.router.navigate(
+          [],
+          {
+            queryParams: {
+              redirect: null,
+              isExternal: null,
+            },
+            queryParamsHandling: 'merge',
+          }
+        );
+
+        this.loaderService.hide();
       });
   }
 
@@ -58,7 +86,10 @@ export class RouteService implements OnDestroy {
       map((data) => data['title']),
       map((title) => this.translateService.get(title)),
     ).subscribe((title) => {
-      title.subscribe(newTitle => this.updateTitle(newTitle)).unsubscribe();
+      title
+        .pipe(take(1))
+        .subscribe(newTitle => this.updateTitle(newTitle))
+        .unsubscribe();
     });
   }
 
@@ -66,32 +97,10 @@ export class RouteService implements OnDestroy {
     this.title.setTitle(newTitle);
   }
 
-  secureRedirection(url: string): void {
+  secureRedirection(redirect: string): void {
     this.loaderService.show('fullscreen');
-    const sanitizedUrl = this.sanitizer.sanitize(SecurityContext.URL, url) as string;
 
-    interval(2000)
-      .pipe(take(1))
-      .subscribe(_ => {
-        const reForValidRedirects = /\.*\w+\./i as RegExp;
-        const matched: string = sanitizedUrl.match(reForValidRedirects)![0].split('.')[0];
-
-        const { secureRedirections, }: any = environment;
-
-        const matchedRedirect: string = secureRedirections[matched];
-        if (matchedRedirect) {
-          this.document.defaultView?.open(matchedRedirect, '_blank');
-        }
-
-        this.router.navigate([], {
-          queryParams: {
-            redirect: null
-          },
-          queryParamsHandling: 'merge',
-        });
-
-        this.loaderService.hide();
-      });
+    this.redirect(redirect);
   }
 
   ngOnDestroy(): void {
@@ -99,5 +108,25 @@ export class RouteService implements OnDestroy {
       this.onLanguageChangeSubscription.unsubscribe();
       this.onLanguageChangeSubscription = undefined;
     }
+  }
+
+  private redirect(url: string): void {
+    url = url.toLowerCase();
+
+    const { secureRedirections, }: any = environment;
+
+    const isExternalUrl = this.isUrl(url);
+    const sanitizedRedirectionUrl: string = isExternalUrl ? this.sanitizeUrl(url) : secureRedirections[url];
+
+    this.redirectionSubject$.next({ url: sanitizedRedirectionUrl, isExternal: isExternalUrl, });
+  }
+
+  private sanitizeUrl(url: string): string {
+    return this.sanitizer.sanitize(SecurityContext.URL, url) as string;
+  }
+
+  private isUrl(value: string): boolean {
+    const urlValidatorRegExp = new RegExp('(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?');
+    return urlValidatorRegExp.test(value);
   }
 }

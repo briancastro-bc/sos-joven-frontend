@@ -9,7 +9,7 @@ import {
   trigger
 } from '@angular/animations';
 
-import { DisplaySidebarService, ThemeService, ThemeType } from '@shared/services';
+import { DisplaySidebarService, RouteService, ThemeService, ThemeType } from '@shared/services';
 import { Observable, Subscription } from 'rxjs';
 
 @Component({
@@ -51,6 +51,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
   constructor(
     @Inject(DOCUMENT) private readonly document: Document,
     private readonly renderer2: Renderer2,
+    private readonly routeService: RouteService,
     private readonly themeService: ThemeService,
     private readonly displaySidebarService: DisplaySidebarService,
   ) {}
@@ -64,6 +65,10 @@ export class SidebarComponent implements OnInit, OnDestroy {
         this.isDisplayedSidebar = 'false';
       }
     });
+  }
+
+  redirect(url: string): void {
+    this.routeService.secureRedirection(url);
   }
 
   displaySidebar(): void {

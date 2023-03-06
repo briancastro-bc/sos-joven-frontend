@@ -3,7 +3,7 @@
     "home": "SAI Soluciones Informáticas",
     "us": "Quienes Somos",
     "services": "Nuestros servicios",
-    "sainonline": "SAI en línea",
+    "saionline": "SAI en línea",
     "products": "Nuestros productos",
     "contact": "Contáctanos",
     "not_found": "404"
@@ -268,8 +268,8 @@
   "us": {
     "mobile": {
       "description": {
-        "subtitle": "Te contamos más acerca de...",
-        "title": "¿Quienes somos? | SAI Soluciones Informáticas",
+        "subtitle": "Nos gustaría presentarnos",
+        "title": "Darte a conocer quienes somos | SAI Soluciones Informáticas",
         "explanation": "Somos una empresa legalmente constituida ante la cámara y comercio de la ciudad de Armenia, Quindío. Nacimos el 13 de mayo de 2011. Nuestra actividad económica se centra en el desarrollo de soluciones informáticas en lo cuál llevamos más de 10 años de experiencia en la industria."
       },
       "principles": [
@@ -329,42 +329,47 @@
         "members": [
           {
             "name": "Willington Rincón",
-            "role": "Director Ejecutivo",
+            "role": "CEO",
             "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Carolina Almanza",
-            "role": "Coordinadora Administrativa",
+            "role": "COO",
             "photo": "assets/images/female-avatar.svg"
           },
           {
             "name": "Sergio Ramírez",
-            "role": "Líder técnico",
+            "role": "Teach Lead",
             "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Edwin Rozo",
-            "role": "Responsable de proyecto",
+            "role": "Project Manager",
             "photo": "assets/images/male-avatar.svg"
           },
           {
+            "name": "Maria José Sánchez",
+            "role": "Graphic Designer",
+            "photo": "assets/images/female-avatar.svg"
+          },
+          {
             "name": "James Valencia",
-            "role": "Desarrollador",
+            "role": "Developer",
             "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Andrés Sierra",
-            "role": "Desarrollador",
+            "role": "Developer",
             "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Camilo Velásquez",
-            "role": "Desarrollador",
+            "role": "Developer",
             "photo": "assets/images/male-avatar.svg"
           },
           {
             "name": "Brian Castro",
-            "role": "Desarrollador",
+            "role": "Developer",
             "photo": "assets/images/male-avatar.svg"
           }
         ]

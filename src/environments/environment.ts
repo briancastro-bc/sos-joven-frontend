@@ -6,5 +6,6 @@ export const environment = {
     instagram: 'https://www.instagram.com/equiposai/',
     linkedin: 'https://www.linkedin.com/company/sai-soluciones-informaticas/',
     twitter: 'https://www.twitter.com/equiposai',
+    youtube: 'https://www.youtube.com/channel/UCq3ebveDQ1P9ui9pyOVGzUA',
   }
 };
