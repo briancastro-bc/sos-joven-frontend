@@ -74,20 +74,71 @@
             .app_nav {
                 display: flex;
                 gap: 25px;
-                position: relative;
+                // position: relative;
 
                 .link {
-                    &:hover {
+                    position: relative;
+                    color: var(--desktop-text-alt-theme);
+                    padding: 30px 0;
 
-                        // cursor: pointer;
+                    &:hover {
+                        cursor: pointer;
                         // background: #000;
-                        .submenu {
+                        .sub__route {
                             display: block;
+                        }
+
+                        .icon__link__subroute {
+                            transform: rotate(0deg);
                         }
                     }
 
-                    color: var(--desktop-text-alt-theme);
-                    padding: 30px 0;
+                    .icon__link__subroute {
+                        transition: all ease 200ms;
+                        font-size: 12px;
+                        margin: 0 0 0 5px;
+                        transform: rotate(180deg);
+                    }
+           
+                    .sub__route {
+                        animation: translate-opacity-top 200ms;
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: -20px;
+                        z-index: 100;
+                        background: var(--desktop-background-theme);
+                        padding: 10px 0 10px 0;
+
+                        gap: 0px;
+                        border: 1px solid var(--border-theme);
+
+                        .subroute__option {
+                            display: flex;
+                            gap: 15px;
+                            min-width: 300px;
+                            padding: 10px 20px 10px 20px;
+
+                            &:hover {
+                                background: var(--background-alt-theme);
+                            }
+
+                            .subroute__icon {
+                                color: var(--primary-alt-color);
+                                font-size: 23px;
+                            }
+
+                            .subroute__title {
+                                font-weight: 600;
+                                color: var(--desktop-text-theme);
+                            }
+
+                            .subroute__info {
+                                font-size: 13px;
+                                color: var(--desktop-text-alt-theme);
+                            }
+                        }
+                    }
 
                 }
 
@@ -106,6 +157,10 @@
                 .dark__mode__button {
                     display: flex;
                     align-items: center;
+
+                    .icon__theme {
+                        fill: var(--text-alt-theme);
+                    }
                 }
             }
         }

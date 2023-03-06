@@ -13,10 +13,8 @@ export class NavbarDesktopComponent {
   constructor(
     public themeService: ThemeService
   ) {}
-
+ 
   ngOnInit()  {
-    let theme = 
-    console.log(this.themeService.currentTheme == 'light-theme');
     
   }
 }

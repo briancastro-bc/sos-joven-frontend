@@ -5,7 +5,6 @@
             <p class="text-xs phone">{{ 'home.nav.nav_contact.phones' | translate }}</p>
         </div>
     </div>
-
     <header class="header">
         <div class="center_header">
             <div class="logo">
@@ -17,34 +16,47 @@
                     </div>
                 </div>
             </div>
-
             <nav class="app_nav">
                 <a class="link" *ngFor=" let link of 'home.nav.links' | translate" [routerLink]="link.to"
-                    [routerLinkActive]="'active'">{{link.route}}</a>
-
+                    [routerLinkActive]="'active'">
+                    <p>
+                        {{link.route}}
+                        <i *ngIf="link.sub_routes" class="fa-solid fa-chevron-down icon__link__subroute"></i>
+                    </p>
+                    <ng-container *ngIf="link.sub_routes">
+                        <div class="sub__route">
+                            <a [routerLink]="subRoute.to" class="subroute__option"
+                                *ngFor="let subRoute of link.sub_routes">
+                                <i *ngIf="link.sub_routes" [ngClass]="subRoute.fontawesome_icon"
+                                    class="subroute__icon"></i>
+                                <div>
+                                    <p class="subroute__title">{{subRoute.route}}</p>
+                                    <p class="subroute__info">{{subRoute.info}}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </ng-container>
+                </a>
                 <div class="saienlinea link">
                     <a [routerLink]="'saienlinea'" [routerLinkActive]="'active'">Sai en linea</a>
                 </div>
-
                 <div class="dark__mode__button" (click)="themeService.toggleTheme()">
-                    
                     <ng-container [ngSwitch]="currentTheme$ | async">
                         <ng-container *ngSwitchCase="'light-theme'">
-                          <box-icon class="eq-icon-button" type="solid" name="moon"></box-icon>
+                            <box-icon class="eq-icon-button icon__theme" type="solid" name="moon"></box-icon>
                         </ng-container>
                         <ng-container *ngSwitchCase="'dark-theme'">
-                          <box-icon class="eq-icon-button" type="solid" name="sun"></box-icon>
+                            <box-icon class="eq-icon-button icon__theme" type="solid" name="sun"></box-icon>
                         </ng-container>
-                      </ng-container>
+                    </ng-container>
                 </div>
             </nav>
         </div>
     </header>
-
-    <a href="https://api.whatsapp.com/send?phone=3122890738&text=Hola,%20Quisiera%20cotizar%20un%20producto" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=3122890738&text=Hola,%20Quisiera%20cotizar%20un%20producto"
+        target="_blank">
         <div class="whatsapp__button">
             <i class="fa-brands fa-whatsapp whatsapp__icon"></i>
-            <!-- <i class="fa-brands fa-square-whatsapp whatsapp__icon"></i> -->
         </div>
     </a>
 </div>

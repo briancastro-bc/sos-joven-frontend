@@ -93,3 +93,15 @@
 		width: 100%
 	}
 }
+
+@keyframes translate-opacity-top {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: all ease-in 300ms;
+	}   
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	} 
+}

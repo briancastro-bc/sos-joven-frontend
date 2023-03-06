@@ -121,52 +121,28 @@
         },
         {
           "to": "us",
-          "route": "Quienes somos",
-          "subtitle": "Sobre nosotros",
-          "sub_routes": [
-            {
-              "to": "about",
-              "route": "Mision y vision"
-            },
-            {
-              "to": "about",
-              "route": "Descripcion"
-            },
-            {
-              "to": "about",
-              "route": "Talento humano"
-            },
-            {
-              "to": "about",
-              "route": "Politicas"
-            }
-          ]
+          "route": "Quienes somos"
         },
         {
           "to": "services",
-          "route": "Servicios",
-          "sub_routes": [
-            {
-              "to": "about",
-              "route": "Mision y vision"
-            },
-            {
-              "to": "about",
-              "route": "Descripcion"
-            },
-            {
-              "to": "about",
-              "route": "Talento humano"
-            },
-            {
-              "to": "about",
-              "route": "Politicas"
-            }
-          ]
+          "route": "Servicios"
         },
         {
-          "to": "products/sifab",
-          "route": "Productos"
+          "route": "Productos",
+          "sub_routes": [
+            {
+              "to" : "products/sifab",
+              "route" : "SIFAB",
+              "fontawesome_icon":"fa-solid fa-display",
+              "info":"Lorem ipsum dolor sit, amet consectetur "
+            },
+            {
+              "to" : "products/sifapp",
+              "route" : "SIFAPP",
+              "fontawesome_icon":"fa-regular fa-window-maximize",
+              "info":"Lorem ipsum dolor sit, amet consectetur "
+            }
+          ]
         },
         {
           "to": "clients",
