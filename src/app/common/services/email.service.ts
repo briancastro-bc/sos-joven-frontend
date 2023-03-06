@@ -11,7 +11,7 @@ export class EmailService {
 
   constructor(
     private readonly http: HttpClient
-  ) {}
+  ) { }
 
   data: EmailInterface = {
     service_id: keysEmailjsEnviroment.service_id,
@@ -20,8 +20,8 @@ export class EmailService {
     template_params: {}
   };
 
-  send(formData: EmailTemplate): Observable<HttpResponse<any>> {
+  send(formData: EmailTemplate): Observable<string> {
     this.data.template_params = formData;
-    return this.http.post<HttpResponse<any>>('https://api.emailjs.com/api/v1.0/email/send', this.data);
+    return this.http.post('https://api.emailjs.com/api/v1.0/email/send', this.data, { responseType: 'text' });
   }
 }

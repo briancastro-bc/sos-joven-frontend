@@ -47,7 +47,10 @@
   --max-width-desktop: #{$max-width-desktop};
   --desktop-content-padding: #{$desktop-content-padding};
 
-  --carrousel-lenght: 7;
+  --banner-velocity: ;
+  
+  --carrousel-lenght: 0;
+  --carrousel-velocity: 0ms;
 }
 
 * {
@@ -71,6 +74,12 @@ body.light-theme {
   --background-alt-theme: var(--light-alt-color);
   --against-theme: var(--dark-color);
   --againts-alt-theme: var(--dark-alt-color);
+
+  // Desktop
+  --logo-theme: var(--primary-alt-color);
+  --desktop-text-theme: var(--grey-1-color);
+  --desktop-text-alt-theme: var(--grey-4-color);
+  --desktop-background-theme: #FFFF;
 }
 
 body.dark-theme {
@@ -82,4 +91,15 @@ body.dark-theme {
   --background-alt-theme: var(--dark-alt-color);
   --against-theme: var(--light-color);
   --againts-alt-theme: var(--light-alt-color);
+
+  // Desktop
+  --logo-theme: var(--primary-alt-color);
+  --desktop-text-theme: #FFFF;
+  --desktop-text-alt-theme: var(--grey-4-color);
+  --desktop-background-theme: var(--dark-color);
+}
+
+re-captcha.is-invalid > div {
+  border: 1px solid #dc3545 !important;
+  border-radius: 0.2rem;
 }

@@ -1,0 +1,17 @@
+<div class="header__modules__section">
+    <div class="center__modules__section">
+        <h1 class="title__modules__section">SIFAB, Software Integrado Financiero y Asistencial</h1>
+        <p class="info__modules__section">Software clinico</p>
+    </div>
+</div>
+
+<section class="module__section">
+    <div class="center__module__section">
+
+        <app-business-module-card *ngFor="let element of 'products.sifab.modules' | translate" title={{element.title}}>
+            <p class="module__info" content>{{element.body}}</p>
+            <i image class="card__icon" ngClass={{element.fontawesome_icon}}></i>
+        </app-business-module-card>
+
+    </div>
+</section>

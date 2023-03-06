@@ -61,3 +61,47 @@
     opacity: 0;
   }
 }
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+		transition: all ease-in 300ms;
+	}   
+	to {
+		opacity: 1;
+	} 
+}
+
+@keyframes translate-opacity {
+	from {
+		opacity: 0;
+		transform: translateY(70px);
+		transition: all ease-in 300ms;
+	}   
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	} 
+}
+
+@keyframes temp {
+	0% {
+		width: 0%
+	}
+
+	100% {
+		width: 100%
+	}
+}
+
+@keyframes translate-opacity-top {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+		transition: all ease-in 300ms;
+	}   
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	} 
+}

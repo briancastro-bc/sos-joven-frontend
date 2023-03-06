@@ -13,7 +13,7 @@ import { SidebarDirective } from '@shared/components/sidebar/sidebar.directive';
 
     <app-navbar-mobile *ngIf="isMobile$ | async"></app-navbar-mobile>
     <app-navbar-desktop *ngIf="!(isMobile$ | async)"></app-navbar-desktop>
-
+    
     <main #main>
       <router-outlet></router-outlet>
     </main>

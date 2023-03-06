@@ -1,10 +1,12 @@
 .nav_container {
     margin: auto;
-    border-bottom: 1px solid var(--grey-9-color);
-    background: #FFFF;
+    border-bottom: 1px solid var(--border-theme);   
+    // background: #FFFF;
+    background: var(--desktop-background-theme);    
 
     .before_header {
-        background: #DCEAFC;
+        // background: #DCEAFC;
+        background: var(--background-alt-theme);
 
         .center_information {
             max-width: var(--max-width-desktop);
@@ -18,16 +20,17 @@
 
             .location {
                 color: var(--grey-4-color);
+                font-weight: 500;
             }
 
             .phone {
                 color: var(--grey-4-color);
+                font-weight: 500;
             }
         }
     }
 
     .header {
-
         .center_header {
             max-width: var(--max-width-desktop);
             margin: auto;
@@ -45,7 +48,7 @@
                     justify-content: center;
                     align-items: center;
                     gap: 6px;
-                    color: var(--primary-alt-color);
+                    color: var(--logo-theme);
 
                     .sai_brand {
                         font-size: 2.5em;
@@ -71,28 +74,77 @@
             .app_nav {
                 display: flex;
                 gap: 25px;
-                padding: 30px 0;
-                position: relative;
+                // position: relative;
 
                 .link {
+                    position: relative;
+                    color: var(--desktop-text-alt-theme);
+                    padding: 30px 0;
+
                     &:hover {
-                        // cursor: pointer;
+                        cursor: pointer;
                         // background: #000;
-                        .submenu {
+                        .sub__route {
                             display: block;
+                        }
+
+                        .icon__link__subroute {
+                            transform: rotate(0deg);
                         }
                     }
 
-                    a {
-                        color: var(--grey-6-color);
-                        padding: 30px 0;
+                    .icon__link__subroute {
+                        transition: all ease 200ms;
+                        font-size: 12px;
+                        margin: 0 0 0 5px;
+                        transform: rotate(180deg);
+                    }
+           
+                    .sub__route {
+                        animation: translate-opacity-top 200ms;
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: -20px;
+                        z-index: 100;
+                        background: var(--desktop-background-theme);
+                        padding: 10px 0 10px 0;
+
+                        gap: 0px;
+                        border: 1px solid var(--border-theme);
+
+                        .subroute__option {
+                            display: flex;
+                            gap: 15px;
+                            min-width: 300px;
+                            padding: 10px 20px 10px 20px;
+
+                            &:hover {
+                                background: var(--background-alt-theme);
+                            }
+
+                            .subroute__icon {
+                                color: var(--primary-alt-color);
+                                font-size: 23px;
+                            }
+
+                            .subroute__title {
+                                font-weight: 600;
+                                color: var(--desktop-text-theme);
+                            }
+
+                            .subroute__info {
+                                font-size: 13px;
+                                color: var(--desktop-text-alt-theme);
+                            }
+                        }
                     }
 
-                    .active {
-                        border-bottom: 3px solid var(--primary-alt-color);
-                        border-bottom: -3px;
-                        color: var(--grey-2-color);
-                    }
+                }
+
+                .active {
+                    border-bottom: 3px solid var(--primary-alt-color);
+                    color: var(--desktop-text-theme);
                 }
 
                 .saienlinea {
@@ -101,7 +153,39 @@
                         font-weight: 700;
                     }
                 }
+
+                .dark__mode__button {
+                    display: flex;
+                    align-items: center;
+
+                    .icon__theme {
+                        fill: var(--text-alt-theme);
+                    }
+                }
             }
+        }
+    }
+
+    .whatsapp__button {
+        position: fixed;
+        bottom: 3em;
+        right: 3em;
+        z-index: 4;
+        background: #43c754;
+        padding: 8px 10px;
+        // border-radius: 7px;
+        border-radius: 50%;
+        transition: all ease-in 050ms;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+        .whatsapp__icon {
+            color: #FFFF;
+            font-size: 2.4em;
+            overflow: hidden;
         }
     }
 }

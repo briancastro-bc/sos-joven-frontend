@@ -1,203 +1,269 @@
-<app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="5000"></app-banner-desktop>
+<app-banner-desktop [information]=" 'home.banner' | translate " [velocity]="7000"></app-banner-desktop>
 
 <section class="about__section">
-    <div class="center_about_section">
-        <div class="about__content">
-            <div>
-                <div class="__content">
-                    <h1 class="about__title">{{ 'home.about.title' | translate }}</h1>
-                    <p class="about__subtitle">{{ 'home.about.subtitle' | translate }}</p>
-                </div>
-                <p class="about__sai">{{ 'home.about.content' | translate }}</p>
-            </div>
+  <div class="center_about_section">
 
-            <a class="button_learn__more" [routerLink]="'/about'">
-                <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
-                <i class="fa solid fa-arrow-right arrow__icon"></i>
-            </a>
+    <div class="about__content">
+      <div>
+        <div class="__content">
+          <h1 class="about__title">{{ 'home.about.title' | translate }}</h1>
+          <!-- <p class="about__subtitle">{{ 'home.about.subtitle' | translate }}</p> -->
         </div>
+        <p class="about__sai">{{ 'home.about.content' | translate }}</p>
+      </div>
 
-      <a class="button_learn__more" [routerLink]="'/about'">
+      <a class="button_learn__more" [routerLink]="'/us'">
         <p class="text__learn">{{ 'home.about.button_learn_more' | translate }}</p>
         <i class="fa solid fa-arrow-right arrow__icon"></i>
       </a>
     </div>
 
-    <div class="about__ilustration">ashd</div>
-</section>
-
-<section class="products__section">
-  <div class="center__products__section">
-    <div class="header__products">
-      <p class="title__products">{{'home.products.title' | translate }}</p>
-    </div>
-    <div class="body__products">
-
-            <div class="product">
-                <div>
-                    <i class="fa-solid fa-desktop product__icon"></i>
-                </div>
-                <div class="product__information">
-                    <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
-                    <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }}</p>
-                    <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
-                </div>
-            </div>
-
-          <a [routerLink]="'/product/sifab'">
-            <div class="product__link">
-              <p>
-                Mas sobre {{'home.products.SIFAB.title' | translate }}
-              </p>
-            </div>
-          </a>
-        </div>
+    <div class="about__ilustration">
+      <div class="circle__image">
+        <img src="https://www.forbes.com/advisor/wp-content/uploads/2022/06/software_engineer.jpeg-900x510.jpg" alt="">
       </div>
-      <div>
-        <div>
-          <div>
-            <div>
-            <div class="product">
-                <div>
-                    <i class="fa-solid fa-window-maximize product__icon"></i>
-                </div>
-                <div class="product__information">
-                    <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
-                    <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
-                    <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
-                </div>
-            </div>
 
-
-          <a [routerLink]="'/product/sifapp'">
-            <div class="product__link">
-              <p>
-                Mas sobre {{'home.products.SIFAPP.title' | translate }}
-              </p>
-            </div>
-          </a>
-        </div>
+      <div class="circle__image ">
+        <img src="https://img.freepik.com/free-photo/coding-man_1098-18084.jpg" alt="">
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="clients__section">
-  <div class="center__clients__section">
-    <div class="header__clients__section">
-      <p class="title__clients">{{ 'home.clients.title' | translate }}</p>
+      <div class="circle__image">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/how_to_become_a_software_engineer.jpg"
+          alt="">
+      </div>
+
+      <!-- <div class="circle__image">
+        <img src="https://res.cloudinary.com/highereducation/images/f_auto,q_auto/g_center,c_fill,fl_lossy,q_auto:best,w_448,h_382/v1662131318/ComputerScience.org/GettyImages-1180183927_73387d16/GettyImages-1180183927_73387d16.jpg?_i=AA" alt="">
+      </div> -->
     </div>
   </div>
 </section>
 
 <section class="securities__section">
-    <div class="center__securities__section">
-        <div class="header__securities">
-            <p class="title__header_securities">{{'home.securities.title' | translate }}</p>
-        </div>
-        <div class="body__securities">
-
-            <div class="security">
-                <i class="fa-solid fa-hands-holding-child security__icon"></i>
-                <p class="security__title">{{'home.securities.responsability.title' | translate }}</p>
-                <p class="security__body">{{'home.securities.responsability.body' | translate }}</p>
-            </div>
-
-
-            <div class="security">
-                <i class="fa-solid fa-handshake-angle security__icon"></i>
-                <!-- <i class="fa-solid fa-handshake security__icon"></i> -->
-                <p class="security__title">{{'home.securities.honestly.title' | translate }}</p>
-                <p class="security__body">{{'home.securities.honestly.body' | translate }}</p>
-            </div>
-
-
-            <div class="security">
-                <i class="fa-solid fa-stamp security__icon"></i>
-                <p class="security__title">{{'home.securities.cuality.title' | translate }}</p>
-                <p class="security__body">{{'home.securities.cuality.body' | translate }}</p>
-            </div>
-
-
-            <div class="security">
-                <!-- <i class="fa-solid fa-hands-holding-diamond security__icon"></i> -->
-                <i class="fa-solid fa-hands-holding-circle security__icon"></i>
-                <p class="security__title">{{'home.securities.competitiveness.title' | translate }}</p>
-                <p class="security__body">{{'home.securities.competitiveness.body' | translate }}</p>
-            </div>
-
-        </div>
+  <div class="center__securities__section">
+    <div class="header__securities">
+      <!-- <p class="title__header_securities">{{'home.securities.title' | translate }}</p> -->
     </div>
+    <div class="body__securities">
+
+      <div class="security">
+        <i class="fa-solid fa-hands-holding-child security__icon"></i>
+        <p class="security__title">{{'home.securities.responsability.title' | translate }}</p>
+        <p class="security__body">{{'home.securities.responsability.body' | translate }}</p>
+      </div>
+
+
+      <div class="security">
+        <i class="fa-solid fa-handshake-angle security__icon"></i>
+        <!-- <i class="fa-solid fa-handshake security__icon"></i> -->
+        <p class="security__title">{{'home.securities.honestly.title' | translate }}</p>
+        <p class="security__body">{{'home.securities.honestly.body' | translate }}</p>
+      </div>
+
+
+      <div class="security">
+        <i class="fa-solid fa-stamp security__icon"></i>
+        <p class="security__title">{{'home.securities.cuality.title' | translate }}</p>
+        <p class="security__body">{{'home.securities.cuality.body' | translate }}</p>
+      </div>
+
+
+      <div class="security">
+        <!-- <i class="fa-solid fa-hands-holding-diamond security__icon"></i> -->
+        <i class="fa-solid fa-hands-holding-circle security__icon"></i>
+        <p class="security__title">{{'home.securities.competitiveness.title' | translate }}</p>
+        <p class="security__body">{{'home.securities.competitiveness.body' | translate }}</p>
+      </div>
+
+    </div>
+  </div>
 
 </section>
 
-<section class="module-display__section">
-  <app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-    <img image src="https://img.freepik.com/foto-gratis/perrito-joven-posando-alegre_155003-28765.jpg" alt="">
-    <p content> Hola mundo </p>
-  </app-business-module-card>
-<app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-  </app-business-module-card>
-<app-business-module-card title="Salud Ocupacional" content="Dolor atque itaque earum quisquam vel Reiciendis minima autem voluptatum temporibus minus Libero rem tempore commodi quisquam optio officia? Incidunt deleniti aspernatur nihil inventore quasi Nam praesentium nobis quasi repudiandae">
-  </app-business-module-card>
+<section class="products__section">
+  <div class="center__products__section">
+
+    <div class="header__products">
+      <p class="title__products">{{'home.products.title' | translate }}</p>
+      <p class="subtitle__products">{{'home.products.subtitle' | translate }}</p>
+    </div>
+
+    <div class="body__products">
+
+      <a [routerLink]="'/products/sifab'">
+        <div class="product">
+          <div>
+            <i class="fa-solid fa-display product__icon"></i>
+          </div>
+          <div class="product__information">
+
+            <p class="product__title">{{'home.products.SIFAB.title' | translate }}</p>
+            <p class="product__subtitle">{{'home.products.SIFAB.subtitle' | translate }} </p>
+            <p class="product__about">{{'home.products.SIFAB.about' | translate }}</p>
+            <div class="product__link">
+              <p>
+                {{'home.products.SIFAB.learn_more' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a [routerLink]="'/products/sifapp'">
+        <div class="product">
+          <div>
+            <i class="fa-regular fa-window-maximize product__icon"></i>
+          </div>
+          <div class="product__information">
+
+            <p class="product__title">{{'home.products.SIFAPP.title' | translate }}</p>
+            <p class="product__subtitle">{{'home.products.SIFAPP.subtitle' | translate }}</p>
+            <p class="product__about">{{'home.products.SIFAPP.about' | translate }}</p>
+            <div class="product__link">
+              <p>
+                {{'home.products.SIFAPP.learn_more' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <app-carrowsel-desktop [images]="'home.clients.images' | translate" [velocity]="350000"></app-carrowsel-desktop>
+  </div>
 </section>
 
 <section class="formcontact__section">
-    <div class="center__formcontact__section">
-        <div class="contactform__section">
-            <div class="header__formcontact">
-                <h1 class="title__formcontact">Contactanos</h1>
-                <p class="subtitle__formcontact">Has realidad tu proyecto</p>
-            </div>
-            <div class="body__form__contact">
-                <form class="contact__form" [formGroup]="contactForm" (ngSubmit)="sendEmail(contactForm.value)">
+  <div class="center__formcontact__section">
 
-                    <app-input-desktop type="text" placeholder="Nombre" label="Nombre"
-                    formControlName="name"></app-input-desktop>
+    <div class="sidebar__contact">
 
-                    <app-input-desktop type="text" placeholder="Apellido" label="Apellido"
-                        formControlName="name"></app-input-desktop>
+      <div class="header__sidebar">
 
-                    <app-input-desktop class="full" type="text" placeholder="Correo" label="Correo electronico"
-                        formControlName="email"></app-input-desktop>
-
-                    <app-input-desktop class="full" type="text" placeholder="Telefofno" label="Telefono (Opcional)"
-                        formControlName="phone"></app-input-desktop>
-
-                    <app-input-desktop class="full" type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
-                        formControlName="message"></app-input-desktop>
-
-                    <button class="full formcontact__button">Enviar mensaje</button>
-                </form>
-                <div *ngIf="formMessage != ''">
-                    <p class="message__form">{{formMessage}}</p>
-                </div>
-            </div>
+        <div class="sai_logo">
+          <h1 class="sai_brand">SAI</h1>
+          <div class="sai_desc">
+            <p class="sai_title">Solciones</p>
+            <p class="sai_subtitle">Informaticas</p>
+          </div>
         </div>
-        <div class="location__map">
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=Sai Soluciones Y Asesorias Informáticas, Armenia, Quindío&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://2yu.co">2yu</a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 100%;
-                            width: 100%;
-                        }
-                    </style><a href="https://embedgooglemap.2yu.co/">html embed google map</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 100%;
-                            width: 100%;
-                        }
-                    </style>
-                </div>
-            </div>
+
+        <div class="contact__card">
+          <div class="icon__contact__card">
+            <i class="fa-regular fa-comments icon__contact"></i>
+          </div>
+          <div class="body__contact__card">
+            <p class="title__contact">Contacto</p>
+            <p class="subtitle__contact">Equipo sai esta aqui para ayudarte</p>
+            <p class="info__contact">contacto@equiposai.com</p>
+          </div>
         </div>
+
+        <div class="contact__card">
+          <div class="icon__contact__card">
+            <i class="fa-regular fa-map icon__contact"></i>
+          </div>
+          <div class="body__contact__card">
+            <p class="title__contact">Oficina</p>
+            <p class="subtitle__contact">Armenia, Quindio, Colombia</p>
+            <a class="info__contact link"
+              href="https://www.google.com/maps/place/Cra.+21a+%238-4,+Armenia,+Quind%C3%ADo/@4.5428211,-75.6711813,17z/data=!4m5!3m4!1s0x8e38f500f3fd0e3b:0x2c805e67c5e32586!8m2!3d4.5428641!4d-75.6706123?hl=es"
+              target="_blank">Ir a google maps</a>
+          </div>
+        </div>
+        <div class="contact__card">
+          <div class="icon__contact__card">
+            <i class="fa-solid fa-phone icon__contact"></i>
+            <!-- <i class="fa-regular fa-comments icon__contact"></i> -->
+          </div>
+          <div class="body__contact__card">
+            <p class="title__contact">Telefono</p>
+            <p class="subtitle__contact">Disponible de 8am a 6pm.</p>
+            <p class="info__contact">+57 3122890738, 3148252084, 3147775180</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social__networks">
+        <a href="https://www.facebook.com/saisolucionesinformaticas/?locale=es_LA" target="_blank">
+          <div class="container__icon__network">
+            <i class="fa-brands fa-facebook icon_network"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.instagram.com/equiposai/" target="_blank">
+
+          <div class="container__icon__network">
+            <i class="fa-brands fa-instagram icon_network"></i>
+          </div>
+        </a>
+        
+        <a href="https://www.youtube.com/channel/UCq3ebveDQ1P9ui9pyOVGzUA" target="_blank">
+          <div class="container__icon__network">
+            <i class="fa-brands fa-youtube icon_network"></i>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/company/sai-soluciones-informaticas/" target="_blank">
+          <div class="container__icon__network">
+            <i class="fa-brands fa-linkedin icon_network"></i>
+          </div>
+        </a>
+      </div>
+
     </div>
+
+    <div class="contact__form">
+      <ng-template #send>
+        <div class="check_send">
+          <div class="message__check">
+            <h1 class="title">Mensaje enviado</h1>
+            <p class="message">Gracias por contactarnos, pronto nos comunicaremos contigo</p>
+            <i class="fa-regular fa-circle-check icon_check"></i>
+            <!-- <i class="fa-solid fa-circle-check icon_check"></i> -->
+          </div>
+        </div>
+      </ng-template>
+
+      <div class="contactform__section" *ngIf="!isSend; else send">
+        <div class="header__formcontact">
+          <h1 class="title__formcontact">¡Contáctanos y deja tus comentarios!</h1>
+          <!-- <p class="subtitle__formcontact">Encuentra la solución de software perfecta para tu negocio</p> -->
+        </div>
+
+        <div class="body__form__contact">
+
+          <form class="contact__form" [formGroup]="formContact" #localForm="ngForm"
+            (ngSubmit)="sendEmail(formContact.value)">
+            <app-input-desktop type="text" placeholder="Escribe tu nombre completo" label="Nombre"
+              formControlName="name"></app-input-desktop>
+
+            <app-input-desktop type="text" placeholder="ejemplo@ejemplo.com" label="Correo electronico"
+              [valid]=" formContact.get('email')?.errors?.['email']" error="Correo electronico invalido"
+              formControlName="email"></app-input-desktop>
+
+            <app-input-desktop type="text" placeholder="3166250909" label="Telefono (Opcional)" formControlName="phone"
+              [valid]="formContact.get('phone')?.errors?.['pattern']"
+              [error]="'Numero telefonico incorrecto'"></app-input-desktop>
+
+            <app-input-desktop type="text" placeholder="Dejanos un mensaje..." label="Mensaje"
+              formControlName="message"></app-input-desktop>
+
+            <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="captcha">
+            </ngx-recaptcha2>
+
+            <button class="full formcontact__button" [ngClass]="{'active': formContact.invalid}"
+              [disabled]="!formContact.valid">
+              <p *ngIf="!isLoading; else loader">Enviar mensaje</p>
+              <ng-template #loader>
+                <span class="loader"></span>
+              </ng-template>
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>

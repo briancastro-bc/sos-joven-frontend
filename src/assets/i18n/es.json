@@ -123,53 +123,29 @@
           "route": "Home"
         },
         {
-          "to": "about",
-          "route": "Quienes somos",
-          "subtitle": "Sobre nosotros",
-          "sub_routes": [
-            {
-              "to": "about",
-              "route": "Mision y vision"
-            },
-            {
-              "to": "about",
-              "route": "Descripcion"
-            },
-            {
-              "to": "about",
-              "route": "Talento humano"
-            },
-            {
-              "to": "about",
-              "route": "Politicas"
-            }
-          ]
+          "to": "us",
+          "route": "Quienes somos"
         },
         {
           "to": "services",
-          "route": "Servicios",
-          "sub_routes": [
-            {
-              "to": "about",
-              "route": "Mision y vision"
-            },
-            {
-              "to": "about",
-              "route": "Descripcion"
-            },
-            {
-              "to": "about",
-              "route": "Talento humano"
-            },
-            {
-              "to": "about",
-              "route": "Politicas"
-            }
-          ]
+          "route": "Servicios"
         },
         {
-          "to": "products",
-          "route": "Productos"
+          "route": "Productos",
+          "sub_routes": [
+            {
+              "to" : "products/sifab",
+              "route" : "SIFAB",
+              "fontawesome_icon":"fa-solid fa-display",
+              "info":"Lorem ipsum dolor sit, amet consectetur "
+            },
+            {
+              "to" : "products/sifapp",
+              "route" : "SIFAPP",
+              "fontawesome_icon":"fa-regular fa-window-maximize",
+              "info":"Lorem ipsum dolor sit, amet consectetur "
+            }
+          ]
         },
         {
           "to": "clients",
@@ -179,7 +155,7 @@
     },
     "banner": [
       {
-        "url": "https://img.freepik.com/vector-gratis/concepto-isometrico-cms_23-2148807389.jpg?w=2000",
+        "url": "https://www.wyzowl.com/wp-content/uploads/2020/03/Free-Project-Management-Software-Tools-for-2020.png",
         "information": {
           "title": "SIFAB - Software Integrado Financiero y Asistencial",
           "body": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
@@ -200,7 +176,7 @@
         }
       },
       {
-        "url": "https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/types-of-software.png",
+        "url": "https://img.freepik.com/free-photo/coding-man_1098-18084.jpg",
         "information": {
           "title": "Con SIFAB todo es más fácil",
           "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
@@ -208,41 +184,186 @@
       }
     ],
     "about": {
-      "title": "SAI",
+      "title": "¿Quien es sai soluciones informaticas?",
       "subtitle": "Soluciones informáticas",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos omnis a et, cumque voluptatibus quisquam fugiat magni repudiandae cum facilis quos consectetur. Nisi, expedita ex! Expedita vitae architecto eos?",
-      "button_learn_more": "Saber mas sobre SAI"
+      "content": "Somos una empresa con mas de 10 años de experiencia en el campo de la tecnología, nos enfocamos en ofrecer soluciones innovadoras y personalizadas que ayuden a mejorar la eficiencia y productividad de nuestros clientes.",
+      "button_learn_more": "Saber mas"
     },
     "products": {
-      "title": "Nuestros productos",
+      "title":"Soluciones de software para mejorar su negocio",
+      "subtitle":"Inicialmente contamos con dos productos",
       "SIFAB": {
         "title": "SIFAB",
-        "subtitle": "Software Integrado Financiero y Asistencial",
-        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+        "subtitle":"Software Integrado Financiero y Asistencial.",
+        "about": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes.",
+        "learn_more" :" Saber mas →"
       },
       "SIFAPP": {
         "title": "SIFAPP",
-        "subtitle": "Lorem ipsum dolor sit amet, consectetur",
-        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus."
+        "subtitle":"Lorem ipsum dolor sit amet, consectetur",
+        "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quasi unde vitae, labore quaerat dolores voluptatibus.",
+        "learn_more" :" Saber mas →"
       }
     },
     "clients": {
       "title": "Nuestros clientes",
-      "images": [
-        "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
-        "https://www.equiposai.com/views/images/galeria/happy.jpg",
-        "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
-        "https://www.equiposai.com/views/images/galeria/ral.jpg",
-        "https://www.equiposai.com/views/images/galeria/jdsuministros.jpg",
-        "https://www.equiposai.com/views/images/galeria/medinped.jpg",
-        "https://www.equiposai.com/views/images/galeria/somti.jpg",
-        "https://www.equiposai.com/views/images/galeria/esedorada.jpg",
-        "https://www.equiposai.com/views/images/galeria/integrasalud.jpg",
-        "https://www.equiposai.com/views/images/galeria/kostar.jpg",
-        "https://www.equiposai.com/views/images/galeria/monicaestrada.jpg",
-        "https://www.equiposai.com/views/images/galeria/oscarelias.jpg",
-        "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
-        "https://www.equiposai.com/views/images/galeria/medicavivir.jpg"
+      "images":[
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/vivessalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/tricauma.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/uniquindio.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/filadelfia.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/esedorada.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/mediclinico.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/ral.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/higea.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/happy.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/valsalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/imeco.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/jaimealvarez.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/cardiologiasas.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/casadelasalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/fertilab.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/orientesalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/saludserv.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/tian.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/medicavivir.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/biomedicas.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/integrasalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/esemarmato.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/aleyda.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/urpecv.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/carolinaherrera.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/kostar.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/unisalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/canamomo.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/manueltoscano.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/medinped.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/aslosalud.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/condufiable.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/monicaestrada.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/oscarelias.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/gilmaclemencia.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/somti.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/olgadelsy.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/promocionsocial.jpg",
+          "url":""
+        },
+        {
+          "image": "https://www.equiposai.com/views/images/galeria/jdsuministros.jpg",
+          "url":""
+        }
       ]
     },
     "securities": {
@@ -263,6 +384,270 @@
         "title": "Competitividad",
         "body": "La pasión, la motivación y el progreso nos anima a ser mejores cada día."
       }
+    }
+  },
+  "products": {
+    "sifab": {
+      "banner": [
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide02.jpg",
+          "information": {
+            "title": "SIFAB - Software Integrado Financiero y Asistencial",
+            "body": "Implementado en IPS alrededor de Colombia. Empresas Sociales del estado, Clinicas privadas y profesionales independientes."
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide03.jpg",
+          "information": {
+            "title": "Historias Clínicas Robustas, Parametrizables",
+            "body": "Nuestros Clientes pueden decidir que formatos implementar o usar alguno de los más de 120 formatos ya listos para usar"
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide01.jpg",
+          "information": {
+            "title": "Con SIFAB todo es más fácil",
+            "body": "Los usuarios de nuestro sistema de información así lo afirman"
+          }
+        },
+        {
+          "url": "https://www.equiposai.com/views/images/slide/slide04.jpg",
+          "information": {
+            "title": "Con SIFAB todo es más fácil",
+            "body": "Cada uno de nuestros módulos permiten parametizar sus datos básicos, lo que agiliza bastante los procesos en cada uno de ellos"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "title":"Admisión y Facturación",
+          "body": "Este módulo permite la liquidación de cada uno de los eventos generados por la atención a cada uno de los pacientes de las diferentes EAPBS o de personas particulares que demanden algún tipo de atención, diferenciando cada contrato, cada detalle en cuanto a los servicios contratados.",
+          "learn_more" :[
+            "Generación de la factura a pacientes y a entidades desde el sistema de información.",
+            "Manejo de contratos donde se puede especificar las condiciones particulares de cada uno de ellos.",
+            "Manejo de Planes de beneficios para el control de servicios contratados, permitiendo asegurar de acuerdo a una buena parametrización, que se facture solo lo convenido con las EPS.",
+            "Ventana para Controlar la facturación, donde se puede observar lo que ha sido facturado en un periodo determinado, cuales ingresos han sido anulados, cuales están abiertos, cerrados, facturados, cuales usuarios han intervenido en el proceso, etc.",
+            "Control sobre las actividades de promoción y detección temprana, teniendo en cuenta la aplicabilidad de cada servicio según los grupos poblaciones y el género del usuario. Al parametrizar correctamente el módulo, el proceso de facturación no permitirá el cargue de actividades a usuarios que no cumplan con todos los criterios según su edad y su género, basado en las normas técnicas de la resolución 3280 de 2018.",
+            "Opción para realizar demanda inducida a los usuarios con el objetivo de incentivar el incremento las metas de PyP.",
+            "Interacción con el componente de la Resolución 202 de 2021 para la captura de información automática desde el módulo de Facturación.",
+            "Alertas sobre los montos de facturación, muy importantes para los contratos capitados.",
+            "Manejo de la facturación por Ingresos, permitiendo que en un mismo consecutivo de ingreso tenga diferentes números de factura.",
+            "Discriminación de la facturación por centros de atención.",
+            "Informes: Facturas por entidad, facturas por unidad funcional, servicios prestados, Facturas por paciente, Historias Clínicas sin diligenciar, Informes de Morbilidad, Notificación obligatoria, medicamentos formulados por paciente, citas médicas por profesionales y por usuario, informe de producción hospitalaria, informe general de servicios prestados, Informes por centros de atención, entre otros, lo que permite el seguimiento, evaluación y toma de decisiones.",
+            "Interface con los módulos de citas, historia clínica, Rips, control de medicamentos, promoción y prevención, laboratorio, Odontología, Liquidación de Cirugías, urgencias y hospitalización."
+          ],
+          "fontawesome_icon" : "fa-solid fa-scroll"
+        },
+        {
+          "title":"Historia Clínica",
+          "body": "Este módulo permite registrar la información asistencial en la atención brindada a cada uno de los pacientes. Nuestro modelo de desarrollo en este módulo nos permite personalizar a través de formatos el diligenciamiento de dicha información, contando con la posibilidad de realizar un diseño estándar, fácil y de alta estética.",
+          "learn_more" :[
+            "Historia Clínica parametrizable, de fácil manejo, adaptable a Medicina general, especializada, promoción y prevención o a otro tipo de profesionales como Odontólogos, Nutricionistas, optómetras, Citohistólogos, Medicina Alternativa, Fisioterapéutas, Psicólogos, gastroenterólogos, etc. Diseño de formatos de Historia Clínica personalizado lo que permite al cliente:",
+
+            "Tener la información que requiere de acuerdo a la normativa vigente y a sus necesidades particulares.",
+
+            "Facilidad en la impresión de los reportes de historia clínica, contando con la posibilidad de personalizarlos como se requiera (colores, marcos, tipos de fuente, etc) lo que permite un alto grado de estética en la impresión o almacenamiento de la información clínica.",
+
+            "Posibilidad de extraer los reportes en varios formatos (imagen JPG,Word-RTF, Excel, PDF, Archivo Plano)",
+
+            "Validaciones personalizadas en cada historia clínica.",
+
+            "Gran nivel de personalización en la forma como el cliente desee interactuar con la historia clínica, lo que permite una mayor automatización y agilidad en el diligenciamiento de la información asistencial.",
+
+            "Integración con las Rutas Integrales de Atención en Salud según la parametrización de Edades y Géneros.",
+
+            "Permite la generación de RIPS a partir de las evoluciones médicas.",
+
+            "Posibilidad de limitar las órdenes médicas de forma parametrizable.",
+
+            "Permite diligenciar anexos a la historia clínica: Fórmulas médicas, Solicitud de procedimientos, Evoluciones Médicas, Notas de Enfermería, Remisiones, Justificación de Medicamentos NO POS, Justificación de Procedimientos NO POS, Notas aclaratorias, Incapacidades médicas, Certificados Médicos, Consentimiento Informado parametrizable.",
+
+            "Manejo de valores por defecto personalizables en cada formato de historia clínica.",
+            "Informes generales de historia clínica."
+          ],
+          "fontawesome_icon" : "fa-solid fa-clipboard"
+        },
+        {
+          "title":"Citas Médicas",
+          "body": "Este módulo permite llevar el registro de las citas que se asignen en la institución ya sea de forma presencial o telefónica, obteniendo información importante, validando la aplicabilidad a los programas de promoción y prevención y permitiendo realizar demanda inducida desde ese momento.",
+          "learn_more" :[
+            "Asignación de horarios teniendo en cuenta tiempos fijos o dependiendo de la duración del servicio.",
+            "En cada turno se pueden asignar número de pacientes, ideal para consultas de grupos (ejemplo turnos de terapia respiratoria, fisioterapia, etc.)",
+            "Manejo de citas presenciales y citas telefónicas.",
+            "Envío de recordatorio de las citas al correo electrónico de los usuarios.",
+            "Manejo de reserva de citas, ideal para citas telefónicas cuando no existen datos de los pacientes o para otro fin diferente (separación de espacios del profesional, reuniones, etc.)",
+            "Manejo de citas extras.",
+            "Manejo de Traslado de citas, Marcación de la llegada de los pacientes.",
+            "Posibilidad de observar las citas anteriores del paciente.",
+            "Control sobre una cantidad definida de citas canceladas por usuario.",
+            "Informe de Indicadores de oportunidad en citas permitiendo cruzar servicios, entidades, profesionales, lo que brinda flexibilidad para este dato tan relevante.",
+            "Manejo de notas por cada cita, importante para recordar aspectos particulares con cada cita.",
+            "Alertas parametrizables sobre los pacientes para advertir cualquier tipo de situación pendiente."
+          ],
+          "fontawesome_icon" : "fa-solid fa-calendar-plus"
+        },
+        {
+          "title":"RIPS",
+          "body": "Nuestra solución permite generar los archivos de acuerdo a lo establecido en la Resolución 3374 de 2000 y todas sus modificaciones. los archivos se generan de una forma ágil, con procesos de validación previos y con la posibilidad de realizar auditoría sobre los registros ya ingresados.",
+          "learn_more" :[
+            "Parametrización de los datos del RIPS con el objetivo de que el cliente pueda darle dinamismo al software si la norma cambia.",
+            "Validación de RIPS antes de almacenar la información lo que evita errores posteriores y reprocesos para corregir la información. Estas validaciones se hacen a nivel de estructura y a nivel lógico.",
+            "Informe de RIPS sin digitar para llevar un control de los mismos y asegurar que las cuentas cuenten con un soporte magnético correcto.",
+            "Admisión de pacientes con control sobre la norma vigente en cuanto a los tipos de documento y sus respectivas longitudes. Lo que asegura que el archivo de usuarios sea correcto.",
+            "Auditoria a los RIPS permitiendo filtrar la información ingresada por rangos de edad, diagnostico, servicios, finalidades de consulta, causa externa, tipo de diagnóstico principal, contratos. Esta opción es importante para verificar la calidad de los RIPS que van a ser entregados.",
+            "Definición de datos de RIPS para Promoción y Prevención y obligatoriedad parametrizable, con el objetivo de definir lineamientos en los programas de PyP, asegurando que la información se clasifique de acuerdo a las matrices de programación de la institución.",
+            "Diligenciamiento de RIPS sin Historia clínica. (Si no hay historia clínica).",
+            "Posibilidad de generar los RIPS por periodo de facturación y por facturas a entidades.",
+            "Opción para realizar la consolidación de los RIPS.",
+            "Opción para generar RIPS teniendo en cuenta varios contratos."
+          ],
+          "fontawesome_icon" : "fa-solid fa-file-pen"
+        },
+        {
+          "title":"Salud Ocupacional",
+          "body": "Este módulo permite llevar las historias clínicas ocupacionales en la IPS. Tiene automatizaciones que permiten la agilidad en los procesos de atención en la entidad. Contamos con una aplicación web para el envío y descarga de certificados de aptitud laboral y de historias clínicas, anexos y demás.",
+          "learn_more" :[
+            "Creación de empresas para llevar el registro de cada una de las actividades realizadas a cada trabajador.",
+            "Personalización de los factores de riesgo para automatizar el diligenciamiento de la historia clínica.",
+            "Parametrización de recomendaciones o datos automáticos con el fin de agilizar el diligenciamiento de la historia clínica.",
+            "Generación de certificados de aptitud laboral.",
+            "Generación de informes detallados o consolidados teniendo en cuenta las variables registradas en la historia clínica.",
+            "Validaciones de los datos de la historia clínica.",
+            "Integración con los procesos de facturación.",
+            "Generación de facturas a las empresas para efectuar los cobros respectivos por la prestación de servicios a los trabajadores.",
+            "Interface WEB para que las empresas usuarias puedan descargar los certificados de aptitud laboral a través de Internet desde nuestro sitio web www.saienlinea.com",
+            "Formatos de historia clínica médica Ocupacional, Audiometría, Visiometría, Optometría, Psicología, Espirometría."
+          ],
+          "fontawesome_icon" : "fa-solid fa-user-doctor"
+        },
+        {
+          "title":"Laboratorio Clínico",
+          "body": "Este módulo permite personalizar de una forma amplia cada uno de los exámenes de laboratorio que se manejan en la entidad, realizando validaciones con respecto a los valores de referencia y los límites de cada analito. Esta totalmente integrado con el módulo de facturación.",
+          "learn_more" :[
+            "Ingreso de las variables de cada examen permitiendo un alto nivel de personalización en cuanto a los tipos de resultados, grupos de edad, valores de referencia, limites.",
+            "Manejo de tipos de resultado parametrizables lo que permite agilidad en la digitación de resultados.",
+            "Impresión de resultados en pantalla y en otros formatos como pdf, word, excel o imagen.",
+            "Hoja de trabajo personalizable con base en las secciones y los tipos de exámenes requeridos.",
+            "Digitación de resultados de una forma amigable y fácil.",
+            "Posibilidad de generar Formatos personalizables para cada examen.",
+            "Manejo de fórmulas para las variables de exámenes de laboratorio.",
+            "Posibilidad de manejar consecutivos de admisión de exámenes de forma manual o automática.",
+            "Diferentes reportes para la hoja de trabajo.",
+            "Consulta de los resultados de laboratorio desde la historia clínica.",
+            "Diferentes tipos de ordenamiento a la hora de digitar los resultados de laboratorio (por fecha, por paciente, por secciones, por consecutivo, por tipo de servicio, etc)",
+            "Personalización de ordenamiento por grupos de variables en los reportes de laboratorio.",
+            "Posibilidad de restringir la observación de los resultados de laboratorio a alguna parte de los usuarios del sistema de información.",
+            "Integración de los exámenes con la Resolución 202 de 2021."
+          ],
+          "fontawesome_icon" : "fa-solid fa-flask-vial"
+        },
+        {
+          "title":"Odontología",
+          "body": "Este módulo permite el registro de los datos detallados en cada uno de los dientes del paciente a través de un odontograma que brinda muchas posibilidades de personalización, además de la historias clínicas programadas, de urgencias, de salud oral y un odontograma muy personalizable con imágenes y colores.",
+          "learn_more" :[
+            "Estructura del diente conformada por 18 partes (partes principales y partes auxiliares según la necesidad de cada odontólogo).",
+            "Personalización de la estructura del diente según criterio del odontólogo.",
+            "Parametrización de diagnósticos, procedimientos y características especiales definiendo color o imagen para aplicar en el odontograma.",
+            "Marcación de hasta 18 partes en las que está diseñada la estructura del diente.",
+            "Marcación con color o imagen sobre las partes principales de cada diente.",
+            "Posibilidad de manejar diagnostico y procedimiento realizado anteriormente sobre cada una de las partes del diente.",
+            "Marcación de procedimientos o diagnósticos en la boca.",
+            "Reserva de una parte del diente para colocar las características especiales (coronas, frenillos, brackets, etc)",
+            "Almacenamiento de observaciones por cada uno de los dientes tanto a nivel de diagnostico como de procedimiento a realizar.",
+            "Manejo de la cartera sobre los tratamientos de cada paciente.",
+            "Informes importantes para el área sobre los tratamientos y el detalle de cada uno de ellos.",
+            "Operación sobre un diente ampliado, lo que facilita el proceso de marcación.",
+            "Impresión de los diferentes tipos de odontograma: Diagnóstico, Procedimientos a realizar y Marcación de los procedimientos ya realizados.",
+            "Estimativo sobre el presupuesto del tratamiento odontológico.",
+            "Manejo de un plan de pagos para el tratamiento odontológico."
+          ],
+          "fontawesome_icon" : "fa-solid fa-tooth"
+        },
+        {
+          "title":"Promoción y Prevención",
+          "body": "Este módulo permite el manejo de cada uno de los programas de promoción y prevención de la institución, llevando un estricto control de las actividades basado en una buena parametrización. Permite el seguimiento a las metas de forma periódica y el realizar demanda inducida.",
+          "learn_more" :[
+            "Personalización de cada programa de promoción y prevención permitiendo relacionar los servicios y medicamentos en cada uno de ellos.",
+            "Manejo de servicios diferenciales con el objetivo de llevar un estricto control sobre las actividades que aplican a cada usuario.",
+            "Integración completa con el proceso de facturación e historia clínica.",
+            "Manejo de los parámetros de la resolución 3280 para la implementación de los servicios y formatos que hacen parte de las Rutas Integrales de Atención en Salud.",
+            "Integración de las Rutas Integrales de Atención en Salud con la Historia Clínica.",
+            "Parametrización para la definición de diagnósticos en actividades de pyp.",
+            "Seguimiento a metas con base en las matrices de programación y las actividades registradas en el proceso de facturación.",
+            "Demanda inducida a través de una ventana al momento de la atención de los usuarios o a través de un informe donde se pueden establecer parametros de contrato, genero, programa, actividad y edades.",
+            "RIPS de pyp de gran calidad teniendo en cuenta las validaciones en el proceso de facturación y en la historia clínica.",
+            "Parametrización de Gráficas de Crecimiento y Desarrollo.",
+            "Generación automática de las Gráficas de Crecimiento y Desarrollo.",
+            "Escala Abreviada del Desarrollo EAD-3."
+          ],
+          "fontawesome_icon" : "fa-solid fa-person-breastfeeding"
+
+        },
+        {
+          "title":"Cirugías",
+          "body": "Este módulo permite realizar la liquidación de procedimientos quirúrgicos teniendo en cuenta los manuales tarifarios ISS, SOAT, las unidades de valor relativo definidas en el acuerdo 312 de 2004. Permite programar los quirófanos y salas con sus respectivos procedimientos Quirúrgicos.",
+          "learn_more" :[
+            "Parametrización de cada uno de los procedimientos Quirúrgicos.",
+            "Definición de los servicios que hacen parte del procedimiento: Honorarios, Derechos de sala y Materiales.",
+            "Liquidación de procedimientos Quirúrgicos teniendo en cuenta los porcentajes aplicables a cada cirugía, dependiendo de la cantidad realizada y la(s) vía(s) de acceso en el procedimiento.",
+            "Agrupación de servicios por cada procedimiento quirúrgico, permitiendo discriminar en la factura los servicios de cada cirugía con sus respectivos valores.",
+            "Parametrización de cada uno de los procedimientos Quirúrgicos o procedimientos menores.",
+            "Creación de horarios para las salas de cirugía.",
+            "Programación de las cirugías o procedimientos menores de acuerdo a los horarios establecidos en cada sala.",
+            "Creación de canastas quirúrgicas.",
+            "Preparación de canastas para los procedimientos quirúrgicos a realizar",
+            "Autorización y admisión de procedimientos Quirúrgicos.",
+            "Apertura de la hoja de gastos",
+            "Apertura de la historia Clínica de procedimientos quirúrgicos y gestión de la hoja de gastos.",
+            "Cierre de la hoja de gastos y devoluciones respectivas al inventario."
+          ],
+          "fontawesome_icon" : "fa-solid fa-heart-pulse"
+        },
+        {
+          "title":"Urgencias - Hospitalización",
+          "body": "Este módulo permite llevar el movimiento del área de urgencias y de hospitalización teniendo en cuenta los ingresos por los diferentes servicios y cumpliendo con los datos que por norma debe reportar la entidad en los archivos RIPS cuando se presente una atención de este tipo.",
+          "learn_more" :[
+            "Manejo de Triage.",
+            "Liquidación de estancias de observación o de Hospitalización.",
+            "Ingresos discriminados para el área de urgencias y para el área de hospitalización, con la posibilidad de unirlos en una misma atención según las exigencias del proceso de facturación.",
+            "Manejo de estancias de observación y de hospitalización permitiendo valores y rangos de tiempo diferente para el cobro.",
+            "Generación del anexo técnico 2 y el anexo técnico 3.",
+            "Opción para el diligenciamiento del FURIPS y generación de los archivos cuando se presenten accidentes de tránsito.",
+            "Historia clínica de Urgencias y de Hospitalización.",
+            "Registros de Signos vitales, Balance de líquidos, Control de Administración de Oxigeno, Registro de Oximetrías.",
+            "Generación de informes teniendo en cuenta los ingresos de urgencias y hospitalización, morbilidad, reingresos, etc.",
+            "Generación de archivos RIPS de Urgencias, Hospitalización y Recién nacidos."
+          ],
+          "fontawesome_icon" : "fa-solid fa-truck-medical"
+        },
+        {
+          "title":"Control de Medicamentos",
+          "body": "Este módulo permite llevar el control de las existencias de medicamentos a través de movimientos de entrada y de salida. Permite registrar la compra realizada al proveedor y parametrizar de los diferentes conceptos de ajuste de entrada o ajuste de salida. Permite manejar varias Bodegas de Inventario.",
+          "learn_more" :[
+            "Posibilidad de registrar la compra realizada al proveedor.",
+            "Parametrización de los diferentes conceptos de ajuste de entrada o ajuste de salida.",
+            "Opción para realizar ajuste de inventarios por algún concepto de entrada o de salida.",
+            "Posibilidad de manejar bodegas de Inventario.",
+            "Validación de medicamentos utilizados en los programas de Promoción y Prevención.",
+            "Facturación de medicamentos y/o Material Médico Quirúrgico a nivel ambulatorio o en Hospitalización o Urgencias.",
+            "Generación del archivo AM (RIPS de Medicamentos)",
+            "Generación del archivo AT (RIPS de Otros servicios-materiales e insumos)",
+            "Generación de Informes de existencias actuales y de movimientos por bodega."
+          ],
+          "fontawesome_icon" : "fa-solid fa-briefcase-medical"
+        },
+        {
+          "title":"Reportes y Estadísticas",
+          "body": "Cada uno de los módulos del sistema de información tiene la posibilidad de generar una gran cantidad de reportes y estadísticas. Estos reportes pueden ser basados en normas, en informes que se incluyen con cada módulo o informes que han solicitado nuestros clientes.",
+          "learn_more" :[
+            "Los reportes que se generan desde nuestro sistema de información son el resultado de un proceso basado en la parametrización del sistema.",
+            "La aplicación tiene reportes estandar y también reportes que son solicitados por los usuarios del sistema de información.",
+            "Los reportes pueden exportase a formatos como excel, imagen, pdf o RTF para word."
+          ],
+          "fontawesome_icon" : "fa-solid fa-chart-column"
+        }
+      ]
+
     }
   },
   "us": {

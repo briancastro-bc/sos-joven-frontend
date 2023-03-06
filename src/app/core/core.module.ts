@@ -8,6 +8,7 @@ import { SharedModule } from '@shared/shared.module';
 import { LayoutComponent } from './layout/layout.component';
 import { AppInitializerService } from './initializer/app-initializer.service';
 
+
 export function AppInitializerFactory(appInitializerService: AppInitializerService): () => Observable<void> {
   return () => appInitializerService.load()
     .pipe(take(1));
@@ -20,8 +21,8 @@ export function AppInitializerFactory(appInitializerService: AppInitializerServi
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule,
-  ],
+    SharedModule
+    ],
   exports: [
     LayoutComponent
   ],
