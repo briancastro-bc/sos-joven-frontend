@@ -1,8 +1,8 @@
 <div class="label__input">
     <p class="error" *ngIf="valid">{{error}}</p>
-    <input 
+    <input
         class='input'
-        [type]="type" 
+        [type]="type"
         [placeholder]="placeholder"
         [(ngModel)]="input"
 		(ngModelChange)="onChange($event)"

@@ -89,5 +89,4 @@ export class ContactMobileComponent implements OnInit, OnDestroy {
     this.formContact.reset();
     this.captchaEl.resetCaptcha();
   }
-
 }

@@ -1,7 +1,16 @@
 <footer class="footer-mobile" role="navigation">
   <div class="footer-mobile__wrapper">
-    <a appRipple *ngFor="let link of links" [routerLink]="link.route" [routerLinkActive]="link.routeActive" class="footer-mobile__wrapper--link" #link>
-      <div class="footer-mobile__wrapper--link__container"></div>
-    </a>
+    <ng-container *ngFor="let l of links">
+      <ng-container *ngIf="!l.external; else internalLink">
+        <a appRipple [routerLink]="l.route" [routerLinkActive]="l.routeActive" class="footer-mobile__wrapper--link" #link>
+          <div class="footer-mobile__wrapper--link__container"></div>
+        </a>
+      </ng-container>
+      <ng-template #internalLink>
+        <a appRipple (click)="secureRedirection(l.route)" class="footer-mobile__wrapper--link" #link>
+          <div class="footer-mobile__wrapper--link__container"></div>
+        </a>
+      </ng-template>
+    </ng-container>
   </div>
 </footer>

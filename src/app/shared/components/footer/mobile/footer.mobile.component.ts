@@ -1,10 +1,13 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { AfterViewInit, Component, ElementRef, QueryList, Renderer2, ViewChildren, ViewEncapsulation } from '@angular/core';
 
+import { RouteService } from '@shared/services';
+
 interface Link {
   span: string;
   route: string;
   routeActive: string;
+  external?: boolean;
   icon: {
     type: string;
     name: string;
@@ -25,7 +28,8 @@ export class FooterMobileComponent implements AfterViewInit {
   links: Link[];
 
   constructor(
-    private readonly renderer2: Renderer2
+    private readonly renderer2: Renderer2,
+    private readonly routeService: RouteService,
   ) {
     this.links = [
       {
@@ -49,6 +53,7 @@ export class FooterMobileComponent implements AfterViewInit {
       {
         span: 'layout.footer.mobile.saionline',
         route: 'saionline',
+        external: true,
         routeActive: 'saioline__active',
         icon: {
           type: 'regular',
@@ -92,5 +97,9 @@ export class FooterMobileComponent implements AfterViewInit {
 
       this.renderer2.appendChild(link.nativeElement.children[0], boxIcon);
     });
+  }
+
+  secureRedirection(redirect: string): void {
+    this.routeService.secureRedirection(redirect);
   }
 }
