@@ -1,12 +1,10 @@
 {
   "titles": {
-    "home": "SAI Soluciones Informáticas",
-    "us": "Quienes Somos",
-    "services": "Nuestros servicios",
-    "saionline": "SAI en línea",
-    "products": "Nuestros productos",
-    "contact": "Contáctanos",
-    "not_found": "404"
+    "home": "",
+    "chat": "Chatea con un profesional",
+    "startup": "SOS Joven",
+    "clearyourhead": "Despeja tu mente",
+    "not_found": "404 - No encontrado"
   },
   "layout": {
     "loader": {

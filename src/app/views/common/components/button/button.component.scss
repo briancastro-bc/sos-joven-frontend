@@ -1,0 +1,36 @@
+@import "src/sass/custom";
+
+$sm-height: 36px;
+$md-height: 44px;
+$lg-height: 52px;
+
+.button {
+  @extend %base-button;
+  width: auto;
+  display: inline-flex;
+  font-size: 1rem;
+  line-height: 1.15rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12.5px;
+  border: 1px solid var(--border-theme);
+  background-color: red;
+
+  &-sm {
+    height: $sm-height;
+    font-size: 0.875rem;
+    line-height: 1rem;
+  }
+
+  &-md {
+    height: $md-height;
+  }
+
+  &-lg {
+    height: $lg-height;
+
+    .button__icon {
+      font-size: 24px;
+    }
+  }
+}

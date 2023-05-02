@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": true
         }
       },
       "root": "",
@@ -31,16 +32,14 @@
               "src/manifest.webmanifest"
             ],
             "styles": [
-              "./node_modules/tailwindcss/base.css",
-              "./node_modules/tailwindcss/components.css",
-              "./node_modules/tailwindcss/utilities.css",
-              "./node_modules/boxicons/css/boxicons.min.css",
-              "src/styles.scss",
-              "node_modules/@fortawesome/fontawesome-free/css/all.css"
+              "node_modules/tailwindcss/base.css",
+              "node_modules/tailwindcss/utilities.css",
+              "node_modules/tailwindcss/components.css",
+              "node_modules/boxicons/css/boxicons.min.css",
+              "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/boxicons/dist/boxicons.js",
-              "node_modules/@fortawesome/fontawesome-free/js/all.js"
+              "node_modules/boxicons/dist/boxicons.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

@@ -4,10 +4,10 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@src/*": ["./src/*"],
       "@app/*": ["./src/app/*"],
-      "@core/*": ["./src/app/core/*"],
-      "@common/*": ["./src/app/common/*"],
       "@shared/*": ["./src/app/shared/*"],
+      "@common/*": ["./src/app/views/common/*"],
       "@environment/*": ["./src/environments/*"],
     },
     "outDir": "./dist/out-tsc",

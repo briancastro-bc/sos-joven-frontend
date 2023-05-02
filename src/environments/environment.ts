@@ -1,5 +1,5 @@
 export const environment = {
-  base_url: 'http://localhost:4004',
+  baseUrl: 'http://localhost:4004',
   version: '0.1.0',
   secureRedirections: {
     facebook: 'https://www.facebook.com/saisolucionesinformaticas',
