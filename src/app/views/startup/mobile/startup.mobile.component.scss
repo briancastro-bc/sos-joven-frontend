@@ -1,0 +1,12 @@
+
+.startup {
+  height: 100vh;
+  overflow: hidden;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,7 +1,23 @@
-<application-button
-  [icon]="'bxs-balloon'"
-  [size]="'medium'"
-  [label]="'Button'"
-  [fullWidth]="false"
-  (click)="click()">
-</application-button>
+<section class="startup">
+  <div class="startup__wrapper">
+    <header class="startup__wrapper__header">
+      <div class="startup__wrapper__header__brand">
+        <span class="startup__wrapper__header__brand--logo"></span>
+      </div>
+      <div class="startup__wrapper__header__nav">
+        <application-button
+          [icon]="'bx-bell'"
+          [size]="'medium'"
+        ></application-button>
+        <a class="startup__wrapper__header__nav--profile">
+          <img [src]="'assets/images/male-avatar.svg'" alt="Profile picture">
+        </a>
+      </div>
+    </header>
+    <div class="startup__wrapper__container">
+      <div class="startup__wrapper__container__content">
+
+      </div>
+    </div>
+  </div>
+</section>

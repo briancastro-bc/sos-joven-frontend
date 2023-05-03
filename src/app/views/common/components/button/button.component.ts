@@ -3,7 +3,9 @@ import {
 } from '@angular/common';
 import {
   Input,
+  inject,
   OnInit,
+  OnDestroy,
   QueryList,
   Component,
   Renderer2,
@@ -12,8 +14,6 @@ import {
   AfterViewInit,
   ViewEncapsulation,
   ChangeDetectionStrategy,
-  inject,
-  OnDestroy,
 } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
